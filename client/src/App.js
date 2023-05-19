@@ -8,7 +8,7 @@ import HomePage from './Pages/HomePage';
 import LoginPage from './Pages/LoginPage';
 import RegistrationPage from './Pages/RegistrationPage';
 import Blog from './Pages/Blog';
-import Scholarships from './Pages/Scholarships';
+import Scholarships from './Pages/Scholarship';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Team from './Pages/Team';
