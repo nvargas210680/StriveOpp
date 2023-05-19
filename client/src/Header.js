@@ -6,9 +6,15 @@ export default function Header(){
         <a href="/" class="logo">StriveOpp</a>
         
         <nav>
-            <Link to="/login"><button>Login</button></Link>
-            <Link to="/register"><button>Register</button></Link>
-            <Link to="/book"><button>Book Appointment</button></Link>
+            <div class="column">
+                <div class="row">
+                    <Link to="/login"><button class="login">Login</button></Link>
+                    <Link to="/register"><button class="register">Register</button></Link>
+                </div>
+                <div class="row">
+                    <Link to="/book"><button class="appointment">Book Appointment</button></Link>
+                </div>
+            </div>
         </nav>
         </header>
     )

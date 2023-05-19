@@ -9,6 +9,8 @@ export default function Footer(){
                 <div class="verticalLine" />
 
                 <div class="column">
+                    <a href="">Twitter</a>
+                    <br />
                     <a href="">Instagram</a>
                     <br />
                     <a href="">TikTok</a>
