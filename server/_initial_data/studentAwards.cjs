@@ -52,7 +52,7 @@ const getPostData = async () => {
     }
     console.log(postDates);
 
-    const filePath = path.join(__dirname, "scraped_data.json");
+    const filePath = path.join(__dirname, "studentAwards.json");
     fs.writeFileSync(filePath, JSON.stringify(postData, null, 2));
 
     return postData;
