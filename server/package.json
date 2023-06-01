@@ -1,28 +1,33 @@
 {
   "name": "server",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "load": "node models/loadInitialScholarshipData.js",
     "start": "node index.js",
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "body-parser": "^1.20.2",
-        "colors": "^1.4.0",
-        "connect-mongodb-session": "^3.1.1",
-        "cors": "^2.8.5",
-        "dotenv": "^16.0.3",
-        "express": "^4.18.2",
-        "express-session": "^1.17.3",
-        "jsonwebtoken": "^9.0.0",
-        "mongoose": "^7.2.0"
-      }
-    }
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
