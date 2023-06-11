@@ -25,3 +25,13 @@ const uploadData = async () => {
 };
 
 uploadData();
+
+function uploadData() {
+  console.log("Running code every week!");
+}
+
+const millisecondsPerWeek = 7 * 24 * 60 * 60 * 1000;
+
+uploadData();
+
+setInterval(uploadData, millisecondsPerWeek);
