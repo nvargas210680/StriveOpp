@@ -1,5 +1,9 @@
 export default function RegistrationPage(){
     return(
-        <div></div>
+        <>
+        <h1>Register Here</h1>
+
+        onboarding process
+        </>
     )
 }
