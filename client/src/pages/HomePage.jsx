@@ -8,9 +8,9 @@ export default function HomePage(){
     return(
         <main>
         {/* CSS Animation + Authentication */}
-        <div class="box">
-            <div class="row">
-                <div class="column">
+        <div className="box">
+            <div className="row">
+                <div className="column">
                 <h1 className="box1">Making education and opportunities accessible 
                 for all students and early-career professionals!</h1>
 
@@ -19,29 +19,29 @@ export default function HomePage(){
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                     laboris nisi ut aliquip ex ea commodo consequat. </h3>
                 </div>
-                <div class="column">
+                <div className="column">
                     <Auth />
                 </div>
             </div>
         </div>
 
         {/* Self Check-Out Options + Book An Appointment */}
-        <div class="box2">
+        <div className="box2">
             <YourGoals />
         </div>
 
         {/* Featured Articles in Print and Online Media */}
-        <div class="box3">
+        <div className="box3">
             <FeaturedArticles />
         </div>
 
         {/* Podcast & Blog Posts */}
-        <div class="box4">
+        <div className="box4">
             <Media />
         </div>
 
         {/* Awards */}
-        <div class="box5">
+        <div className="box5">
             <Awards />
         </div>
         </main>
