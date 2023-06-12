@@ -38,25 +38,25 @@ await signOut(auth);
 return(
 /* Template from https://codepen.io/Mohuth/pen/QWgrPvp */
 
-<div class="container">
-	<div class="screen">
-		<div class="screen__content">
-			<form class="login">
+<div className="container">
+	<div className="screen">
+		<div className="screen__content">
+			<form className="login">
                 {/* Login Field: Email */}
-				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
+				<div className="login__field">
+					<i className="login__icon fas fa-user"></i>
 					<input
-                    class="login__input"
+                    className="login__input"
                     placeholder="Email" 
                     onChange={(e) => setEmail(e.target.value)}
                     />
 				</div>
 
                 {/* Login Field: Password */}
-				<div class="login__field">
-					<i class="login__icon fas fa-lock"></i>
+				<div className="login__field">
+					<i className="login__icon fas fa-lock"></i>
 					<input
-                    class="login__input"
+                    className="login__input"
                     placeholder="Password" 
                     type="password"
                     onChange={(e) => setPassword(e.target.value)}
@@ -66,30 +66,30 @@ return(
 
             {/* Buttons - Native Login */}
 
-				<button class="button login__submit" onClick={signIn}>
-					<span class="button__text">Login</span>
-					<i class="button__icon fas fa-chevron-right"></i>
+				<button className="button login__submit" onClick={signIn}>
+					<span className="button__text">Login</span>
+					<i className="button__icon fas fa-chevron-right"></i>
 				</button>				
 			</form>
 
             {/* Buttons - Social Login */}
 
-			<div class="social-login">
+			<div className="social-login">
 				<h3>log in via</h3>
-				<div class="social-media">
+				<div className="social-media">
 					<button
-                        class="social-icons"
+                        className="social-icons"
                         onClick={signInWithGoogle} 
                         >Google
                         </button>
 				</div>
 			</div>
 		</div>
-		<div class="screen__background">
-			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
-			<span class="screen__background__shape screen__background__shape2"></span>
-			<span class="screen__background__shape screen__background__shape1"></span>
+		<div className="screen__background">
+			<span className="screen__background__shape screen__background__shape4"></span>
+			<span className="screen__background__shape screen__background__shape3"></span>		
+			<span className="screen__background__shape screen__background__shape2"></span>
+			<span className="screen__background__shape screen__background__shape1"></span>
 		</div>		
 	</div>
 </div>
