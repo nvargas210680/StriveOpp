@@ -1,37 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import { ReactDOM } from "react";
+import { Button, Card, Dropdown, Header, Input, Icon, Image, Menu, Sidebar } from 'semantic-ui-react';
 
 export default function NavigationBar(){
     return(
-        <nav className="navigation">
-            <button className="hamburger">
-            {/* icon from heroicons.com */}
-                <img src=""
-                xmlns="http://www.w3.org/2000/svg" />
-            </button>
+        <>
+        <div className="navbar">
+        <head className="navbar">
+        
+            <title>Underline Link Hover</title>
 
-            <div className="navigation-menu">
-                <ul>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+            <link rel="stylesheet" href="App.css" />
+        </head>
 
-                    <li>
-                        <a href="/database">Scholarship Database</a>
-                    </li>
-
-                    <li>
-                        <a href="/mentorship">Mentors & Mentees</a>
-                    </li>
-
-                    <li>
-                        <a href="/team">Meet the Team</a>
-                    </li>
-
-                    <li>
-                        <a href="/about">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    )
-}
+            <nav>
+                <a href="/">Home</a>
+                <a href="/database">Scholarship Database</a>
+                <a href="/mentorship">Mentors & Mentees</a>
+                <a href="/team">Meet the Team</a>
+                <a href="/about">About</a>
+            </nav>
+            
+        </div>
+        </>
+        )
+    }
