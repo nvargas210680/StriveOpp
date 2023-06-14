@@ -1,690 +1,795 @@
 [
   {
     "category": " BMO",
-    "title": "BMO Student Award",
+    "scholarship": "BMO Student Award",
+    "demographic": "Visit",
     "deadline": "December 31, 2023",
-    "amount": "$10000",
+    "value": "$10000",
+    "requirements":"Preparing Canadian Students and their Parents for College and University.
+
+    The best place to research, discuss, and find funding for education.",
+    "tags":"Canadian / Residents",
     "url": "https://yconic.55rush.com/bmo"
   },
   {
     "category": " Samsung",
-    "title": "Samsung This Is My Epic Contest",
+    "scholarship": "Samsung This Is My Epic Contest",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://bit.ly/this-is-my-epic"
   },
   {
     "category": " CIBC",
-    "title": "Fund My First Year – Chance to Win $10,000* for first year tuition",
+    "scholarship": "Fund My First Year – Chance to Win $10,000* for first year tuition",
+    "demographic": "Visit",
     "deadline": "July 15, 2023",
-    "amount": "$10000",
+    "value": "$10000",
     "url": "https://studentlifenetwork.55rush.com/fund-my-first-year/dashboard/feed"
   },
   {
     "category": " Sobeys",
-    "title": "Sobeys Food for Thought Scholarship",
+    "scholarship": "Sobeys Food for Thought Scholarship",
+    "demographic": "Visit",
     "deadline": "April 30, 2024",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://yconic.55rush.com/foodforthought"
   },
   {
     "category": " Unilever",
-    "title": "Unilever Voices for Change Scholarship",
+    "scholarship": "Unilever Voices for Change Scholarship",
+    "demographic": "Visit",
     "deadline": "August 23, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://forms.yconic.com/s/unilever-voices-for-change-award-2022/tt-9e7413?ref=studentawards"
   },
   {
     "category": " ERA",
-    "title": "Electronic Recycling Association Scholarship for $1 Million",
+    "scholarship": "Electronic Recycling Association Scholarship for $1 Million",
+    "demographic": "Visit",
     "deadline": "September 01, 2023",
-    "amount": "$1000000",
+    "value": "$1000000",
     "url": "https://www.era.ca/2023-era-scholarship-for-1-million-100k-dollars/"
   },
   {
     "category": " ATCO",
-    "title": "ATCO Indigenous Education Awards Program",
+    "scholarship": "ATCO Indigenous Education Awards Program",
+    "demographic": "Visit",
     "deadline": "August 15, 2023",
-    "amount": "$1800",
+    "value": "$1800",
     "url": "https://bit.ly/3xp8FU4"
   },
   {
     "category": " Student Life Network",
-    "title": "99 Scholarships: Money for your passions, not your grades.",
+    "scholarship": "99 Scholarships: Money for your passions, not your grades.",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://99scholarships.ca/?ref=studentawards"
   },
   {
     "category": " The Schulich Foundation",
-    "title": "Schulich Leader Scholarships",
+    "scholarship": "Schulich Leader Scholarships",
+    "demographic": "Visit",
     "deadline": "January 30, 2024",
-    "amount": "$120000",
+    "value": "$120000",
     "url": "https://bit.ly/3GuVqCB"
   },
   {
     "category": " IPPC",
-    "title": "Indigenous Pharmacy Professionals of Canada Scholarships",
+    "scholarship": "Indigenous Pharmacy Professionals of Canada Scholarships",
+    "demographic": "Visit",
     "deadline": "June 15, 2023",
-    "amount": "$20000",
+    "value": "$20000",
     "url": "https://www.pharmacists.ca/pharmacy-in-canada/ippc/indigenous-pharmacy-scholarship/"
   },
   {
     "category": " Young Mining Professionals",
-    "title": "Young Mining Professionals Scholarship Fund",
+    "scholarship": "Young Mining Professionals Scholarship Fund",
+    "demographic": "Visit",
     "deadline": "August 31, 2023",
-    "amount": "$175000",
+    "value": "$175000",
     "url": "http://www.ympscholarships.com/applications-2023/"
   },
   {
     "category": " North Bay Society of Architects",
-    "title": "North Bay Society of Architects Scholarships",
+    "scholarship": "North Bay Society of Architects Scholarships",
+    "demographic": "Visit",
     "deadline": "July 14, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://www.nbsa.ca/nbsa-scholarships"
   },
   {
     "category": " United Nurses of Alberta",
-    "title": "United Nurses of Alberta Nursing Education Scholarship",
+    "scholarship": "United Nurses of Alberta Nursing Education Scholarship",
+    "demographic": "Visit",
     "deadline": "October 15, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://www.una.ca/memberresources/scholarships"
   },
   {
     "category": " MAE",
-    "title": "MAE Indigenous Education Fund Scholarship",
+    "scholarship": "MAE Indigenous Education Fund Scholarship",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://mccuaig.net/scholarship.html"
   },
   {
     "category": " Public Service Alliance of Canada",
-    "title": "For the Love of Curling Scholarship",
+    "scholarship": "For the Love of Curling Scholarship",
+    "demographic": "Visit",
     "deadline": "June 26, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://www.curling.ca/foundation/youth-scholarships/"
   },
   {
     "category": " Canadian Beef Cattle Check-Off Agency",
-    "title": "Public Service Alliance of Canada Scholarship Program",
+    "scholarship": "Public Service Alliance of Canada Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 25, 2023",
-    "amount": "$4000",
+    "value": "$4000",
     "url": "https://psacunion.ca/sites/psac/files/scholarship_guidelines_2023_final_en_3.pdf"
   },
   {
     "category": " PEO Sisterhood",
-    "title": "Canadian Beef Check-Off Agency Scholarship",
+    "scholarship": "Canadian Beef Check-Off Agency Scholarship",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://www.cdnbeefcheckoff.ca/scholarship/"
   },
   {
     "category": " Bill 7 Award",
-    "title": "Florence E. Taylor Charitable Scholarship Fund",
+    "scholarship": "Florence E. Taylor Charitable Scholarship Fund",
+    "demographic": "Visit",
     "deadline": "August 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.peoab-sk.ca/florence-e-taylor-charitable-scholarship-fund/"
   },
   {
     "category": " Unifor",
-    "title": "Bill 7 Award",
+    "scholarship": "Bill 7 Award",
+    "demographic": "Visit",
     "deadline": "August 04, 2023",
-    "amount": "$3500",
+    "value": "$3500",
     "url": "https://bill7award.ca/apply/"
   },
   {
     "category": " Canadian Centre for Occupational Health and Safety",
-    "title": "Brian Maxwell Memorial Scholarships",
+    "scholarship": "Brian Maxwell Memorial Scholarships",
+    "demographic": "Visit",
     "deadline": "June 12, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://www.ofsaa.on.ca/recognition/scholarships/brian-maxwell-memorial/"
   },
   {
     "category": " Metal Supermarkets",
-    "title": "Unifor Scholarships",
+    "scholarship": "Unifor Scholarships",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://www.unifor.org/resources/education/scholarships"
   },
   {
     "category": " Northwest Territories",
-    "title": "CCOHS Chad Bradley Scholarship Award",
+    "scholarship": "CCOHS Chad Bradley Scholarship Award",
+    "demographic": "Visit",
     "deadline": "August 31, 2023",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://www.ccohs.ca/scholarships/cbradley/"
   },
   {
     "category": " Tier 1 Energy",
-    "title": "Metal Supermarkets Trade School Scholarships",
+    "scholarship": "Metal Supermarkets Trade School Scholarships",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://www.metalsupermarkets.com/trade-school-scholarship/"
   },
   {
     "category": " Spin Master",
-    "title": "Housing Northwest Territories Scholarships",
+    "scholarship": "Housing Northwest Territories Scholarships",
+    "demographic": "Visit",
     "deadline": "July 05, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.nwthc.gov.nt.ca/en/services/scholarships"
   },
   {
     "category": " Boom & Bucket",
-    "title": "Tier 1 Energy Solutions Kealan Ossum Scholarship Fund",
+    "scholarship": "Tier 1 Energy Solutions Kealan Ossum Scholarship Fund",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://www.tier1energy.ca/scholarships"
   },
   {
     "category": " WellBefore",
-    "title": "Spin Master Future Of Play Scholarship Program",
+    "scholarship": "Spin Master Future Of Play Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$12500",
+    "value": "$12500",
     "url": "https://www.spinmastercareers.com/global/be/scholarships"
   },
   {
     "category": " Electro Federation Canada",
-    "title": "Boom & Bucket Student Scholarship Program",
+    "scholarship": "Boom & Bucket Student Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.boomandbucket.com/blog/scholarship"
   },
   {
     "category": " CIBC",
-    "title": "WellBefore Scholarship Program",
+    "scholarship": "WellBefore Scholarship Program",
+    "demographic": "Visit",
     "deadline": "January 04, 2024",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://wellbefore.com/pages/scholarship"
   },
   {
     "category": " CIBC",
-    "title": "Electro Federation Canada Scholarship Program",
+    "scholarship": "Electro Federation Canada Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$160000",
+    "value": "$160000",
     "url": "https://scholarship.electrofed.com/"
   },
   {
     "category": " CIBC",
-    "title": "See The World Scholarship",
+    "scholarship": "See The World Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=683fcdf0-ad84-4ac3-a004-b09d4ce60c04"
   },
   {
     "category": " CIBC",
-    "title": "Made For Trades Scholarship",
+    "scholarship": "Made For Trades Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=ca07a810-67b2-48e9-b104-53adb6b73141?ref=studentawards"
   },
   {
     "category": " CIBC",
-    "title": "Anime All Day Scholarship",
+    "scholarship": "Anime All Day Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=6c2fd5d2-317a-4301-87ea-fb234f4b5f43"
   },
   {
     "category": " CIBC",
-    "title": "Globe Trotter Scholarship",
+    "scholarship": "Globe Trotter Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=f7bd3981-052b-44e7-bcda-8441c492f209"
   },
   {
     "category": " CIBC",
-    "title": "Can You Flip It? Scholarship",
+    "scholarship": "Can You Flip It? Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=6b24e536-cd66-42ea-a90d-108079ead2fd"
   },
   {
     "category": " CIBC",
-    "title": "Health Is Wealth Scholarship",
+    "scholarship": "Health Is Wealth Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=09267e65-19d1-4dbd-8ef0-24a7aaa22428"
   },
   {
     "category": " CIBC",
-    "title": "Years In The Making Scholarship",
+    "scholarship": "Years In The Making Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=0c9ef8a2-777b-4f33-ae59-98bf12c5d246"
   },
   {
     "category": " Assumption Life",
-    "title": "Money Talks Scholarship",
+    "scholarship": "Money Talks Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=be209d84-be81-4be0-9c17-2310fd513a6e"
   },
   {
     "category": " CFNS",
-    "title": "Knock Our Stocks Off Scholarship",
+    "scholarship": "Knock Our Stocks Off Scholarship",
+    "demographic": "Visit",
     "deadline": "October 31, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://studentlifenetwork.55rush.com/99scholarships/dashboard/action?id=3ba9acc4-68fd-44a3-a5cd-543c5c2fe17e"
   },
   {
     "category": " Ontario Teachers Insurance Plan",
-    "title": "Lorraine LeBlanc Scholarship",
+    "scholarship": "Lorraine LeBlanc Scholarship",
+    "demographic": "Visit",
     "deadline": "September 30, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://assumption.ca/getmedia/07fe1a90-f9e1-4566-a6dc-9804d23e5e3f/Lorraine-LeBlanc-Scholarship-EN"
   },
   {
     "category": " AIA Canada",
-    "title": "Loretta Saunders Community Scholarship Fund",
+    "scholarship": "Loretta Saunders Community Scholarship Fund",
+    "demographic": "Visit",
     "deadline": "July 30, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://cfns-fcne.ca/lorettasaunderscommunityscholarship/"
   },
   {
     "category": " AIA Canada",
-    "title": "Ontario Teachers Insurance Plan Bursary Program",
+    "scholarship": "Ontario Teachers Insurance Plan Bursary Program",
+    "demographic": "Visit",
     "deadline": "June 15, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://www.otip.com/bursary"
   },
   {
     "category": " Canada Company",
-    "title": "AIA and the University of the Aftermarket Foundation Scholarship Program",
+    "scholarship": "AIA and the University of the Aftermarket Foundation Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://aiahighfivesforkids.ca/en/aia-and-the-university-of-the-aftermarket-foundation-uofaf-scholarship-program/"
   },
   {
     "category": " United Food & Commercial Workers",
-    "title": "AIA Canada High Fives for Kids Scholarship",
+    "scholarship": "AIA Canada High Fives for Kids Scholarship",
+    "demographic": "Visit",
     "deadline": "September 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://aiahighfivesforkids.ca/en/aia-high-fives-for-kids-scholarship/"
   },
   {
     "category": " Canadian Women In Construction",
-    "title": "Canada Company Scholarship Program",
+    "scholarship": "Canada Company Scholarship Program",
+    "demographic": "Visit",
     "deadline": "September 30, 2023",
-    "amount": "$4000",
+    "value": "$4000",
     "url": "https://www.canadacompany.ca/en/our-initiatives/scholarships/"
   },
   {
     "category": " Lumine Group",
-    "title": "United Food and Commercial Workers Canada BDM Scholarships",
+    "scholarship": "United Food and Commercial Workers Canada BDM Scholarships",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.ufcw.ca/index.php?option=com_scholarship&view=sform&id=2&Itemid=138&lang=en"
   },
   {
     "category": " Grain Farmers of Ontario",
-    "title": "Canadian Association of Women in Construction Bursary",
+    "scholarship": "Canadian Association of Women in Construction Bursary",
+    "demographic": "Visit",
     "deadline": "July 04, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://cawic.ca/cawic-bursaries/"
   },
   {
     "category": " AES Engineering",
-    "title": "Lumine Group Future Leaders in Technology & Business Scholarships",
+    "scholarship": "Lumine Group Future Leaders in Technology & Business Scholarships",
+    "demographic": "Visit",
     "deadline": "August 31, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://www.luminegroup.com/resources/lumine-group-scholarship"
   },
   {
     "category": " BBPA",
-    "title": "Grain Farmers of Ontario Legacy Scholarship",
+    "scholarship": "Grain Farmers of Ontario Legacy Scholarship",
+    "demographic": "Visit",
     "deadline": "October 08, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://gfo.ca/legacyscholarship/"
   },
   {
     "category": " BC First Nations Forestry Council",
-    "title": "AES Engineering Scholarships",
+    "scholarship": "AES Engineering Scholarships",
+    "demographic": "Visit",
     "deadline": "July 03, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://aesengineers.com/scholarships.php"
   },
   {
     "category": " Ontario Horticultural Trades Foundation",
-    "title": "Black Business & Professional Association National Scholarship Program",
+    "scholarship": "Black Business & Professional Association National Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://bbpa.org/bbpa-scholarships/"
   },
   {
     "category": " Jamaican Canadian Association",
-    "title": "BC First Nations Forestry Council’s Indigenous Forestry Scholarship Program",
+    "scholarship": "BC First Nations Forestry Council’s Indigenous Forestry Scholarship Program",
+    "demographic": "Visit",
     "deadline": "July 10, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.forestrycouncil.ca/cpages/ifsp"
   },
   {
     "category": " Zoeken",
-    "title": "Ontario Horticultural Trades Foundation Scholarships",
+    "scholarship": "Ontario Horticultural Trades Foundation Scholarships",
+    "demographic": "Visit",
     "deadline": "September 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.ohtf.ca/scholarships?utm_source=Landscape+Ontario&utm_campaign=25c79c69b3-EMAIL_CAMPAIGN_2021_09_10_06_17_COPY_02&utm_medium=email&utm_term=0_7c47bf17ab-25c79c69b3-1401303992"
   },
   {
     "category": " Softball Canada",
-    "title": "Jamaican Canadian Association Annual Scholarship Program",
+    "scholarship": "Jamaican Canadian Association Annual Scholarship Program",
+    "demographic": "Visit",
     "deadline": "November 30, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://jcaontario.org/scholarship/jcaannualscholarships/"
   },
   {
     "category": " AIA Canada",
-    "title": "Zoeken ‘Against The Odds’ Scholarship",
+    "scholarship": "Zoeken ‘Against The Odds’ Scholarship",
+    "demographic": "Visit",
     "deadline": "August 25, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.zoeken.ca/home/scholarship/ "
   },
   {
     "category": " Castagra",
-    "title": "Ethel Boyce Achievement Award",
+    "scholarship": "Ethel Boyce Achievement Award",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$700",
+    "value": "$700",
     "url": "https://softball.ca/awards/ethelboyce"
   },
   {
     "category": " Russell Alexander Law",
-    "title": "Arthur Palin Automotive Aftermarket Scholarship Award",
+    "scholarship": "Arthur Palin Automotive Aftermarket Scholarship Award",
+    "demographic": "Visit",
     "deadline": "November 01, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.aiacanada.com/career-resources/grants-and-scholarships/arthur-paulin-automotive-aftermarket-scholarship-award/"
   },
   {
     "category": " Canadian Immigration Historical Society",
-    "title": "Castagra Roofing Scholarship Program",
+    "scholarship": "Castagra Roofing Scholarship Program",
+    "demographic": "Visit",
     "deadline": "December 15, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://www.castagra.com/scholarship/"
   },
   {
     "category": " Allied Van Lines",
-    "title": "Russell Alexander Law Scholarship",
+    "scholarship": "Russell Alexander Law Scholarship",
+    "demographic": "Visit",
     "deadline": "September 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.russellalexander.com/russell-alexander-law-firm-scholarship/"
   },
   {
     "category": " BluEarth Renewables",
-    "title": "Canadian Immigration Historical Society Molloy Bursary",
+    "scholarship": "Canadian Immigration Historical Society Molloy Bursary",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://cihs-shic.ca/molloy-bursary"
   },
   {
     "category": " Spin Master",
-    "title": "Allied Van Lines Scholarship",
+    "scholarship": "Allied Van Lines Scholarship",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://www.alliedvanlines.ca/scholarship"
   },
   {
     "category": " Spin Master",
-    "title": "BluEarth Renewables’ Scholarship Program",
+    "scholarship": "BluEarth Renewables’ Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 09, 2023",
-    "amount": "$12500",
+    "value": "$12500",
     "url": "https://bluearthrenewables.com/our-responsibility/scholarships/"
   },
   {
     "category": " Spin Master",
-    "title": "Spin Master Future Of Play Digital Games Scholarship",
+    "scholarship": "Spin Master Future Of Play Digital Games Scholarship",
+    "demographic": "Visit",
     "deadline": "August 05, 2023",
-    "amount": "$12500",
+    "value": "$12500",
     "url": "https://www.spinmastercareers.com/global/be/digital-games-scholarship"
   },
   {
     "category": " NSHSS",
-    "title": "Spin Master Future Of Play Toy Design Scholarships",
+    "scholarship": "Spin Master Future Of Play Toy Design Scholarships",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$12500",
+    "value": "$12500",
     "url": "https://www.spinmastercareers.com/global/be/toy-design-scholarship"
   },
   {
     "category": " Villa Charities",
-    "title": "Spin Master Future Of Play Entertainment Scholarships",
+    "scholarship": "Spin Master Future Of Play Entertainment Scholarships",
+    "demographic": "Visit",
     "deadline": "August 01, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://www.spinmastercareers.com/global/be/entertainment-scholarship"
   },
   {
     "category": " American Pavilion",
-    "title": "James W. Lewis High School Global Leader Scholarship",
+    "scholarship": "James W. Lewis High School Global Leader Scholarship",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://www.nshss.org/scholarships/s/nshss-james-w-lewis-high-school-global-leader-scholarship/"
   },
   {
     "category": " ResourceAbilities",
-    "title": "Graduate Student Scholarship",
+    "scholarship": "Graduate Student Scholarship",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.villacharities.com/wp-content/uploads/2023/04/2023-Villa-Charities-Scholarship-Program-Terms-Conditions.pdf"
   },
   {
     "category": " ResourceAbilities",
-    "title": "General Education Scholarship",
+    "scholarship": "General Education Scholarship",
+    "demographic": "Visit",
     "deadline": "July 19, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://americanpavilion.com/annual-general-education-scholarship/"
   },
   {
     "category": " Novus Biologicals",
-    "title": "Alice & Roy Bruce Memorial Scholarship",
+    "scholarship": "Alice & Roy Bruce Memorial Scholarship",
+    "demographic": "Visit",
     "deadline": "August 31, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://resourceabilities.ca/awards-scholarships/"
   },
   {
     "category": " Indspire",
-    "title": "P.E.I. Foundation for People with Disabilities Awards",
+    "scholarship": "P.E.I. Foundation for People with Disabilities Awards",
+    "demographic": "Visit",
     "deadline": "November 30, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://resourceabilities.ca/awards-scholarships/"
   },
   {
     "category": " SGI Canada",
-    "title": "Novus Biologicals Scholarship Program",
+    "scholarship": "Novus Biologicals Scholarship Program",
+    "demographic": "Visit",
     "deadline": "November 15, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://www.novusbio.com/scholarship-program.html"
   },
   {
     "category": " SGI Canada",
-    "title": "Indspire: Investments in the education of Indigenous people",
+    "scholarship": "Indspire: Investments in the education of Indigenous people",
+    "demographic": "Visit",
     "deadline": "January 31, 2024",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://indspire.microsoftcrmportals.com/en-US/"
   },
   {
     "category": " ACUFC",
-    "title": "Actuarial Science Scholarship",
+    "scholarship": "Actuarial Science Scholarship",
+    "demographic": "Visit",
     "deadline": "June 14, 2023",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://www.sgi.sk.ca/scholarships"
   },
   {
     "category": " Canada Post",
-    "title": "Risk Management and Insurance Scholarship",
+    "scholarship": "Risk Management and Insurance Scholarship",
+    "demographic": "Visit",
     "deadline": "August 31, 2023",
-    "amount": "$2000",
+    "value": "$2000",
     "url": "https://www.sgi.sk.ca/scholarships"
   },
   {
     "category": " Insightful",
-    "title": "Bourses d’études postsecondaires en Français langue seconde",
+    "scholarship": "Bourses d’études postsecondaires en Français langue seconde",
+    "demographic": "Visit",
     "deadline": "December 15, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://acufc.ca/boursesfls/"
   },
   {
     "category": " Odenza Marketing Group",
-    "title": "Canada Post Indigenous Student Awards",
+    "scholarship": "Canada Post Indigenous Student Awards",
+    "demographic": "Visit",
     "deadline": "December 01, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://www.canadapost-postescanada.ca/cpc/en/our-company/giving-back-to-our-communities/canada-post-awards-for-indigenous-students.page"
   },
   {
     "category": " LA Tutors",
-    "title": "Insightful Scholarship Program",
+    "scholarship": "Insightful Scholarship Program",
+    "demographic": "Visit",
     "deadline": "December 15, 2023",
-    "amount": "$500",
+    "value": "$500",
     "url": "https://www.insightful.io/scholarship"
   },
   {
     "category": " Canadian Centre for Occupational Health and Safety",
-    "title": "Odenza Marketing Group Scholarship",
+    "scholarship": "Odenza Marketing Group Scholarship",
+    "demographic": "Visit",
     "deadline": "September 30, 2023",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://odenzascholarships.com/marketingscholarship.php"
   },
   {
     "category": " PEO",
-    "title": "Innovation in Education Scholarship",
+    "scholarship": "Innovation in Education Scholarship",
+    "demographic": "Visit",
     "deadline": "July 31, 2023",
-    "amount": "$57800",
+    "value": "$57800",
     "url": "https://www.latutors123.com/scholarships/innovation-in-education/"
   },
   {
     "category": " New Brunswick Government",
-    "title": "Dick Martin Scholarship Award",
+    "scholarship": "Dick Martin Scholarship Award",
+    "demographic": "Visit",
     "deadline": "July 31, 2023",
-    "amount": "$3000",
+    "value": "$3000",
     "url": "https://www.ccohs.ca/scholarship/"
   },
   {
     "category": " University of Ottawa",
-    "title": "The Fred VanVleet Scholarship",
+    "scholarship": "The Fred VanVleet Scholarship",
+    "demographic": "Visit",
     "deadline": "August 15, 2023",
-    "amount": "$5000",
+    "value": "$5000",
     "url": "https://rotmancommerce.utoronto.ca/future-students/scholarships-and-awards/the-fred-vanvleet-scholarship/"
   },
   {
     "category": " Valour Canada",
-    "title": "Program for Continuing Education Grant",
+    "scholarship": "Program for Continuing Education Grant",
+    "demographic": "Visit",
     "deadline": "August 15, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.peointernational.org/about-peo-program-continuing-education-pce"
   },
   {
     "category": " Haywood Hunt",
-    "title": "New Brunswick Bursary",
+    "scholarship": "New Brunswick Bursary",
+    "demographic": "Visit",
     "deadline": "October 06, 2023",
-    "amount": "$1500",
+    "value": "$1500",
     "url": "https://www2.gnb.ca/content/gnb/en/services/services_renderer.200790.New_Brunswick_Bursary.html"
   },
   {
     "category": " Government of Ontario",
-    "title": "The Frans De Bruyn Travel Award Fund",
+    "scholarship": "The Frans De Bruyn Travel Award Fund",
+    "demographic": "Visit",
     "deadline": "July 10, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://scholarships.uottawa.ca/p/a/17724/"
   },
   {
     "category": " Terry Fox Humanitarian Award",
-    "title": "Valour Canada History and Heritage Scholarship",
+    "scholarship": "Valour Canada History and Heritage Scholarship",
+    "demographic": "Visit",
     "deadline": "November 30, 2023",
-    "amount": "$7500",
+    "value": "$7500",
     "url": "https://valourcanada.ca/education/vchh-scholarship/"
   },
   {
     "category": " North American Van Lines",
-    "title": "Haywood Hunt Scholarship Program",
+    "scholarship": "Haywood Hunt Scholarship Program",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$28000",
+    "value": "$28000",
     "url": "https://haywoodhunt.ca/scholarship/"
   },
   {
     "category": " SGI Canada",
-    "title": "Hilary M. Weston Scholarship",
+    "scholarship": "Hilary M. Weston Scholarship",
+    "demographic": "Visit",
     "deadline": "July 27, 2023",
-    "amount": "$1000",
+    "value": "$1000",
     "url": "https://www.ontario.ca/page/honours-and-awards-community#section-4"
   },
   {
     "category": " Disability Credit Canada",
-    "title": "Terry Fox Humanitarian Award Program",
+    "scholarship": "Terry Fox Humanitarian Award Program",
+    "demographic": "Visit",
     "deadline": "June 30, 2023",
-    "amount": "$2500",
+    "value": "$2500",
     "url": "https://terryfoxawards.ca/"
   },
   {
     "category": " Telus",
-    "title": "North American Van Lines Logistics Scholarship Competition",
-    "amount": "$1000",
+    "scholarship": "North American Van Lines Logistics Scholarship Competition",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "https://www.northamericanvanlines.ca/scholarship"
   },
   {
     "category": " 7shifts",
-    "title": "SGI Corporate Scholarship",
-    "amount": "$5000",
+    "scholarship": "SGI Corporate Scholarship",
+    "demographic": "Visit",
+    "value": "$5000",
     "url": "https://www.sgi.sk.ca/scholarships"
   },
   {
     "category": " 7shifts",
-    "title": "Disability Credit Canada Scholarship",
-    "amount": "$1000",
+    "scholarship": "Disability Credit Canada Scholarship",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "https://disabilitycreditcanada.com/dcci-scholarship-for-canadian-students-with-disabilities/"
   },
   {
     "category": " moneyGenius",
-    "title": "Diversity in Technology Scholarship Program",
-    "amount": "$1000",
+    "scholarship": "Diversity in Technology Scholarship Program",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "https://www.telus.com/en/about/careers/students-grads"
   },
   {
     "category": " ACUFC",
-    "title": "7shifts Hospitality Management Scholarship",
-    "amount": "$2000",
+    "scholarship": "7shifts Hospitality Management Scholarship",
+    "demographic": "Visit",
+    "value": "$2000",
     "url": "https://www.7shifts.com/education"
   },
   {
     "category": " Mon Sheong Foundation",
-    "title": "7shifts Culinary Scholarship",
-    "amount": "$3000",
+    "scholarship": "7shifts Culinary Scholarship",
+    "demographic": "Visit",
+    "value": "$3000",
     "url": "https://www.7shifts.com/education"
   },
   {
     "category": " ServiceScape",
-    "title": "moneyGenius Scholarship Canada",
-    "amount": "$4000",
+    "scholarship": "moneyGenius Scholarship Canada",
+    "demographic": "Visit",
+    "value": "$4000",
     "url": "https://moneygenius.ca/scholarship-canada"
   },
   {
     "category": " Shim Law",
-    "title": "Bursaries for Post-Secondary Studies in French as a Second Language Program",
-    "amount": "$1000",
+    "scholarship": "Bursaries for Post-Secondary Studies in French as a Second Language Program",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "https://acufc.ca/fslbursaries/"
   },
   {
     "category": " GoTranscript",
-    "title": "Golden Jubilee Scholarship",
-    "amount": "$1000",
+    "scholarship": "Golden Jubilee Scholarship",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "http://www.monsheong.org/what-we-do/golden-jubilee-scholarship/#1521583933414-ca6bfd52-d8de"
   },
   {
     "category": " Johnson Insurance",
-    "title": "ServiceScape Scholarship",
-    "amount": "$1000",
+    "scholarship": "ServiceScape Scholarship",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "https://www.servicescape.com/scholarship"
   },
   {
     "category": " Villa Charities",
-    "title": "Annual Shim Law Scholarship",
-    "amount": "$1000",
+    "scholarship": "Annual Shim Law Scholarship",
+    "demographic": "Visit",
+    "value": "$1000",
     "url": "http://shimlaw.ca/shim-scholarship-award/"
   },
   {
-    "title": "Academic Scholarship Program",
-    "amount": "$2500",
+    "scholarship": "Academic Scholarship Program",
+    "demographic": "Visit",
+    "value": "$2500",
     "url": "https://gotranscript.com/scholarship-program"
   },
   {
-    "title": "Johnson Scholarship Program",
+    "scholarship": "Johnson Scholarship Program",
+    "demographic": "Visit",
     "url": "https://www.johnson.ca/scholarship"
   },
   {
-    "title": "Undergraduate Student Scholarship",
+    "scholarship": "Undergraduate Student Scholarship",
+    "demographic": "Visit",
     "url": "https://www.villacharities.com/wp-content/uploads/2023/04/2023-Villa-Charities-Scholarship-Program-Terms-Conditions.pdf"
   }
 ]

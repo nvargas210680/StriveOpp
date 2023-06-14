@@ -1,11 +1,5 @@
 [
   {
-    "title": "NUPGE: Tommy Douglas Scholarship",
-    "deadline": "July 07, 2023",
-    "amount": "$2,500",
-    "url": "/Scholarships/5728/NUPGE-Tommy-Douglas-Scholarship"
-  },
-  {
     "title": "Bill 7 Award 2SLGBTQ+ Scholarship",
     "deadline": "August 04, 2023",
     "amount": "$4,000",
@@ -42,6 +36,24 @@
     "url": "/Scholarships/65366/Villa-Charities-Graduate-Student-Scholarship"
   },
   {
+    "title": "Janitorial Manager $1,000 Annual Scholarship",
+    "deadline": "July 01, 2023",
+    "amount": "$1,000",
+    "url": "/Scholarships/69812/Janitorial-Manager-$1,000-Annual-Scholarship"
+  },
+  {
+    "title": "2023 ERA Scholarship for $1 Million ",
+    "deadline": "September 01, 2023",
+    "amount": "$1,000,000",
+    "url": "/Scholarships/81740/2023-ERA-Scholarship-for-$1-Million"
+  },
+  {
+    "title": "2023 ERA Scholarship - Win up to $10,000 & a MacBook Pro",
+    "deadline": "September 01, 2023",
+    "amount": "$10,000",
+    "url": "/Scholarships/81741/2023-ERA-Scholarship-Win-up-to-$10,000-&-a-MacBook-Pro"
+  },
+  {
     "title": "Eaton - Indigenous Clean Energy Scholarship: Summer 2023",
     "deadline": "June 30, 2023",
     "amount": "$5,000",
@@ -55,6 +67,16 @@
   },
   {
     "title": "De Beers Group Scholarships for Canadian Women 2023",
+    "deadline": "June 30, 2023",
+    "amount": "$10,000",
     "url": "/Scholarships/85253/De-Beers-Group-Scholarships-for-Canadian-Women-2023"
+  },
+  {
+    "title": "Durham College | DoorDash #BlackFoodEnergy Culinary Scholarship",
+    "url": "/Scholarships/85368/Durham-College-|-DoorDash-#BlackFoodEnergy-Culinary-Scholarship"
+  },
+  {
+    "title": "Durham College",
+    "url": "https://www.Schoolfinder.com/Schools/Quick-Facts/College/cdurh08/Durham-College"
   }
 ]

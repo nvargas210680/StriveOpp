@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import data from "../data.json/scholarshipcafe.json" assert { type: "json" };
+import data from "../data.json/scholarshipcafe2.json" assert { type: "json" };
 import admin from "firebase-admin";
 import serviceAccount from "./striveopp2-firebase-adminsdk-airpl-4048329c00.json" assert { type: "json" };
 
@@ -13,7 +13,7 @@ const uploadData = async () => {
     // const batch = db.batch();
 
     data.forEach((item) => {
-      admin.firestore().collection("scholarships").add(item);
+      admin.firestore().collection("scholarships2").add(item);
       // batch.set(documentRef, item);
     });
 
@@ -26,12 +26,12 @@ const uploadData = async () => {
 
 uploadData();
 
-function uploadData() {
-  console.log("Running code every week!");
-}
+// function uploadData() {
+//   console.log("Running code every week!");
+// }
 
-const millisecondsPerWeek = 7 * 24 * 60 * 60 * 1000;
+// const millisecondsPerWeek = 7 * 24 * 60 * 60 * 1000;
 
-uploadData();
+// uploadData();
 
-setInterval(uploadData, millisecondsPerWeek);
+// setInterval(uploadData, millisecondsPerWeek);
