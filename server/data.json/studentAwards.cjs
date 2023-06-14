@@ -50,7 +50,7 @@ const getPostData = async () => {
       };
       postData.push(post);
     }
-    console.log(postDates);
+    // console.log(postDates);
 
     const filePath = path.join(__dirname, "studentAwards.json");
     fs.writeFileSync(filePath, JSON.stringify(postData, null, 2));
