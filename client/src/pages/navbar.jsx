@@ -22,7 +22,10 @@ export default function NavigationBar(){
                 <a href="/team">Meet the Team</a>
                 <a href="/about">About</a>
             </nav>
-            
+
+            <div className="search-bar-container">
+                Search Section
+            </div>
         </div>
         </>
         )
