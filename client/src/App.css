@@ -1,5 +1,5 @@
 *{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color:#294243;
   width: 100%;
   box-sizing:border-box;
@@ -66,70 +66,53 @@ h3{
 
 /* Navigation Bar */
 
-.navigation {
-	height: 60px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	position: relative;
-	padding: 0.5rem 0rem;
-	background-color: #fff;
-	color: black;
-	box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-}
-
-.navigation-menu {
-	margin-left: auto;
-}
-
-.navigation-menu ul{
-	display:flex;
+.navbar:before,
+.navbar:after{
 	padding:0;
+	margin:0;
+	box-sizing: border-box;
 }
 
-.navigation-menu li{
-	list-style-type:none;
-	margin: 0 1rem;
+.navbar{
+	background-color: #294243;
+	height:60px;
 }
 
-.navigation-menu li a{
-	color:#294243;
-	text-decoration: none;
-	display:block;
-	width:100%;
+nav{
+	display:flex;
+	align-items:center;
+	margin:auto;
 }
 
-.hamburger{
-	border:0;
-	height:40px;
-	width:40px;
-	padding:0.5rem;
-	border-radius:50%;
-	background-color:#eee;
-	transition: background-color 0.2s ease-in-out;
+nav a{
+	position:relative;
+	text-decoration:none;
+	font-family: 'Poppins', sans-serif;
+	color: #eee;
+	font-size:18px;
+	letter-spacing:0.5px;
+	padding:12px;
+}
+
+nav a:after{
+	content:"";
 	position:absolute;
-	right:25px;
-	transform:translateY(-50%);
-	display:none;
+	background-color:#eee;
+	height:3px;
+	width:0;
+	left:0;
+	bottom: -2px;
+	transition:0.3s;
 }
 
-.hamburger:hover{
-	background-color:2642af;
+nav a:hover{
+	color:#eee;
 }
 
-/* Pages */
-
-div.homepage{
-	align-items: center;
+nav a:hover:after{
+	width:80%;
 }
 
-div.team{
-  text-align: center;
-}
-
-div.team-exec{
-  margin:30px;
-}
 
 /* Landing Page */
 
@@ -176,6 +159,17 @@ div.box5{
   display:flex;
 }
 
+/* Search Bar & Results */
+.search-bar-container{
+	padding-top:20vh;
+	width:40%;
+	margin: auto;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	min-width:200px;
+}
+
 /* Buttons */
 
 button.social-icons{
@@ -219,6 +213,7 @@ input {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	margin:40px;
 }
 
 .screen {		
@@ -395,7 +390,7 @@ input {
 
 .team-body{
 	display:grid;
-	justify-items:center;
+	justify-items:left;
 	grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 	color:#eee;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
