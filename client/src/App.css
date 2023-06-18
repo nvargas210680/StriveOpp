@@ -162,7 +162,7 @@ div.box5{
 /* Search Bar & Results */
 .search-bar-container{
 	padding-top:20vh;
-	width:40%;
+	width:30%;
 	margin: auto;
 	display:flex;
 	flex-direction:column;
