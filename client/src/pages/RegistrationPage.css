@@ -1,0 +1,40 @@
+main.registration-container{
+    /* height:100vh; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+form.registration-container{
+    background-color: #eee;
+    display:flex;
+    border-radius:25px;
+    width:auto;
+    padding: 60px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+div.registration-form1{
+    display:block;
+}
+
+select{
+    background-color: white;
+}
+
+input.checkbox{
+    background-color: white;
+}
+
+button.registration{
+    border-radius:25px;
+    padding:20px;
+    width:200px;
+    height:120px;
+    background-color:#294243;
+    color:#eee;
+    align-items:center;
+    font-size:12px;
+
+}
