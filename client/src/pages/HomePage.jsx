@@ -3,8 +3,12 @@ import Awards from "./HomePageFeatures/Awards";
 import FeaturedArticles from "./HomePageFeatures/FeaturedArticles";
 import Media from "./HomePageFeatures/Media";
 import YourGoals from "./HomePageFeatures/YourGoals";
+import { BsPlayCircleFill } from "react-icons/bs";
 
 export default function HomePage(){
+
+    const style ={ fontSize:"6rem", margin:"5px", };
+
     return(
         <main>
         {/* CSS Animation + Authentication */}
@@ -14,6 +18,24 @@ export default function HomePage(){
                 <h1 className="box1">Making financing education accessible for students and early career professionals.</h1>
 
                 <h3 className="box1">StriveOpp is revolutionizing education and opportunities for students and early career professionals. Our database focuses on accessibility and offers over 700 scholarships for students seeking to study in Canada. To realize your greatest potential in a world with fair access to finance your education, join StriveOpp today. </h3>
+                
+                {/* Demo Video Link */}
+
+                
+                <div className="homepage-demo">
+                <div className="row">
+
+                    <div className="column">
+                    <a href="/"><BsPlayCircleFill id="homepage-demo" style={style} /></a>
+                    </div>
+
+                    <div className="column">
+                    <h3>See it in action!</h3>
+                    </div>
+                    
+                </div>
+                </div>
+                
                 </div>
                 <div className="column">
                     <Auth />
@@ -41,6 +63,7 @@ export default function HomePage(){
             <Awards />
         </div>
         </main>
+        
 
     )
 }
