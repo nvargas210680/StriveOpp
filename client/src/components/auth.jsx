@@ -63,6 +63,13 @@ return(
                     />
 				</div>
                 <br />
+            {/* "Don't yet have an account?*/}
+            <p class="account-question">
+                Don't have an account?
+                <br />
+                <br />
+                Use your Google account or sign-up<a href="/register"> here</a>!
+            </p>
 
             {/* Buttons - Native Login */}
 
@@ -75,7 +82,6 @@ return(
             {/* Buttons - Social Login */}
 
 			<div className="social-login">
-				<h3>log in via</h3>
 				<div className="social-media">
 					<button
                         className="social-icons"
