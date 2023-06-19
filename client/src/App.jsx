@@ -20,7 +20,7 @@ import LoginPage from './pages/LoginPage'
 import RegistrationPage from './pages/RegistrationPage'
 import Blog from './pages/Blog'
 import Team from './pages/Team'
-import Mentorship from './pages/Mentorship'
+import Coaching from './pages/Coaching'
 import ScholarshipDatabase from './pages/ScholarshipDatabase'
 import About from './pages/About';
 
@@ -37,7 +37,7 @@ function App() {
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/team" element={<Team />}/>
-          <Route path="/mentorship" element={<Mentorship />} />
+          <Route path="/coaching" element={<Coaching />} />
           <Route path="/database" element={<ScholarshipDatabase />} />
           <Route path="/about" element={<About />} />
         </Route>
