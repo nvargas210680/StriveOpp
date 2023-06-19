@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ReactDOM } from "react";
 import { Button, Card, Dropdown, Header, Input, Icon, Image, Menu, Sidebar } from 'semantic-ui-react';
-import { SearchBar } from "../components/SearchBar";
 
 export default function NavigationBar(){
     return(
@@ -19,7 +18,7 @@ export default function NavigationBar(){
             <nav>
                 <a href="/">Home</a>
                 <a href="/database">Scholarship Database</a>
-                <a href="/mentorship">Mentors & Mentees</a>
+                <a href="/coaching">Coaching</a>
                 <a href="/team">Meet the Team</a>
                 <a href="/about">About</a>
             </nav>
