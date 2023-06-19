@@ -353,9 +353,13 @@ input {
 	color: #8BBE96;
 }
 
+p.account-question{
+	font-size:10px;
+}
+
 .social-login {	
 	position: absolute;
-	height: 140px;
+	height: 70px;
 	width: 160px;
 	text-align: center;
 	bottom: 0px;

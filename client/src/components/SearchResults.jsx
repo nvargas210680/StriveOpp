@@ -1,6 +1,6 @@
-import "./SearchResult.css";
+import "./SearchResults.css";
 
-export const SearchResult = ({ result }) => {
+export const SearchResults = ({ result }) => {
   return (
     <div
       className="search-result"
