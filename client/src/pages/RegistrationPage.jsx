@@ -7,7 +7,7 @@ export default function RegistrationPage(){
             <form className="registration-container">
 
                 <div class="registration-image">
-                {/* Insert Image Here */}
+                <img className="registration-image" src="https://i.imgur.com/SrLr8tD.png"/>
                 </div>
 
                 <div className="registration-form1">
