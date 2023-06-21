@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../config/firebase"
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs} from "firebase/firestore";
 import { DataGrid, GridToolbar} from '@mui/x-data-grid';
 
 export default function Scholarship(){
@@ -50,9 +50,11 @@ export default function Scholarship(){
       };
     
       const applyFilters = (tagFilterValue, demographicFilterValue) => {
+        console.log(tagFilterValue, demographicFilterValue)
+        console.log(scholarships)
         const filteredData = scholarships.filter((scholarship) => {
-          const tagMatch = scholarship.tag.toLowerCase().includes(tagFilterValue);
-          const demographicMatch = scholarship.demographic
+          const tagMatch =scholarship.tag && scholarship.tag.toLowerCase().includes(tagFilterValue);
+          const demographicMatch = scholarship.demographic &&scholarship.demographic
             .toLowerCase()
             .includes(demographicFilterValue);
           return tagMatch && demographicMatch;
@@ -94,10 +96,18 @@ export default function Scholarship(){
                         <option value="women">Women</option>
                         <option value="international">International</option>
                     </select>
+                <DataGrid sx = {{backgroundColor:'#ffffff', height:600, width: "100%"}}
+                        rows={filteredScholarships} columns={columns} 
+                        slots={{toolbar: GridToolbar}} 
+                        slotProps={{
+                            toolbar: {
+                            showQuickFilter: true,
+                            quickFilterProps: { debounceMs: 500 },
+                            },
+                        }}
+                />
                 </div>
                 <div style={{ height: 400, width: "100%" }}>
-                <DataGrid sx = {{backgroundColor:'#ffffff', height:600, width: "100%"}}
-                        rows={filteredScholarships} columns={columns} />
                 </div>
             </div>
             
