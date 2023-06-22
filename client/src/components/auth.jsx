@@ -68,7 +68,7 @@ return(
                 Don't have an account?
                 <br />
                 <br />
-                Use your Google account or sign-up<a href="/register"> here</a>!
+                Use your Google account or sign-up<a href="/register"> here!</a>
             </p>
 
             {/* Buttons - Native Login */}
