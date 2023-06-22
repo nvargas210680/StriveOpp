@@ -5,13 +5,23 @@ import { useState } from "react";
 export default function PersonalInfo(){
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
+    const handleProvinceChange = (e) => console.log((province[e.target.value]))
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(e.target.name.value);
+        console.log(e.target.email.value);
+        setName(e.target.name.value);
+        setEmail(e.target.email.value)
+        e.target.name.value="";
+        e.target.email.value="";
+    }
 
     return(
         <>
         <main className="registration-container">
             <form 
                 className="registration-container"
-                // onSubmit={(e)=>handleSubmit(e)}
+                onSubmit={(e)=>handleSubmit(e)}
                 >
 
                 <div class="registration-image">

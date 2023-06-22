@@ -11,11 +11,16 @@ form.registration-container{
     border-radius:25px;
     width:auto;
     padding: 60px;
-    margin:100px;
+    margin:30px;
 }
 
 div.registration-form1{
     display:block;
+}
+
+h1.registration{
+    text-align: center;
+    margin: 0 auto;
 }
 
 select{
@@ -36,6 +41,11 @@ button.registration{
     text-align: center;
     font-size:12px;
     margin-top:6px;
+}
+
+div.button_registration-prevnext{
+    display:flex;
+    text-align:center;
 }
 
 button.registration-prevnext{
