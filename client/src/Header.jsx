@@ -17,6 +17,16 @@ export default function Header(){
                 {results && results.length > 0 && <SearchResultsList results={results} />}
         </div>
 
+        <div className="login-register">
+            <Link to="/login">
+                <b>Login | </b>
+            </Link>
+
+            <Link to="/register">
+                <b>Register</b>
+            </Link>
+        </div>
+
         </header>
         </>
     )

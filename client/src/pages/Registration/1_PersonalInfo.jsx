@@ -15,7 +15,7 @@ export default function PersonalInfo(){
                 >
 
                 <div class="registration-image">
-                <img className="registration-image" src="https://i.imgur.com/FJKM0Vz.jpg"/>
+                <img className="registration-image" src="https://i.imgur.com/BXy8rRd.png"/>
                 </div>
 
                 <div className="registration-form1">

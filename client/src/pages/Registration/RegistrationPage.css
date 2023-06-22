@@ -1,3 +1,4 @@
+/* Container */
 main.registration-container{
     /* height:100vh; */
     display:flex;
@@ -14,13 +15,16 @@ form.registration-container{
     margin:60px;
 }
 
-div.registration-form1{
-    display:block;
-}
-
+/* Font & Text */
 h1.registration{
     text-align: center;
     margin: 0 auto;
+}
+
+
+/* Form */
+div.registration-form1{
+    display:block;
 }
 
 select{
@@ -64,7 +68,8 @@ button.registration-prevnext{
 img.registration-image{
     object-fit:fill;
     border-radius:50px;
-    padding:40px;
+    padding:15px;
+    text-align:center;
 }
 
 div.termsofservice{
