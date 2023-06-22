@@ -13,6 +13,9 @@ export default function OtherInfo(){
                 <div className="registration-form1">
                     <h1><i>Almost there! 👋</i></h1>
                 </div>
+
+                {/* Input Fields */}
+
             </form>
         </main>
         </>
