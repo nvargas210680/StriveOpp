@@ -23,7 +23,7 @@ export default function RegistrationPage(){
         <>
         <div className="form">
             <div className="progressbar">
-                progress bar
+            <div style={{ width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "100%" }} />
             </div>
 
             {/* Buttons */}

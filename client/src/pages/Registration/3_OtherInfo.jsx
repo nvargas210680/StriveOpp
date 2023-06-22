@@ -4,7 +4,6 @@ import React from "react";
 export default function OtherInfo(){
     return(
         <>
-        other info
         <main className="registration-container">
             <form className="registration-container">
                 <div class="registration-image">

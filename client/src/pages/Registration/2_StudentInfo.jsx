@@ -4,7 +4,6 @@ import React from "react";
 export default function StudentInfo(){
     return(
         <>
-        student info for the scholarship matching
         <main className="registration-container">
             <form className="registration-container">
                 <div class="registration-image">
