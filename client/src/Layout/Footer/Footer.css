@@ -1,0 +1,22 @@
+.footer{
+    width:100%;
+    background: #eee;
+    margin-top:100px;
+    margin-bottom:20px;
+    align-items: center;
+    padding:50px;
+}
+
+img.footer-logo{
+    float:right;
+    width:180px;
+    margin-right:50px;
+}
+
+.link{
+    text-decoration: none;
+    color:#294243;
+}
+
+.link:hover{
+}

@@ -1,0 +1,18 @@
+.inthenews{
+    align-items: center;
+}
+
+h1.inthenews{
+    text-align:center;
+}
+
+.container-inthenews{
+    border-radius:12px;
+    background-color: #eee;
+    padding:50px;
+    margin:100px;
+    height:fit-content;
+    display:flex;
+    flex-direction: row;
+}
+
