@@ -1,0 +1,20 @@
+.coaching{
+    margin-top:-400px;
+    height:fit-content;
+    margin-bottom:100px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color:var(--green-dark-striveopp);
+}
+
+.container-coaching{
+    display:flex;
+    flex-direction: row;
+    border-radius:12px;
+    background-color: #eee;
+    padding:100px;
+    margin:100px;
+    width:fit-content;
+    height:fit-content;
+}

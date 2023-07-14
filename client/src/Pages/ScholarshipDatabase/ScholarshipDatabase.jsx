@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../config/firebase"
+import { db } from "../../config/firebase"
 import { collection, getDocs} from "firebase/firestore";
 import { DataGrid, GridToolbar} from '@mui/x-data-grid';
 

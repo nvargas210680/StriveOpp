@@ -1,0 +1,23 @@
+.aboutus{
+    margin-top:-400px;
+    height:fit-content;
+    margin-bottom:100px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.container-aboutus{
+    display:flex;
+    flex-direction: row;
+    border-radius:12px;
+    background-color: #eee;
+    padding:40px;
+    margin:100px;
+    width:fit-content;
+    height:fit-content;
+}
+
+h1.aboutus{
+    text-align: center;
+}
