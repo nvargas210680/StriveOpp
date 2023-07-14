@@ -1,0 +1,17 @@
+.selfserve{
+    align-items: center;
+}
+
+h1.selfserve{
+    text-align:center;
+}
+
+.container-selfserve{
+    border-radius:12px;
+    background-color: #eee;
+    padding:10px;
+    margin:100px;
+    
+    height:fit-content;
+}
+
