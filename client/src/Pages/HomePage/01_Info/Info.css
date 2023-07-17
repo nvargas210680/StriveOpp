@@ -2,7 +2,7 @@
     height:fit-content;
     margin-bottom:100px;
     align-items: center;
-    width: 100%;
+    width: fit-content;
 }
 
 .container-info{
@@ -12,6 +12,7 @@
     margin:100px;
     width:fit-content;
     height:fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info-left{
@@ -19,15 +20,14 @@
     flex-direction:column;
     text-align:center;
     background-color: #eee;
-    padding:50px;
+    padding:40px;
 }
 
 .info-right{
     display:flex;
-    
     background-color: #eee;
     text-align:center;
-    padding:50px;
+    padding:40px;
 }
 
 .info-left>:nth-child(1){
