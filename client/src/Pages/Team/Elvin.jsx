@@ -1,5 +1,9 @@
 import React from 'react';
 import "./Team.css";
+import { 
+    BsGithub,
+    BsLinkedin,
+    } from 'react-icons/bs';
 
 const Elvin = () => {
     return(
@@ -11,15 +15,13 @@ const Elvin = () => {
 
                     <div className="bio_social-links">
                         <h4>Connect</h4>
-                        <ul>
-                            <li><a href="/">LinkedIn</a></li>
-                            <li><a href="/">GitHub</a></li>
-                        </ul>
+                        <BsGithub />
+                        <BsLinkedin />
                     </div>
 
 
                     <div className="title">
-                        <span>Scrum Master</span>
+                        <span className="bio">Scrum Master</span>
                     </div>
 
 

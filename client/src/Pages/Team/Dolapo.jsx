@@ -1,5 +1,9 @@
 import React from 'react';
 import "./Team.css";
+import { 
+    BsGithub,
+    BsLinkedin,
+    } from 'react-icons/bs';
 
 const Dolapo = () => {
     return(
@@ -11,15 +15,12 @@ const Dolapo = () => {
 
                     <div className="bio_social-links">
                         <h4>Connect</h4>
-                        <ul>
-                            <li><a href="/">LinkedIn</a></li>
-                            <li><a href="/">GitHub</a></li>
-                        </ul>
+                        <BsLinkedin />
                     </div>
 
 
                     <div className="title">
-                        <span>CEO & Founder</span>
+                        <span className="bio">CEO & Founder</span>
                     </div>
 
 
