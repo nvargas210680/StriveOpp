@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
                     }}>
 
                 <Container 
-                    maxWidth="l"
+                    maxWidth="xl"
                     >
                     <Toolbar disableGutters>
                         <img
