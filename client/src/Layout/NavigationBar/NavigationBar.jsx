@@ -143,15 +143,17 @@ function ResponsiveAppBar() {
                                 }} />
                         </Typography>
 
+                        {/* Menu Bar */}
+
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my:2, color: '#294243', display: 'block' }}>
-
-                                <Link style={{textDecoration:"none", color:"#294243"}} to={`/${page}`}>{page}</Link>
-
+                                    <Link style={{textDecoration:"none", color:"#294243"}} to={`/${page}`}>
+                                        {page}
+                                    </Link>
                             </Button>
                             ))}
                         </Box>
@@ -162,6 +164,8 @@ function ResponsiveAppBar() {
                                     <BiUserCircle />
                                 </IconButton>
                             </Tooltip>
+
+                            {/* Account Settings */}
 
                             <Menu
                                 sx={{ mt: '45px', color: '#294243' }}
@@ -177,11 +181,12 @@ function ResponsiveAppBar() {
                                     horizontal: 'right',
                                 }}
                                 open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
-                                >
+                                onClose={handleCloseUserMenu}>
                                 {settings.map((setting) => (
                                     <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center" color="#294243" >{setting}</Typography>
+                                        <Typography textAlign="center" color="#294243" >
+                                            <Link style={{textDecoration:"none", color:"#294243"}} to={`/${setting}`}>{setting}</Link>
+                                        </Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>

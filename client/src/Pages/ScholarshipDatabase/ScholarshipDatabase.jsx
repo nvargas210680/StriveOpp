@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { db } from "../../config/firebase"
 import { collection, getDocs} from "firebase/firestore";
 import { DataGrid, GridToolbar} from '@mui/x-data-grid';
+import "./ScholarshipDatabase.css";
+import MultiSelectDropDown from "./MultiSelectDropDown/MultiSelectDropDown";
 
 export default function Scholarship(){
 
@@ -20,7 +22,6 @@ export default function Scholarship(){
         { field: "tag", headerName: "Tag", width: 120 },
         { field: "url", headerName: "URL", width: 200 },
       ];
-
 
     useEffect(() => {
         const getScholarships = async () => {
@@ -63,32 +64,32 @@ export default function Scholarship(){
       };
 
     return(
-        <>
-        <div>
+        <div className="scholarshipdatabase">
             <h1>Scholarship Database</h1>
-            <div className="App">
+
+            <MultiSelectDropDown />
+
                 <div className="filter">
-                    <label htmlFor="tagFilter">Tag Filter:</label>
+                    <label className="tagFilter" htmlFor="tagFilter">Tag Filter:</label>
                     <select
                     id="tagFilter"
                     value={tagFilter}
-                    onChange={handleTagFilterChange}
-                    >
-                    <option value="">All</option>
-                    <option value="high school">High School</option>
-                    <option value="bachelor">Bachelor</option>
-                    <option value="pos-graduate">Pos graduated</option>
-                    <option value="master">Master</option>
-                    <option value="undergraduate">Undergraduate</option>
+                    onChange={handleTagFilterChange}>
+                      <option value="">All</option>
+                      <option value="high school">High School</option>
+                      <option value="bachelor">Bachelor</option>
+                      <option value="pos-graduate">Post-Graduated</option>
+                      <option value="master">Master</option>
+                      <option value="undergraduate">Undergraduate</option>
                     </select>
                 </div>
+
                 <div className="filter">
-                    <label htmlFor="demographicFilter">Demographic Filter:</label>
+                    <label className="tagFilter" htmlFor="demographicFilter">Demographic Filter:</label>
                     <select
                         id="demographicFilter"
                         value={demographicFilter}
-                        onChange={handleDemographicFilterChange}
-                    >
+                        onChange={handleDemographicFilterChange}>
                         <option value="">All</option>
                         <option value="any">Any</option>
                         <option value="youth">Youth</option>
@@ -96,22 +97,16 @@ export default function Scholarship(){
                         <option value="women">Women</option>
                         <option value="international">International</option>
                     </select>
-                <DataGrid sx = {{backgroundColor:'#ffffff', height:600, width: "100%"}}
-                        rows={filteredScholarships} columns={columns} 
-                        slots={{toolbar: GridToolbar}} 
-                        slotProps={{
-                            toolbar: {
-                            showQuickFilter: true,
-                            quickFilterProps: { debounceMs: 500 },
-                            },
-                        }}
-                />
-                </div>
-                <div style={{ height: 400, width: "100%" }}>
-                </div>
-            </div>
-            
-        </div>
-        </>
+
+                    <DataGrid sx = {{backgroundColor:'#eee', height:"fit-content", width: "fit-content", m:5}}
+                            rows={filteredScholarships} columns={columns} 
+                            slots={{toolbar: GridToolbar}} 
+                            slotProps={{
+                                toolbar: {
+                                showQuickFilter: true,
+                                quickFilterProps: { debounceMs: 500 },
+                                }, }} />
+              </div>
+          </div>
     );
 }
