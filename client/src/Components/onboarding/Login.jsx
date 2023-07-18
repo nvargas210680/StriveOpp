@@ -76,22 +76,24 @@ const Login = () => {
           <h2 className="text-center mb-4">Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <input
-              id="email"
-              type="email"
-              ref={emailRef}
-              required
-              placeholder="Email"
-              className="form-control my-4"
-            />
-            <input
-              id="password"
-              type="password"
-              ref={passwordRef}
-              required
-              placeholder="Password"
-              className="form-control my-4"
-            />
+            <Form.Group id="email">
+              <Form.Control
+                type="email"
+                ref={emailRef}
+                required
+                placeholder="Email"
+                className="my-4"
+              />
+            </Form.Group>
+            <Form.Group id="password">
+              <Form.Control
+                type="password"
+                ref={passwordRef}
+                required
+                placeholder="Password"
+                className="my-4"
+              />
+            </Form.Group>
             <Button disabled={loading} className="w-100 mt-4" type="submit">
               Sign In
             </Button>
