@@ -1,44 +1,70 @@
-import { useState } from 'react'
-import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
-import Fonts from './Components/Fonts/Font'
+import { useState } from "react";
+import "./App.css";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Fonts from "./Components/Fonts/Font";
 
-import Layout from './Layout/Layout'
-import HomePage from './Pages/HomePage/HomePage'
-import Login from './Pages/Login/Login'
-import Register from './Pages/Register/Register'
-import ScholarshipDatabase from './Pages/ScholarshipDatabase/ScholarshipDatabase'
-import Coaching from './Pages/Coaching/Coaching'
-import Blog from './Pages/Blog/Blog'
-import Team from './Pages/Team/Team'
-import About from './Pages/About/About'
-import Contact from './Pages/Contact/Contact'
+import Layout from "./Layout/Layout";
+import HomePage from "./Pages/HomePage/HomePage";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
+import ScholarshipDatabase from "./Pages/ScholarshipDatabase/ScholarshipDatabase";
+import Coaching from "./Pages/Coaching/Coaching";
+import Blog from "./Pages/Blog/Blog";
+import Team from "./Pages/Team/Team";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import { Container } from "react-bootstrap";
+import AuthProvider from "./contexts/AuthProvider";
+import SuggestedScholarships from "./Pages/ScholarshipDatabase/SuggestedScholarships";
+import Signup from "./Pages/Register/Signup";
+import PersonalInformation from "./Pages/Register/PersonalInformation";
+import CompleteProfile2 from "./Pages/Register/CompleteProfile2";
+import Success from "./Pages/Register/Success";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <Fonts />
+    <Container>
+      <Fonts />
 
-    <div className="App">
-      <Routes>
-        <Route path="/" element={ <Layout /> }>
-        <Route index element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/scholarships" element={<ScholarshipDatabase />} />
-        <Route path="/coaching" element={<Coaching />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </div>
-
-    </>
-  )
+      <div className="App">
+        <BrowserRouter>
+          <AuthProvider>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<HomePage />} />
+                <Route path="/login" element={<Login />} />
+                {/* <Route path="/register" element={<Register />} /> */}
+                <Route path="/scholarships" element={<ScholarshipDatabase />} />
+                <Route path="/coaching" element={<Coaching />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route
+                  path="/login/suggested-scholarship"
+                  element={<SuggestedScholarships />}
+                />
+                <Route
+                  path="/complete-profile/:var1/:var2/suggested-scholarship"
+                  element={<SuggestedScholarships />}
+                />
+                <Route
+                  path="/complete-profile/:var1/:var2"
+                  element={<CompleteProfile2 />}
+                />
+                <Route
+                  path="personal-information"
+                  element={<PersonalInformation />}
+                />
+                <Route path="/success" element={<Success />} />
+              </Route>
+            </Routes>
+          </AuthProvider>
+        </BrowserRouter>
+      </div>
+    </Container>
+  );
 }
 
-export default App
+export default App;
