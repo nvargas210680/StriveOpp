@@ -29,7 +29,7 @@ const UpdateProfile = () => {
     }
     Promise.all(promises)
       .then(() => {
-        navigate("/");
+        navigate("/dashboard");
       })
       .catch(() => {
         setError("Failed to update account");
