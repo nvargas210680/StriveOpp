@@ -41,7 +41,7 @@ function SuggestedScholarships() {
 
     fetchUserProfile();
   }, [currentUser]);
-
+  console.log("hello");
   return (
     <div>
       <div>{userProfile?.firstName}</div>
