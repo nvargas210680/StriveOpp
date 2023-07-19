@@ -15,13 +15,12 @@ const Info = () => {
                     <div className="column">
                 <div className="info-left">
 
-                    <span>Welcome to</span>
                     <span>StriveOpp</span>
                     <span>Making financing education accessible for students 
                         and early career professionals.
                     </span>
 
-                    <img className="info" src="https://i.imgur.com/rj4xbHe.png" />
+                    <img className="info" src="https://i.imgur.com/SVIl3Rg.png" />
 
                     <span>
                         StriveOpp is revolutionizing education and opportunities 
@@ -32,20 +31,14 @@ const Info = () => {
                         our education, join StriveOpp today.
                     </span>
 
-                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'100%', backgroundColor:'#eee', }}>
-                        
-                        <Link to="/about">
-                            <Button variant="outlined" bgcolor="neutral">
+                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', backgroundColor:'#eee', }}>
+                            <Button variant="outlined" href="/About" bgcolor="neutral">
                                 Learn More
                             </Button>
-                        </Link>
-
-                        <Link to="/scholarships">
-                            <Button variant="solid" color="primary">
+            
+                            <Button variant="solid" href="/Scholarships" color="primary">
                                 Scholarship Database
                             </Button>
-                        </Link>
-
                     </Box> 
 
                 </div>
