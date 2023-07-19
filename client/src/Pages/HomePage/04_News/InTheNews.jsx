@@ -21,10 +21,6 @@ const InTheNews = () => {
                         <div className="column">
                         <NewsCard />
                         </div>
-
-                        <div className="column">
-                        <NewsCard />
-                        </div>
                     </div>
             </div>
         </div>

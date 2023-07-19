@@ -1,15 +1,14 @@
 .info{
     height:fit-content;
-    margin-bottom:100px;
-    align-items: center;
+    align-items:center;
     width: fit-content;
 }
 
 .container-info{
     border-radius:12px;
     background-color: #eee;
-    padding:10px;
-    margin:100px;
+    padding:5px;
+    margin: 100px 180px 100px 180px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -20,14 +19,15 @@
     flex-direction:column;
     text-align:center;
     background-color: #eee;
-    padding:40px;
+    padding:20px;
 }
 
 .info-right{
     display:flex;
     background-color: #eee;
     text-align:center;
-    padding:40px;
+    align-items:center;
+    padding:95px 40px 40px 40px;
 }
 
 .info-left>:nth-child(1){

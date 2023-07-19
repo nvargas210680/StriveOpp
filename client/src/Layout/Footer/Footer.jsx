@@ -44,6 +44,10 @@ function Footer(props) {
             </div>
 
             <div className="footer-right">
+                <div className="subscribe">
+                    Subscribe to receive bi-weekly highlights of scholarships, remote job opportunities, internships, events, and more!
+                </div>
+                
                 <div className="footerappointment">
                     <Button variant="solid" color="primary">
                         Book Appointment

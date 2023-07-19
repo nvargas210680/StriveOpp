@@ -12,7 +12,7 @@ h1.inthenews{
     border-radius:12px;
     background-color: #eee;
     padding:50px;
-    margin:100px;
+    margin: 80px 180px 80px 180px;
     height:fit-content;
     display:flex;
     flex-direction:row;

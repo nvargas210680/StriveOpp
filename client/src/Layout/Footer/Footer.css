@@ -36,7 +36,7 @@ a.footerlinks:hover{
 .footer-right{
     margin-top:-100px;
     float:right;
-    width:40%;
+    width:20%;
 }
 
 .socialmedia_icons{
@@ -45,9 +45,16 @@ a.footerlinks:hover{
     flex-direction:row;
 }
 
+.subscribe{
+    text-align: center;
+    margin-bottom:50px;
+    font-weight:bold;
+    font-size:larger
+}
+
 .footerappointment{
     margin-bottom:50px;
-    width:50%
+    width:80%
 }
 
 .footertext{

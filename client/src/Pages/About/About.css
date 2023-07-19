@@ -1,5 +1,4 @@
 .aboutus{
-    margin-top:-250px;
     height:fit-content;
     margin-bottom:100px;
     align-items: center;
@@ -13,7 +12,7 @@
     border-radius:12px;
     background-color: #eee;
     padding:40px;
-    margin:100px;
+    margin: 80px 180px 80px 180px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -21,4 +20,8 @@
 
 h1.aboutus{
     text-align: center;
+}
+
+img.aboutus{
+    width:100%;
 }
