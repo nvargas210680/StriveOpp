@@ -20,6 +20,10 @@ import Signup from "./Pages/Register/Signup";
 import PersonalInformation from "./Pages/Register/PersonalInformation";
 import CompleteProfile2 from "./Pages/Register/CompleteProfile2";
 import Success from "./Pages/Register/Success";
+import PrivateRoute from "./Pages/privateRoute/PrivateRoute";
+import ForgotPassword from "./Pages/passwordUpdateProfile/ForgotPassword";
+import UpdateProfile from "./Pages/passwordUpdateProfile/UpdateProfile";
+import Dashboard from "./Pages/dashboard/Dashboard";
 
 function App() {
   return (
@@ -58,6 +62,24 @@ function App() {
                   element={<PersonalInformation />}
                 />
                 <Route path="/success" element={<Success />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route
+                  path="/update-profile"
+                  element={
+                    <PrivateRoute>
+                      <UpdateProfile />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  exact
+                  path="/dashboard"
+                  element={
+                    <PrivateRoute>
+                      <Dashboard />
+                    </PrivateRoute>
+                  }
+                />
               </Route>
             </Routes>
           </AuthProvider>
