@@ -1,34 +1,66 @@
 import React from "react";
 import "./MultiSelectDropDown.css";
-import { Helmet } from "react-helmet-async";
+import CreatableSelect from "react-select/creatable";
 
 const MultiSelectDropDown = () => {
-    return(
-        <>
-        {/* <Helmet>
-            <title>MultiSelectDropDownMenu</title>
-            <link rel="canonical" href="./Assets/multiselect-dropdown.js"/>
-        </Helmet> */}
+    const options = [
+        { value: "lgbtq", label: "LGBTQ+", color: "#FF8B00" },
+        { value: "faculty-humanities", label: "Humanities", color: "#36B37E" },
+        { value: "value500", label: "$500", color: "#0052CC" },
+      ];
 
-        <script src="./Assets/multiselect-dropdown.js" type="module"></script>
+      const colorStyles = {
+        control: (styles) => ({ ...styles, backgroundColor: "white" }),
+        option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+          return { ...styles, color: data.color };
+        },
 
-        <div className="multiselectdropdown">
-            <form>
-                <select 
-                    name="select" 
-                    multiple className="multiselect" 
-                    multiselct-search="true"
-                    multiselect-select-all="true"
-                    multiselect-max-items="15">
-                        <option>First</option>
-                        <option>Second</option>
-                        <option>Third</option>
-                        <option>Fourth</option>
-                </select>
-            </form>
+        multiValue: (styles, { data }) => {
+          return {
+            ...styles,
+            backgroundColor: data.color,
+            color: "#eee",
+            padding:"8px",
+            margin:"5px",
+            width:"fit-content"
+          };
+        },
+
+        multiValueLabel: (styles, { data }) => {
+          return {
+            ...styles,
+            color: "#eee"
+          };
+        },
+
+        multiValueRemove: (styles, { data }) => {
+          return {
+            ...styles,
+            color: "#eee",
+            cursor: "pointer",
+            ":hover": {
+              color: "#eee",
+            },
+          };
+        },
+      };
+      const handleChange = (selectedOption, actionMeta) => {
+        console.log("handleChange", selectedOption, actionMeta);
+      };
+      const handleInputChange = (inputValue, actionMeta) => {
+        console.log("handleInputChange", inputValue, actionMeta);
+      };
+      return (
+        <div style={{width: '900px', marginBottom:'50px'}}>
+            <CreatableSelect
+            options={options}
+            onChange={handleChange}
+            onInputChange={handleInputChange}
+            isMulti
+            styles={colorStyles}
+            />
         </div>
-        </>
-    )
-}
+      );
+    };
 
 export default MultiSelectDropDown;

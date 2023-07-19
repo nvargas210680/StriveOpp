@@ -98,7 +98,7 @@ export default function Scholarship(){
                         <option value="international">International</option>
                     </select>
 
-                    <DataGrid sx = {{backgroundColor:'#eee', height:"fit-content", width: "fit-content", m:5}}
+                    <DataGrid sx = {{backgroundColor:'#eee', height:"500px", width: "fit-content", m:5}}
                             rows={filteredScholarships} columns={columns} 
                             slots={{toolbar: GridToolbar}} 
                             slotProps={{
