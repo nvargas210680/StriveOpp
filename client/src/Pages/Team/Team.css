@@ -1,16 +1,28 @@
 .team{
-    margin:0 auto;
-    margin-top:-250px;
+
+    margin-top:-220px;
     align-items: center;
     text-align: center;
+	width:fit-content;
 }
 
 h1{
     text-align: center;
 }
 
+.container-team{
+	border-radius:12px;
+    background-color: #eee;
+    padding:10px;
+    margin:20px;
+    align-items: center;
+    width:fit-content;
+    height:fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .meet-the-team{
-	--size:400px;
+	--size:500px;
 	--blue: #aad5ff;
   	--lb: rgba(0, 0, 0, 0.5);
 }
@@ -32,6 +44,8 @@ h1{
 	align-items:center;
 	justify-items:center;
 	filter: drop-shadow(0px 0px 7px rgba(1, 1, 1, .7));
+	margin-right: 100px;
+	margin-left:100px;
 }
 
 .headshotImage{
@@ -57,7 +71,7 @@ h1{
     transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   }
 
-  h4,
+h4,
 ul,
 span.bio {
   padding: 0;
