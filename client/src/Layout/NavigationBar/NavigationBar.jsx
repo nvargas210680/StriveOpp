@@ -16,7 +16,7 @@ import "./NavigationBar.css";
 import { Link } from 'react-router-dom';
 import { BiUserCircle } from "react-icons/bi";
 
-const pages = ['Scholarships', 'Coaching', 'Blog', 'About', 'Team'];
+const pages = ['Scholarships', 'Coaching', 'Blog', 'About'];
 const settings = ['Profile', 'Dashboard', 'Login'];
 
 function ResponsiveAppBar() {
@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
                     }}>
 
                 <Container 
-                    maxWidth="xl"
+                    maxWidth="100%"
                     >
                     <Toolbar disableGutters>
                         <img
@@ -61,14 +61,14 @@ function ResponsiveAppBar() {
                             }} />
 
                         <Typography
-                            variant="h4"
+                            variant="h3"
                             noWrap
                             component="a"
                             href="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
-                                fontFamily: 'Chicle',
+                                fontFamily: 'Oswald',
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 color: '#294243',
@@ -108,8 +108,8 @@ function ResponsiveAppBar() {
                                 }}>
                                     {pages.map((page) => (
                                         <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography textAlign="center" color="#294243" fontSize="40px">
-                                                <Link style={{ textDecoration:"none", color:"#294243"}} to = {`/${page}`}>
+                                            <Typography textAlign="center" color="#294243" >
+                                                <Link style={{ textDecoration:"none", color:"#294243" }} to = {`/${page}`}>
                                                     {page}
                                                 </Link>
                                             </Typography>
