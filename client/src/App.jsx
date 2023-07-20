@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async';
+import { Link, Route, Routes, BrowserRouter } from 'react-router-dom'
 import Fonts from './Components/Fonts/Font'
-
 import Layout from './Layout/Layout'
 import HomePage from './Pages/HomePage/HomePage'
 import Login from './Pages/Login/Login'
@@ -16,15 +14,23 @@ import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Profile from './Profiles/User/Profile/Profile'
 import Dashboard from './Profiles/User/Dashboard/Dashboard'
+import Signup from './Pages/Register/Signup';
+import SuggestedScholarships from './Pages/ScholarshipDatabase/SuggestedScholarships';
+import CompleteProfile2 from './Pages/Register/CompleteProfile2';
+import PersonalInformation from './Pages/Register/PersonalInformation';
+import Success from './Pages/Register/Success';
+import ForgotPassword from './Pages/passwordUpdateProfile/ForgotPassword';
+import UpdateProfile from './Pages/passwordUpdateProfile/UpdateProfile';
+import PrivateRoute from './Pages/privateRoute/PrivateRoute';
+import AuthProvider from './contexts/AuthProvider'
 
 function App() {
   const [count, setCount] = useState(0);
-  const helmetContext = {};
 
   return (
     <>
-    <HelmetProvider context={helmetContext}>
     <Fonts />
+
       <div className="App">
         <Routes>
           <Route path="/" element={ <Layout /> }>
@@ -42,10 +48,9 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </HelmetProvider>
 
       <div className="App">
-        <BrowserRouter>
+        {/* <BrowserRouter> */}
           <AuthProvider>
             <Routes>
               <Route path="/" element={<Layout />}>
@@ -97,9 +102,9 @@ function App() {
               </Route>
             </Routes>
           </AuthProvider>
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
       </div>
-    </Container>
+    </>
   );
 }
 
