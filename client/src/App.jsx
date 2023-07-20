@@ -44,8 +44,63 @@ function App() {
       </div>
     </HelmetProvider>
 
-    </>
-  )
+      <div className="App">
+        <BrowserRouter>
+          <AuthProvider>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<HomePage />} />
+                <Route path="/login" element={<Login />} />
+                {/* <Route path="/register" element={<Register />} /> */}
+                <Route path="/scholarships" element={<ScholarshipDatabase />} />
+                <Route path="/coaching" element={<Coaching />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route
+                  path="/suggested-scholarship"
+                  element={<SuggestedScholarships />}
+                />
+                <Route
+                  path="/complete-profile/:var1/:var2/suggested-scholarship"
+                  element={<SuggestedScholarships />}
+                />
+                <Route
+                  path="/complete-profile/:var1/:var2"
+                  element={<CompleteProfile2 />}
+                />
+                <Route
+                  path="personal-information"
+                  element={<PersonalInformation />}
+                />
+                <Route path="/success" element={<Success />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route
+                  path="/update-profile"
+                  element={
+                    <PrivateRoute>
+                      <UpdateProfile />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  exact
+                  path="/dashboard"
+                  element={
+                    <PrivateRoute>
+                      <Dashboard />
+                    </PrivateRoute>
+                  }
+                />
+              </Route>
+            </Routes>
+          </AuthProvider>
+        </BrowserRouter>
+      </div>
+    </Container>
+  );
 }
 
-export default App
+export default App;
