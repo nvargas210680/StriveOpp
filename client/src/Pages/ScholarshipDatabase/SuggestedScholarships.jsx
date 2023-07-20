@@ -56,7 +56,7 @@ function SuggestedScholarships() {
                 <th>Value</th>
                 {/* <th>Demographic</th> */}
                 <th>Requirements</th>
-                {/* <th>Tag</th> */}
+                <th>Tag</th>
               </tr>
             </thead>
             <tbody>
@@ -68,7 +68,7 @@ function SuggestedScholarships() {
                   <td>{scholarship.value}</td>
                   {/* <td>{scholarship.demographic}</td> */}
                   <td>{scholarship.requirements}</td>
-                  {/* <td>{scholarship.tag}</td> */}
+                  <td>{scholarship.tag}</td>
                 </tr>
               ))}
             </tbody>

@@ -23,6 +23,7 @@ import ForgotPassword from "./Pages/passwordUpdateProfile/ForgotPassword";
 import UpdateProfile from "./Pages/passwordUpdateProfile/UpdateProfile";
 import PrivateRoute from "./Pages/privateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider";
+import UserProfile from "./Pages/userProfile/UserProfile";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -81,6 +82,7 @@ function App() {
                   </PrivateRoute>
                 }
               />
+              <Route path="/user-profile" element={<UserProfile />} />
             </Route>
           </Routes>
         </AuthProvider>
