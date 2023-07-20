@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./Auth.css";
+import Button from '@mui/joy/Button';
+import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
 
 export const Auth = () => {
     const [email, setEmail] = useState("");
@@ -39,27 +41,38 @@ export const Auth = () => {
                         Don't have an account?
                         <br />
                         <br />
-                        Use your Google account or sign-up<a href="/register"> here!</a>
+                        Use your Google account or sign-up<a href="/register"> here</a>!
                         </p>
+                        <br />
 
                         {/* Buttons - Native Login */}
 
-                        <button className="button login__submit" 
-                        // onClick={signIn}
-                        >
-                        <span className="button__text">Login</span>
-                        <i className="button__icon fas fa-chevron-right"></i>
-                        </button>
+                        <Button variant="solid" sx={{width:"40%", bgColor:"#006699"}}>
+                                Login
+                        </Button>
+
                     </form>
 
                         {/* Buttons - Social Login */}
                         <div className="social-login">
                             <div className="social-media">
-                                <button className="social-icons" 
-                                // onClick={signInWithGoogle}
-                                >
-                                    Google
-                                </button>
+                                <BsGoogle
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsMicrosoft 
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsFacebook
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />   
                             </div>
                         </div>
 

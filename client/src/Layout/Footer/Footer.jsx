@@ -84,6 +84,12 @@ function Footer(props) {
                             onMouseOut={({target})=>target.style.color="var(--dark-green)"}
                         />
                     </div>
+
+                    <div className="footerlogoimage">
+                        <img 
+                            className="footer-logo"
+                            src="https://i.imgur.com/qAOjfum.png" />
+                    </div>
                 </div>
 
             <div className="footertext">
