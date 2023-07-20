@@ -9,9 +9,19 @@ const InTheNews = () => {
             <h1 className="inthenews">In The News</h1>
             
             <div className="container-inthenews">
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
+                    <div className="row">
+                        <div className="column">
+                        <NewsCard />
+                        </div>
+
+                        <div className="column">
+                        <NewsCard />
+                        </div>
+
+                        <div className="column">
+                        <NewsCard />
+                        </div>
+                    </div>
             </div>
         </div>
     )

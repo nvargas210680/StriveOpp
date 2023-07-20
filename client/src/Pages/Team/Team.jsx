@@ -10,6 +10,7 @@ import Renata from "./Renata";
 const Team = () =>{
     return(
         <div className="team">
+            <div className="container-team">
             <h1>Meet the Team</h1>
 
             <div className="column">
@@ -27,6 +28,7 @@ const Team = () =>{
                     <Renata />
                     <Han />
                 </div>
+            </div>
             </div>
         </div>
     )

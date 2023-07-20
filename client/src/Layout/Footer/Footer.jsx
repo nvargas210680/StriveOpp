@@ -1,10 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import PropTypes from 'prop-types';
+import Button from '@mui/joy/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { TextField } from "@mui/material";
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
 import { 
     BsSpotify,
     BsLinkedin,
@@ -17,19 +18,48 @@ function Footer(props) {
 
     return(
         <div className="footer">
+            {/* Footer Left */}
 
-            <div className="row">
-                <div className="column">
-                    <Link to="/Contact">Contact</Link>
-                    <br />
-                    <Link to="/">Link2</Link>
-                    <br />
-                    <Link to="/">Link3</Link>
-                    <br />
-                    <Link to="/">Link4</Link>
+            <div className="footer-left">
+                <div className="footerlogoimage">
+                    <img 
+                        className="footer-logo"
+                        src="https://i.imgur.com/jdh9G07.png" />
                 </div>
 
-                <div className="column">
+                <div className="footer-phrase">
+                    <h2><i>Unleash Potential, Embrace Opportunities: Strive Ahead!</i></h2>
+                </div>
+
+                <div className="footerlinks">
+                    <a className="footerlinks" href="/">Products & Services</a>
+                    <br />
+                    <a className="footerlinks" href="/">Testimonials</a>
+                    <br />
+                    <a className="footerlinks" href="/About">Who We Are</a>
+                    <br />
+                    <a className="footerlinks" href="/Team">Meet The Team</a>
+                    <br />
+                    <a className="footerlinks" href="/Contact">Contact Us</a>
+                </div>
+            </div>
+
+            <div className="footer-right">
+                <div className="subscribe">
+                    Subscribe to receive bi-weekly highlights of scholarships, remote job opportunities, internships, events, and more!
+                    <TextField
+                        style = {{width: 300}}
+                        id="email"
+                        label="Email"
+                        margin="normal" />
+                </div>
+                
+                <div className="footerappointment">
+                    <Button variant="solid" color="primary">
+                        Book Appointment
+                    </Button>
+                </div>
+
                 <div className="socialmedia_icons">
                         <BsLinkedin 
                             size={30}
@@ -40,7 +70,6 @@ function Footer(props) {
 
                         <BsInstagram
                             size={30}
-                            style={{ marginTop: 10 }}
                             color="var(--dark-green)"
                             onMouseOver={({target})=>target.style.color="#eee"}
                             onMouseOut={({target})=>target.style.color="var(--dark-green)"}
@@ -48,7 +77,6 @@ function Footer(props) {
 
                         <BsTiktok
                             size={30}
-                            style={{ marginTop: 10 }}
                             color="var(--dark-green)"
                             onMouseOver={({target})=>target.style.color="#eee"}
                             onMouseOut={({target})=>target.style.color="var(--dark-green)"}
@@ -56,23 +84,23 @@ function Footer(props) {
 
                         <BsSpotify
                             size={30}
-                            style={{ marginTop: 10 }}
+
                             color="var(--dark-green)"
                             onMouseOver={({target})=>target.style.color="#eee"}
                             onMouseOut={({target})=>target.style.color="var(--dark-green)"}
                         />
                     </div>
+
+                    <div className="footerlogoimage">
+                        <img 
+                            className="footer-logo"
+                            src="https://i.imgur.com/qAOjfum.png" />
+                    </div>
                 </div>
 
-                <div className="column">
-                    <img 
-                        className="footer-logo"
-                        src="https://i.imgur.com/jdh9G07.png" />
-                </div>
-            </div>
-
-            <Box component="footer">
-                <Container maxWidth="lg">
+            <div className="footertext">
+                <Box component="footer">
+                <Container maxWidth={false}>
                     <Typography 
                         marginTop="50px"
                         variant="h6" 
@@ -91,6 +119,7 @@ function Footer(props) {
                     </Typography>
                 </Container>
             </Box>
+        </div>
         </div>
     )
 }

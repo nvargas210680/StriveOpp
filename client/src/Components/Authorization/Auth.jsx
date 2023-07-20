@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useRef } from "react";
 import "./Auth.css";
+import Button from '@mui/joy/Button';
+import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
-
 export const Auth = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -54,17 +55,35 @@ export const Auth = () => {
                 // onChange={(e) => setPassword(e.target.value)}
               />
             </div>
+<form>
+                        <Button variant="solid" sx={{width:"40%", bgColor:"#006699"}}>
+                                Login
+                        </Button>
 
-            {/* "Don't yet have an account?*/}
-            <p class="account-question">
-              Don't have an account?
-              <br />
-              <br />
-              Use your Google account or sign-up
-              <Link to="/signup">Here!</Link>
-            </p>
+                    </form>
 
-            {/* Buttons - Native Login */}
+                        {/* Buttons - Social Login */}
+                        <div className="social-login">
+                            <div className="social-media">
+                                <BsGoogle
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsMicrosoft 
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsFacebook
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />   
+                            </div>
+                        </div>
 
             <button
               disabled={loading}

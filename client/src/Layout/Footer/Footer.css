@@ -3,20 +3,64 @@
     background: #eee;
     margin-top:100px;
     margin-bottom:20px;
-    align-items: center;
-    padding:50px;
+    padding:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-left{
+    float:left;
+    display:flex;
+    flex-direction:column;
 }
 
 img.footer-logo{
-    float:right;
-    width:180px;
-    margin-right:50px;
+    align-items:center;
+    width:280px;
 }
 
-.link{
+.footer-phrase{
+    margin-bottom:25px;
+}
+
+a.footerlinks{
+    font-size: 1.4rem;
     text-decoration: none;
     color:#294243;
 }
 
-.link:hover{
+a.footerlinks:hover{
+    color:var(--orange);
+}
+
+.footer-right{
+    margin-top:-470px;
+    float:right;
+    width:25%;
+}
+
+.socialmedia_icons{
+    float:right;
+    display:flex;
+    flex-direction:row;
+}
+
+.subscribe{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    margin-bottom:50px;
+    font-weight:bold;
+    font-size:larger
+}
+
+.footerappointment{
+    margin-bottom:50px;
+    width:80%
+}
+
+.footertext{
+    margin-top:30px;
+    display:flex;
+    flex-direction:row;
 }

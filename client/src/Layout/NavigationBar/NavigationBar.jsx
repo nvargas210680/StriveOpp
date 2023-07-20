@@ -14,9 +14,10 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import "./NavigationBar.css";
 import { Link } from 'react-router-dom';
+import { BiUserCircle } from "react-icons/bi";
 
-const pages = ['Scholarships', 'Coaching', 'Blog', 'About', 'Team'];
-const settings = ['Profile', 'Account', 'Dashboard'];
+const pages = ['Scholarships', 'Coaching', 'Blog', 'About'];
+const settings = ['Profile', 'Dashboard', 'Login', 'Register'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -47,7 +48,7 @@ function ResponsiveAppBar() {
                     }}>
 
                 <Container 
-                    maxWidth="l"
+                    maxWidth="100%"
                     >
                     <Toolbar disableGutters>
                         <img
@@ -60,14 +61,14 @@ function ResponsiveAppBar() {
                             }} />
 
                         <Typography
-                            variant="h4"
+                            variant="h3"
                             noWrap
                             component="a"
                             href="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
-                                fontFamily: 'Chicle',
+                                fontFamily: 'Oswald',
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 color: '#294243',
@@ -85,9 +86,7 @@ function ResponsiveAppBar() {
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
                             color="#294243">
-
-                                <MenuIcon />
-
+                                <BiUserCircle />
                             </IconButton>
 
                             <Menu
@@ -106,12 +105,11 @@ function ResponsiveAppBar() {
                                 onClose={handleCloseNavMenu}
                                 sx={{
                                     display: { xs: 'block', md: 'none', color: '#294243' },
-                                }}
-                                >
+                                }}>
                                     {pages.map((page) => (
                                         <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography textAlign="center" color="#294243" fontSize="40px">
-                                                <Link style={{textDecoration:"none", color:"#294243"}} to = {`/${page}`}>
+                                            <Typography textAlign="center" color="#294243" >
+                                                <Link style={{ textDecoration:"none", color:"#294243" }} to = {`/${page}`}>
                                                     {page}
                                                 </Link>
                                             </Typography>
@@ -121,12 +119,12 @@ function ResponsiveAppBar() {
                         </Box>
 
                         <Typography
-                            variant="h5"
+                            variant="h6"
                             noWrap
                             component="a"
                             href=""
                             sx={{
-                            mr: 2,
+                            mr: 0,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                             fontFamily: 'monospace',
@@ -145,27 +143,29 @@ function ResponsiveAppBar() {
                                 }} />
                         </Typography>
 
+                        {/* Menu Bar */}
+
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: '#294243', display: 'block' }}>
-
-                                <Link style={{textDecoration:"none", color:"#294243"}} to={`/${page}`}>{page}</Link>
-
+                                sx={{ my:2, color: '#294243', display: 'block' }}>
+                                    <Link style={{textDecoration:"none", color:"#294243"}} to={`/${page}`}>
+                                        {page}
+                                    </Link>
                             </Button>
                             ))}
                         </Box>
 
                         <Box sx={{ flexGrow: 0 }}>
                             <Tooltip title="Open settings">
-
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                            
+                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                                    <BiUserCircle />
+                                </IconButton>
                             </Tooltip>
+
+                            {/* Account Settings */}
 
                             <Menu
                                 sx={{ mt: '45px', color: '#294243' }}
@@ -181,11 +181,12 @@ function ResponsiveAppBar() {
                                     horizontal: 'right',
                                 }}
                                 open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
-                                >
+                                onClose={handleCloseUserMenu}>
                                 {settings.map((setting) => (
                                     <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center" color="#294243" >{setting}</Typography>
+                                        <Typography textAlign="center" color="#294243" >
+                                            <Link style={{textDecoration:"none", color:"#294243"}} to={`/${setting}`}>{setting}</Link>
+                                        </Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>

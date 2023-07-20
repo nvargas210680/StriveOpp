@@ -1,0 +1,15 @@
+.scholarshipdatabase{
+    margin-top:-250px;
+    height:fit-content;
+    align-items: center;
+    width: fit-content;
+    color:var(--green-dark-striveopp);
+}
+
+.filter{
+}
+
+select{
+    width:60%;
+    background: #eee;
+}
