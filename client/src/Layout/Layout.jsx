@@ -7,14 +7,14 @@ import "./Layout.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
 
 const Layout = () => {
-    return(
-        <div className="layout">
-            <NavigationBar />
-            <Outlet />
-            <Footer />
-            <Copyright />
-        </div>
-    )
-}
+  return (
+    <div className="layout">
+      <NavigationBar />
+      <Outlet />
+      <Footer description="" title="" />
+      <Copyright />
+    </div>
+  );
+};
 
 export default Layout;

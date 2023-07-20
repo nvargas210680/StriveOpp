@@ -9,7 +9,7 @@
 //     const [password, setPassword] = useState("");
 
 //     // console.log(auth?.currentUser?.photoURL);
-//     const {signin} = useAuth(); 
+//     const {signin} = useAuth();
 
 //     return(
 //         <div className="container">
@@ -25,7 +25,7 @@
 //                                 // onChange={(e) => setEmail(e.target.value)}
 //                             />
 //                         </div>
-                        
+
 //                         {/* Login Field: Password */}
 //                         <div className="login__field">
 //                         <i className="login__icon fas fa-lock"></i>
@@ -63,7 +63,7 @@
 //                                     onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
 //                                     onMouseOut={({target})=>target.style.color="#eee"} />
 
-//                                 <BsMicrosoft 
+//                                 <BsMicrosoft
 //                                     size={40}
 //                                     color="#eee"
 //                                     onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
@@ -73,7 +73,7 @@
 //                                     size={40}
 //                                     color="#eee"
 //                                     onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
-//                                     onMouseOut={({target})=>target.style.color="#eee"} />   
+//                                     onMouseOut={({target})=>target.style.color="#eee"} />
 //                             </div>
 //                         </div>
 
@@ -144,53 +144,53 @@ export const Auth = () => {
                 ref={passwordRef}
                 // onChange={(e) => setPassword(e.target.value)}
               />
-              </div>
-  
-              {/* "Don't yet have an account?*/}
-              <p class="account-question">
-                Don't have an account?
-                <br />
-                <br />
-                Use your Google account or sign-up
-                <Link to="/signup">Here!</Link>
-              </p>
-  
-              {/* Buttons - Native Login */}
-  
+            </div>
+
+            {/* "Don't yet have an account?*/}
+            <p className="account-question">
+              Don't have an account?
+              <br />
+              <br />
+              Use your Google account or sign-up
+              <Link to="/signup">Here!</Link>
+            </p>
+
+            {/* Buttons - Native Login */}
+
+            <button
+              disabled={loading}
+              className="button login__submit"
+              type="submit"
+              // onClick={signIn}
+            >
+              <span className="button__text">Login</span>
+              <i className="button__icon fas fa-chevron-right"></i>
+            </button>
+            <p>{error}</p>
+          </form>
+
+          {/* Buttons - Social Login */}
+          <div className="social-login">
+            <div className="social-media">
               <button
-                disabled={loading}
-                className="button login__submit"
-                type="submit"
-                // onClick={signIn}
+                className="social-icons"
+                // onClick={signInWithGoogle}
               >
-                <span className="button__text">Login</span>
-                <i className="button__icon fas fa-chevron-right"></i>
+                Google
               </button>
-              <p>{error}</p>
-            </form>
-  
-            {/* Buttons - Social Login */}
-            <div className="social-login">
-              <div className="social-media">
-                <button
-                  className="social-icons"
-                  // onClick={signInWithGoogle}
-                >
-                  Google
-                </button>
-              </div>
             </div>
           </div>
-          <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Forgot Password?</Link>
-          </div>
-          <div className="screen__background">
-            <span className="screen__background__shape screen__background__shape4"></span>
-            <span className="screen__background__shape screen__background__shape3"></span>
-            <span className="screen__background__shape screen__background__shape2"></span>
-            <span className="screen__background__shape screen__background__shape1"></span>
-          </div>
+        </div>
+        <div className="w-100 text-center mt-3">
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </div>
+        <div className="screen__background">
+          <span className="screen__background__shape screen__background__shape4"></span>
+          <span className="screen__background__shape screen__background__shape3"></span>
+          <span className="screen__background__shape screen__background__shape2"></span>
+          <span className="screen__background__shape screen__background__shape1"></span>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
