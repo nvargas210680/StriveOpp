@@ -94,6 +94,7 @@ import { useState, useRef } from "react";
 import "./Auth.css";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
 
 export const Auth = () => {
   const emailRef = useRef();
@@ -171,14 +172,38 @@ export const Auth = () => {
 
           {/* Buttons - Social Login */}
           <div className="social-login">
-            <div className="social-media">
+            {/* <div className="social-media">
               <button
                 className="social-icons"
                 // onClick={signInWithGoogle}
               >
                 Google
               </button>
-            </div>
+            </div> */}
+
+            {/* Buttons - Social Login */}
+//                         <div className="social-login">
+//                             <div className="social-media">
+//                                 <BsGoogle
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsMicrosoft
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+
+                                <BsFacebook
+                                    size={40}
+                                    color="#eee"
+                                    onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
+                                    onMouseOut={({target})=>target.style.color="#eee"} />
+                            </div>
+                        </div>
+
           </div>
         </div>
         <div className="w-100 text-center mt-3">
