@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Button from '@mui/joy/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { TextField } from "@mui/material";
 import Typography from '@mui/material/Typography';
 import { 
     BsSpotify,
@@ -46,6 +47,11 @@ function Footer(props) {
             <div className="footer-right">
                 <div className="subscribe">
                     Subscribe to receive bi-weekly highlights of scholarships, remote job opportunities, internships, events, and more!
+                    <TextField
+                        style = {{width: 300}}
+                        id="email"
+                        label="Email"
+                        margin="normal" />
                 </div>
                 
                 <div className="footerappointment">
