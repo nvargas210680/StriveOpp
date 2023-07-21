@@ -52,9 +52,9 @@ function SuggestedScholarships() {
               <tr>
                 <th>Scholarship</th>
                 <th>Deadline</th>
-                <th>URL</th>
+                {/* <th>URL</th> */}
                 <th>Value</th>
-                <th>Demographic</th>
+                {/* <th>Demographic</th> */}
                 <th>Requirements</th>
                 <th>Tag</th>
               </tr>
@@ -64,9 +64,9 @@ function SuggestedScholarships() {
                 <tr key={scholarship.id}>
                   <td>{scholarship.scholarship}</td>
                   <td>{scholarship.deadline}</td>
-                  <td>{scholarship.url}</td>
+                  {/* <td>{scholarship.url}</td> */}
                   <td>{scholarship.value}</td>
-                  <td>{scholarship.demographic}</td>
+                  {/* <td>{scholarship.demographic}</td> */}
                   <td>{scholarship.requirements}</td>
                   <td>{scholarship.tag}</td>
                 </tr>
