@@ -43,38 +43,61 @@ function SuggestedScholarships() {
   }, [currentUser]);
   console.log("hello");
   return (
-    <div>
-      <div>{userProfile?.firstName}</div>
-      <div>
-        {userProfile?.tags && (
-          <table>
-            <thead>
-              <tr>
-                <th>Scholarship</th>
-                <th>Deadline</th>
-                {/* <th>URL</th> */}
-                <th>Value</th>
-                {/* <th>Demographic</th> */}
-                <th>Requirements</th>
-                <th>Tag</th>
-              </tr>
-            </thead>
-            <tbody>
-              {scholarships.map((scholarship) => (
-                <tr key={scholarship.id}>
-                  <td>{scholarship.scholarship}</td>
-                  <td>{scholarship.deadline}</td>
-                  {/* <td>{scholarship.url}</td> */}
-                  <td>{scholarship.value}</td>
-                  {/* <td>{scholarship.demographic}</td> */}
-                  <td>{scholarship.requirements}</td>
-                  <td>{scholarship.tag}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </div>
+    // <div className="scholarships-container">
+    //   <table className="scholarships-table">
+    //     <thead>
+    //       <tr>
+    //         <th>Scholarship</th>
+    //         <th>Deadline</th>
+    //         {/* <th>URL</th> */}
+    //         <th>Value</th>
+    //         {/* <th>Demographic</th> */}
+    //         <th>Requirements</th>
+    //         <th>Tag</th>
+    //       </tr>
+    //     </thead>
+    //     <tbody>
+    //       {scholarships.map((scholarship) => (
+    //         <tr key={scholarship.id}>
+    //           <td>{scholarship.scholarship}</td>
+    //           <td>{scholarship.deadline}</td>
+    //           {/* <td>{scholarship.url}</td> */}
+    //           <td>{scholarship.value}</td>
+    //           {/* <td>{scholarship.demographic}</td> */}
+    //           <td>{scholarship.requirements}</td>
+    //           <td>{scholarship.tag}</td>
+    //         </tr>
+    //       ))}
+    //     </tbody>
+    //   </table>
+    // </div>
+    <div className="scholarships-container">
+      <table className="scholarships-table">
+        <thead>
+          <tr>
+            <th>Scholarship</th>
+            <th>Deadline</th>
+            <th>URL</th>
+            <th>Value</th>
+            {/* <th>Demographic</th> */}
+            <th>Requirements</th>
+            <th>Tag</th>
+          </tr>
+        </thead>
+        <tbody>
+          {scholarships.map((scholarship) => (
+            <tr key={scholarship.id}>
+              <td>{scholarship.scholarship}</td>
+              <td>{scholarship.deadline}</td>
+              <td>{scholarship.url}</td>
+              <td>{scholarship.value}</td>
+              {/* <td>{scholarship.demographic}</td> */}
+              <td>{scholarship.requirements}</td>
+              <td>{scholarship.tag}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

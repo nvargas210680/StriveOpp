@@ -1,15 +1,40 @@
-.scholarshipdatabase{
-    margin-top:-250px;
-    height:fit-content;
-    align-items: center;
-    width: fit-content;
-    color:var(--green-dark-striveopp);
+.scholarshipdatabase {
+  margin-top: -250px;
+  height: fit-content;
+  align-items: center;
+  width: fit-content;
+  color: var(--green-dark-striveopp);
 }
 
-.filter{
+.filter {
 }
 
-select{
-    width:60%;
-    background: #eee;
+select {
+  width: 60%;
+  background: #eee;
+}
+
+/* Add this CSS code to your App.css or a separate CSS file */
+
+.scholarships-container {
+  width: 100%;
+  padding: 1rem;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.scholarships-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scholarships-table th,
+.scholarships-table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.scholarships-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  font-weight: bold;
 }
