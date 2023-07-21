@@ -95,6 +95,7 @@ import "./Auth.css";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
+import Button from '@mui/joy/Button';
 
 export const Auth = () => {
   const emailRef = useRef();
@@ -147,27 +148,36 @@ export const Auth = () => {
               />
             </div>
 
+            <div className="w-100 text-center mt-3">
+              <Link to="/forgot-password">Forgot Password?</Link>
+            </div>
+
+            {/* Buttons - Native Login */}
+
+            <Button 
+              variant="solid" 
+              sx={{width:"40%", bgColor:"#006699", m:1}}
+              type="submit"
+              disabled={loading}
+              // onClick={signIn}
+              >
+              Login
+            </Button>
+            <br />
+            <p>{error}</p>
+
             {/* "Don't yet have an account?*/}
             <p className="account-question">
               Don't have an account?
               <br />
               <br />
-              Use your Google account or sign-up
-              <Link to="/signup">Here!</Link>
+              Use your Google account or sign-up <Link to="/signup"> here</Link>!
+
             </p>
 
-            {/* Buttons - Native Login */}
 
-            <button
-              disabled={loading}
-              className="button login__submit"
-              type="submit"
-              // onClick={signIn}
-            >
-              <span className="button__text">Login</span>
-              <i className="button__icon fas fa-chevron-right"></i>
-            </button>
-            <p>{error}</p>
+
+
           </form>
 
           {/* Buttons - Social Login */}
@@ -182,9 +192,10 @@ export const Auth = () => {
             </div> */}
 
             {/* Buttons - Social Login */}
-//                         <div className="social-login">
-//                             <div className="social-media">
-//                                 <BsGoogle
+                        <span className="changeColor">
+                        <div className="social-login">                             
+                        <div className="social-media">
+                               <BsGoogle
                                     size={40}
                                     color="#eee"
                                     onMouseOver={({target})=>target.style.color="var(--green-striveopp)"}
@@ -203,11 +214,9 @@ export const Auth = () => {
                                     onMouseOut={({target})=>target.style.color="#eee"} />
                             </div>
                         </div>
+                        </span>
 
           </div>
-        </div>
-        <div className="w-100 text-center mt-3">
-          <Link to="/forgot-password">Forgot Password?</Link>
         </div>
         <div className="screen__background">
           <span className="screen__background__shape screen__background__shape4"></span>

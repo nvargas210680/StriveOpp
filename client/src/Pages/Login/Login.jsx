@@ -1,5 +1,9 @@
 import { useRef, useState, useEffect } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import Button from '@mui/joy/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { TextField } from "@mui/material";
+import { Form, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import {
@@ -11,6 +15,7 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { db } from "../../config/firebase";
+import "./Login.css"
 
 const Login = () => {
   const emailRef = useRef();
@@ -70,51 +75,150 @@ const Login = () => {
   };
 
   return (
-    <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <input
-              id="email"
-              type="email"
-              ref={emailRef}
-              required
-              placeholder="Email"
-              className="form-control my-4"
-            />
-            <input
-              id="password"
-              type="password"
-              ref={passwordRef}
-              required
-              placeholder="Password"
-              className="form-control my-4"
-            />
-            <Button disabled={loading} className="w-100 mt-4" type="submit">
-              Sign In
-            </Button>
-          </Form>
-          <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Forgot Password?</Link>
-          </div>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
-      </div>
-      {matchedScholarships.length > 0 && (
-        <div>
-          <h3>Matched Scholarships:</h3>
-          <ul>
-            {matchedScholarships.map((scholarship) => (
-              <li key={scholarship.id}>{scholarship.title}</li>
-            ))}
-          </ul>
+    <div className="login">
+      <div className="containerlogin">
+        <div className="loginleft">
+          <img className="loginleft" src="https://i.imgur.com/K1E8Kex.png" />
         </div>
-      )}
-    </>
+
+        <div className="loginright">
+          <Typography
+            fontFamily="Poppins"
+            color="#294243"
+            variant="h4"
+            align="center"
+            gutterBottom>
+              {'Login'.toUpperCase()}
+
+              {error && <Alert variant="danger">{error}</Alert>}
+          </Typography>
+
+            <Grid 
+              container direction="column"
+              justify="center">
+                <Grid item>
+                  <Form 
+                    id="login-form"
+                    onSubmit={handleSubmit}>
+                    <Grid item>
+                      <TextField
+                        style={{width:400}}
+                        type="email"
+                        ref={emailRef}
+                        label="Email"
+                        placeholder="Email"
+                        name="Email"
+                        margin="normal">
+
+                      </TextField>
+                    </Grid>
+ 
+                    <Grid item>
+                      <TextField
+                        style={{width:400}}
+                        type="password"
+                        ref={passwordRef}
+                        label="Password"
+                        placeholder="Password"
+                        name="password"
+                        margin="normal">
+
+                      </TextField>
+                    </Grid>
+                    <Grid 
+                      item container direction="row"
+                      spacing={2}
+                      style={{marginTop:10}}
+                      align="center">
+                        <Grid item
+                          style={{alignItems:"center"}}>
+                          <Button
+                            style={{width:"50%"}}>
+                            Reset
+                          </Button>
+                        </Grid>
+
+                        <Grid item>
+                          <Button
+                            style={{width:"50%"}}>
+                            Submit
+                          </Button>
+                        </Grid>
+
+                        <div className="loginquestion">
+                          <Link to="/forgot-password">Forgot Password?</Link>
+                        </div>
+
+                        <div className="loginquestion">
+                        Need an account? <Link to="/signup">Sign Up</Link>
+                        </div>
+                  </Grid>
+                </Form>
+              </Grid>
+            </Grid>
+            </div>
+        
+            {/* {matchedScholarships.length > 0 && (
+              <div className="matchedscholarships">
+                <h3>Matched Scholarships:</h3>
+                  <ul>
+                    {matchedScholarships.map((scholarship) => (
+                    <li key={scholarship.id}>{scholarship.title}</li>
+                    ))}
+                  </ul>
+              </div> */}
+              
+          </div>
+        </div>
+
+//       <Card>
+//         <Card.Body>
+//           <h2 className="text-center mb-4">Log In</h2>
+//           {error && <Alert variant="danger">{error}</Alert>}
+//           <Form onSubmit={handleSubmit}>
+//             <input
+//               id="email"
+//               type="email"
+//               ref={emailRef}
+//               required
+//               placeholder="Email"
+//               className="form-control my-4"
+//             />
+//             <input
+//               id="password"
+//               type="password"
+//               ref={passwordRef}
+//               required
+//               placeholder="Password"
+//               className="form-control my-4"
+//             />
+//             <Button 
+//               disabled={loading} 
+//               w="40%"
+//               className="w-100 mt-4" 
+//               type="submit">
+//               Sign In
+//             </Button>
+//           </Form>
+//           <div className="w-100 text-center mt-3">
+//             <Link to="/forgot-password">Forgot Password?</Link>
+//           </div>
+//         </Card.Body>
+//       </Card>
+//       <div className="w-100 text-center mt-2">
+//         Need an account? <Link to="/signup">Sign Up</Link>
+//       </div>
+//       {matchedScholarships.length > 0 && (
+//         <div>
+//           <h3>Matched Scholarships:</h3>
+//           <ul>
+//             {matchedScholarships.map((scholarship) => (
+//               <li key={scholarship.id}>{scholarship.title}</li>
+//             ))}
+//           </ul>
+//         </div>
+//       )}
+//     </>
   );
 };
 

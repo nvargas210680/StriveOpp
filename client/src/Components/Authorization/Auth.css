@@ -4,6 +4,12 @@
     display:flex;
     height:fit-content;
 }
+.changeColor {
+	color: #eee;
+  }
+.changeColor:hover {
+	color: var(--green-striveopp);
+  }
 
 .screen{		
 	background: linear-gradient(90deg, #294243, #8BBE96);		
@@ -147,6 +153,8 @@ p.account-question{
 	font-family:"Poppins", sans-serif;
 	font-size:13px;
 	font-weight:bold;
+	width:60%;
+	margin-top:10px;
 }
 
 .social-login {	
