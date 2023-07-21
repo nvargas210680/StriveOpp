@@ -1,15 +1,14 @@
+//
 import React, { useState, useEffect } from "react";
 import { db } from "../../config/firebase";
 import { useAuth } from "../../contexts/AuthProvider";
-import { collection, doc, getDocs, query, where } from "firebase/firestore";
+import { collection, query, where, getDocs } from "firebase/firestore";
+
 const UserProfile = () => {
   const [singleDoc, setSingleDoc] = useState({});
   const { currentUser } = useAuth();
-  const id = currentUser.uid;
 
-  const fetchSingle = async (e) => {
-    e.preventDefault();
-    console.log(db);
+  const fetchUserProfile = async () => {
     const userCollection = collection(db, "user_profile");
     const userQuery = query(
       userCollection,
@@ -27,13 +26,23 @@ const UserProfile = () => {
   };
 
   useEffect(() => {
-    console.log(singleDoc);
-  }, [singleDoc]);
+    fetchUserProfile();
+  }, []); // The empty dependency array ensures this effect runs only once when the component mounts
+
+  const { firstName, lastName, tags } = singleDoc;
 
   return (
     <div>
-      <h1>Fetching Data</h1>
-      <button onClick={fetchSingle}>Fetch single doc</button>
+      <h1>Profile</h1>
+      {Object.keys(singleDoc).length > 0 ? (
+        <div>
+          <p>First Name: {firstName}</p>
+          <p>Last Name: {lastName}</p>
+          <p>Tags: {tags && tags.join(", ")}</p>
+        </div>
+      ) : (
+        <p>Loading user profile data...</p>
+      )}
     </div>
   );
 };
