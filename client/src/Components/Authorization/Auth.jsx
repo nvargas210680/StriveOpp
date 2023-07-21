@@ -101,37 +101,37 @@ export const Auth = () => {
             </div> */}
             {/* Buttons - Social Login */}
             <span className="changeColor">
-            //{" "}
-            <div className="social-login">
               //{" "}
-              <div className="social-media">
+              <div className="social-login">
                 //{" "}
-                <BsGoogle
-                  size={40}
-                  color="#eee"
-                  onMouseOver={({ target }) =>
-                    (target.style.color = "var(--green-striveopp)")
-                  }
-                  onMouseOut={({ target }) => (target.style.color = "#eee")}
-                />
-                <BsMicrosoft
-                  size={40}
-                  color="#eee"
-                  onMouseOver={({ target }) =>
-                    (target.style.color = "var(--green-striveopp)")
-                  }
-                  onMouseOut={({ target }) => (target.style.color = "#eee")}
-                />
-                <BsFacebook
-                  size={40}
-                  color="#eee"
-                  onMouseOver={({ target }) =>
-                    (target.style.color = "var(--green-striveopp)")
-                  }
-                  onMouseOut={({ target }) => (target.style.color = "#eee")}
-                />
+                <div className="social-media">
+                  //{" "}
+                  <BsGoogle
+                    size={40}
+                    color="#eee"
+                    onMouseOver={({ target }) =>
+                      (target.style.color = "var(--green-striveopp)")
+                    }
+                    onMouseOut={({ target }) => (target.style.color = "#eee")}
+                  />
+                  <BsMicrosoft
+                    size={40}
+                    color="#eee"
+                    onMouseOver={({ target }) =>
+                      (target.style.color = "var(--green-striveopp)")
+                    }
+                    onMouseOut={({ target }) => (target.style.color = "#eee")}
+                  />
+                  <BsFacebook
+                    size={40}
+                    color="#eee"
+                    onMouseOver={({ target }) =>
+                      (target.style.color = "var(--green-striveopp)")
+                    }
+                    onMouseOut={({ target }) => (target.style.color = "#eee")}
+                  />
+                </div>
               </div>
-            </div>
             </span>
           </div>
         </div>
