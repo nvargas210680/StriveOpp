@@ -5,7 +5,6 @@ import Fonts from "./Components/Fonts/Font";
 import Layout from "./Layout/Layout";
 import HomePage from "./Pages/HomePage/HomePage";
 import Login from "./Pages/Login/Login";
-import Register from "./Pages/Register/Register";
 import ScholarshipDatabase from "./Pages/ScholarshipDatabase/ScholarshipDatabase";
 import Coaching from "./Pages/Coaching/Coaching";
 import Blog from "./Pages/Blog/Blog";
@@ -60,7 +59,7 @@ function App() {
                 element={<CompleteProfile2 />}
               />
               <Route
-                path="personal-information"
+                path="/personal-information"
                 element={<PersonalInformation />}
               />
               <Route path="/success" element={<Success />} />

@@ -23,6 +23,7 @@
 	z-index: 1;
 	position: relative;	
 	height: 90%;
+	margin-top: 240px;
 }
 
 .screen__background {		
@@ -79,8 +80,8 @@
 
 .login {
 	width: 480px;
-	padding-top: 80px;
-	padding-right:180px;
+	padding-top: 100px;
+	padding-right:200px;
 }
 
 .login__field {
@@ -159,12 +160,11 @@ p.account-question{
 
 .social-login {	
 	position: absolute;
-	height: 70px;
-	width: 160px;
 	text-align: center;
-	bottom: 0px;
-	right: 0px;
 	color: #eee;
+	margin-top:40px;
+	margin-left:120px;
+	width:250px;
 }
 
 .social-media {
@@ -185,4 +185,12 @@ p.account-question{
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
+}
+
+.contactIcon{
+	fill:#eee;
+}
+
+.contactIcon:hover {
+    fill: #f2f735;
 }

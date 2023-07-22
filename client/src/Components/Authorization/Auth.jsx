@@ -4,6 +4,7 @@ import "./Auth.css";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
+import { IconContext } from "react-icons";
 import Button from '@mui/joy/Button';
 
 export const Auth = () => {
@@ -100,39 +101,22 @@ export const Auth = () => {
               </button>
             </div> */}
             {/* Buttons - Social Login */}
-            <span className="changeColor">
-              //{" "}
+            <IconContext.Provider value={{ color: "black", className: "contactIcon" }}>
               <div className="social-login">
-                //{" "}
                 <div className="social-media">
-                  //{" "}
                   <BsGoogle
+                    // onClick={signInWithGoogle}
                     size={40}
-                    color="#eee"
-                    onMouseOver={({ target }) =>
-                      (target.style.color = "var(--green-striveopp)")
-                    }
-                    onMouseOut={({ target }) => (target.style.color = "#eee")}
                   />
                   <BsMicrosoft
                     size={40}
-                    color="#eee"
-                    onMouseOver={({ target }) =>
-                      (target.style.color = "var(--green-striveopp)")
-                    }
-                    onMouseOut={({ target }) => (target.style.color = "#eee")}
                   />
                   <BsFacebook
                     size={40}
-                    color="#eee"
-                    onMouseOver={({ target }) =>
-                      (target.style.color = "var(--green-striveopp)")
-                    }
-                    onMouseOut={({ target }) => (target.style.color = "#eee")}
                   />
                 </div>
               </div>
-            </span>
+            </IconContext.Provider>
           </div>
         </div>
         <div className="screen__background">

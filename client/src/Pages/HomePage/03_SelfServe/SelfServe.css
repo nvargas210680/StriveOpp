@@ -6,13 +6,44 @@ h1.selfserve{
     text-align:center;
 }
 
-.container-selfserve{
+h3.selfserve{
+    font-family:"Poppins", sans-serif;
+    padding-block:16px;
+    text-align:center;
+    font-size:1.5rem;
+}
+
+.containerselfserve{
+    display:flex;
+    flex-direction:row;
     border-radius:12px;
     background-color: #eee;
-    padding:10px;
     margin: 80px 180px 80px 180px;
+    padding:30px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selfserveleft{
+    display:flex;
+    flex-direction:column;
+    margin:50px;
+}
+
+.selfservelefttop{
+    display:flex;
+    flex-direction:row;
+}
+
+.selfserveleftbottom{
+    display:flex;
+    flex-direction:row;
+}
+
+.selfserveright{
+    display:flex;
+    flex-direction:column;
+    margin:50px;
 }
 

@@ -7,8 +7,8 @@
 .container-info{
     border-radius:12px;
     background-color: #eee;
-    padding:5px;
-    margin: 150px 180px 80px 180px;
+    padding:20px;
+    margin: 50px 180px 80px 180px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -47,13 +47,17 @@
 
 .info-left>:nth-child(3){
     width:70%;
-    margin-top:-40px;
-    margin-bottom:-40px;
+    margin-top:-20px;
+    margin-bottom:-20px;
+    transition: transform 300ms ease;
+}
+        
+.info-left>:nth-child(3):hover, .info-left>:nth-child(3):focus-within {
+    transform: scale(1.05);
 }
 
 .info-left>:nth-child(4){
-    margin-top:10px;
-    margin-bottom:50px;
+    margin-bottom:30px;
     text-align:center;
     font-size:1rem;
     background-color: #eee;

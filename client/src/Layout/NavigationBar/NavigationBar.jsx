@@ -51,14 +51,14 @@ function ResponsiveAppBar() {
                     maxWidth="100%"
                     >
                     <Toolbar disableGutters>
-                        <img
+                        {/* <img
                             src="https://images.squarespace-cdn.com/content/v1/612dabc42132625e4c2932c5/4d60e94c-dfa6-4c2e-a153-35d9ec01319b/fotor_2023-1-3_21_18_12.png?format=1500w" 
                             className="logo"
                             sx={{ display: { 
                                 xs: 'none', 
                                 md: 'flex' }, 
                                 mr: 1,
-                            }} />
+                            }} /> */}
 
                         <Typography
                             variant="h3"
