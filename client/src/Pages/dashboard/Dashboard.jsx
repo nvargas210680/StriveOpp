@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import UserProfile from "../userProfile/UserProfile";
 import SuggestedScholarships from "../ScholarshipDatabase/SuggestedScholarships";
-import ScholarshipDatabase from "../ScholarshipDatabase/ScholarshipDatabase";
 
 const Dashboard = () => {
   const [error, setError] = useState("");
@@ -35,7 +35,25 @@ const Dashboard = () => {
   return (
     <>
       <div>
+        <UserProfile />
+        <div></div>
+      </div>
+      <div>
         <SuggestedScholarships />
+      </div>
+      <div>
+        <h2 className="text-center mb-4">Profile</h2>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <strong>Email: </strong> {currentUser.email || "No email available"}
+        <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
+          Update Profile
+        </Link>
+      </div>
+
+      <div className="w-100 text-center mt-2">
+        <Button variant="link" onClick={handleLogout}>
+          Log Out
+        </Button>
       </div>
     </>
   );

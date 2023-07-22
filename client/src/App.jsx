@@ -12,7 +12,7 @@ import Team from "./Pages/Team/Team";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Profile from "./Profiles/User/Profile/Profile";
-import Dashboard from "./Profiles/User/Dashboard/Dashboard";
+import Dashboard from "./Pages/dashboard/Dashboard";
 import Signup from "./Pages/Register/Signup";
 import SuggestedScholarships from "./Pages/ScholarshipDatabase/SuggestedScholarships";
 import CompleteProfile2 from "./Pages/Register/CompleteProfile2";
