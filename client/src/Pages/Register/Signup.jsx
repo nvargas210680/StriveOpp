@@ -1,7 +1,12 @@
 import { useRef, useState } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Form, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import "./Signup.css"
+import Button from '@mui/joy/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { TextField } from "@mui/material";
 
 const Signup = () => {
   const emailRef = useRef();
@@ -29,51 +34,145 @@ const Signup = () => {
   };
 
   return (
-    <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <input
-              id="email"
-              type="email"
-              ref={emailRef}
-              required
-              placeholder="Email"
-              className="form-control my-4"
-            />
-            <input
-              id="password"
-              type="password"
-              ref={passwordRef}
-              required
-              placeholder="Password"
-              className="form-control my-4"
-            />
-            <input
-              id="password-confirm"
-              type="password"
-              ref={passwordConfirmRef}
-              required
-              placeholder="Confirm your password"
-              className="form-control my-4"
-            />
-            <Button
-              disabled={loading}
-              className="w-100 mt-4"
-              onClick={handleSubmit}
-              type="submit"
-            >
-              Next Page
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
-        Already have an account? <Link to="/login">Log In</Link>
+    <div className="signup">
+      <div className="containersignup">
+        <div className="signupleft">
+          <img className="signupleft" src="https://i.imgur.com/8RnOqyk.png" />
+        </div>
+
+        <div className="signupright">
+          <Typography
+            fontFamily="Poppins"
+            color="#294243"
+            variant="h4"
+            align="center"
+            gutterBottom>
+              {'Sign-Up'.toUpperCase()}
+
+              {error && <Alert variant="danger">{error}</Alert>}
+          </Typography>
+
+          <Grid 
+            container direction="column"
+            justify="center">
+              <Grid item>
+                <Form
+                  id="signup-form"
+                  onSubmit={handleSubmit}>
+                  <Grid item>
+                    <TextField
+                        style={{width:400}}
+                        type="email"
+                        ref={emailRef}
+                        required
+                        label="Email"
+                        placeholder="Email"
+                        name="Email"
+                        margin="normal">
+                    </TextField>
+                  </Grid>
+                  
+                  <Grid item>
+                      <TextField
+                        style={{width:400}}
+                        type="password"
+                        ref={passwordRef}
+                        required
+                        label="Password"
+                        placeholder="Password"
+                        name="password"
+                        margin="normal">
+                      </TextField>
+                    </Grid>
+
+                    <Grid item>
+                      <TextField
+                        style={{width:400}}
+                        type="password"
+                        ref={passwordConfirmRef}
+                        required
+                        label="Confirm your password"
+                        placeholder="Confirm your password"
+                        name="Confirm your password"
+                        margin="normal">
+                        </TextField>
+                    </Grid>
+                    
+                    <Grid 
+                      item container direction="row"
+                      spacing={2}
+                      style={{marginTop:10}}
+                      align="center">
+                        <Grid item
+                          style={{alignItems:"center"}}>
+                          <Button
+                            style={{width:"50%"}}>
+                            Reset
+                          </Button>
+                        </Grid>
+
+                        <Grid item>
+                          <Button
+                            style={{width:"50%"}}>
+                            Next Page
+                          </Button>
+                        </Grid>
+                    </Grid>
+
+                    <div className="signupquestion">
+                      Already have an account? <Link to="/login">Log In</Link>
+                    </div>
+                </Form>
+              </Grid>
+          </Grid>
+        </div>
       </div>
-    </>
+    </div>
+    // <>
+    //   <Card>
+    //     <Card.Body>
+    //       <h2 className="text-center mb-4">Sign Up</h2>
+    //       {error && <Alert variant="danger">{error}</Alert>}
+    //       <Form onSubmit={handleSubmit}>
+    //         <input
+    //           id="email"
+    //           type="email"
+    //           ref={emailRef}
+    //           required
+    //           placeholder="Email"
+    //           className="form-control my-4"
+    //         />
+    //         <input
+    //           id="password"
+    //           type="password"
+    //           ref={passwordRef}
+    //           required
+    //           placeholder="Password"
+    //           className="form-control my-4"
+    //         />
+    //         <input
+    //           id="password-confirm"
+    //           type="password"
+    //           ref={passwordConfirmRef}
+    //           required
+    //           placeholder="Confirm your password"
+    //           className="form-control my-4"
+    //         />
+    //         <Button
+    //           disabled={loading}
+    //           className="w-100 mt-4"
+    //           onClick={handleSubmit}
+    //           type="submit"
+    //         >
+    //           Next Page
+    //         </Button>
+    //       </Form>
+    //     </Card.Body>
+    //   </Card>
+    //   <div className="w-100 text-center mt-2">
+    //     Already have an account? <Link to="/login">Log In</Link>
+    //   </div>
+    // </>
   );
 };
 
