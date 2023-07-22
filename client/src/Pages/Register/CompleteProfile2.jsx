@@ -9,7 +9,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../../config/firebase";
 import { useAuth } from "../../contexts/AuthProvider";
-// import "./completeProfile.css";
+import "./CompleteProfile2.css";
 import { useNavigate, useParams } from "react-router-dom";
 
 const CompleteProfile2 = () => {

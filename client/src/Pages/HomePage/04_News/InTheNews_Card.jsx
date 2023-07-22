@@ -35,7 +35,7 @@ const NewsCard = () =>{
         };
 
     return(
-        <Card sx={{ maxWidth:340, mr:20, p:2 }}>
+        <Card sx={{ maxWidth:340, p:2 }}>
             <CardHeader
                 avatar={
                     <Avatar sx={{ bgcolor:green[500] }} aria-label="newsheadline">
