@@ -3,7 +3,13 @@
 	align-items:center;
     display:flex;
     height:fit-content;
+	transition: transform 300ms ease;
 }
+        
+.container:hover, .container:focus-within {
+    transform: scale(1.05);
+}
+
 .changeColor {
 	color: #eee;
   }

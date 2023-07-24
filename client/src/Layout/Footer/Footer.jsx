@@ -54,11 +54,12 @@ function Footer(props) {
                         margin="normal" />
                 </div>
                 
-                <div className="footerappointment">
-                    <Button variant="solid" color="primary">
-                        Book Appointment
-                    </Button>
-                </div>
+                <Box sx={{ display: 'flex', '& > button': { flex: 1 }, width:'50%', marginBottom:"50px"}}>
+                        <Button
+                            sx={{ bgcolor: "#294243" }}>
+                            Book With Me
+                        </Button>
+                    </Box>
 
                 <div className="socialmedia_icons">
                         <BsLinkedin 

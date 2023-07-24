@@ -1,7 +1,7 @@
 import React from 'react'
 import "./AccessDatabase.css"
 import Button from '@mui/joy/Button';
-import Grid from '@mui/material/Grid';
+import Box from '@mui/joy/Box';
 
 const AccessDatabase = () => {
   return (
@@ -9,22 +9,19 @@ const AccessDatabase = () => {
         <img className="selfserve" src="https://i.imgur.com/Niuwe2x.png" />
         <h3 className="selfserve">Scholarship Database</h3>
 
-        <Grid container direction="column" justify="center" alignItems="center" spacing={1} margin="10px">
-            <Grid item>
+        <Box sx={{ display: 'flex', flexDirection:'column', width:'50%', marginTop:"10px"}}>
+            
               <p className="cardcareercoachinginfo">
                 lorem ipsum
               </p>
-            </Grid>
-
-            <Grid item>
+            
               <Button 
                 variant="solid"
-                sx={{width:"50%", bgcolor: "#294243"}}
+                sx={{ bgcolor: "#294243", marginBottom:"30px"}}
                 href="/scholarships">
                   750+ Scholarships
               </Button>
-            </Grid>
-        </Grid>
+        </Box>
         
     </div>
   )
