@@ -81,7 +81,7 @@ export const Auth = () => {
               Don't have an account?
               <br />
               <br />
-              Use your Google account or sign-up <Link to="/signup"> here</Link>!
+              Use your Google account or sign-up <Link to="/register"> here</Link>!
 
             </p>
 
