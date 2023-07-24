@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import { Button, Card, Alert } from "react-bootstrap";
+import { Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import UserProfile from "../userProfile/UserProfile";
 import SuggestedScholarships from "../ScholarshipDatabase/SuggestedScholarships";
-import { Box } from "@mui/material";
+import Button from '@mui/joy/Button';
+import Box from '@mui/joy/Box';
+import Grid from '@mui/material/Grid';
 import "./dashboard.css";
 
 const Dashboard = () => {
@@ -40,9 +42,42 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="containerUserProfile">
+      <div className="dashboard">
+
+        <div className="dashboardleft">
+          <div className="containerdashboardleft">
+            <Grid>
+              <Grid item>
+                <UserProfile />
+              </Grid>
+
+              <Box 
+                sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
+                
+                <Button
+                  onClick={handleProfile}
+                  sx={{ bgcolor: "#294243" }}>
+                    Update Profile
+                </Button>
+
+                <Button
+                  onClick={handleLogout}
+                  sx={{ bgcolor: "#294243" }}>
+                    Sign-Out
+                </Button>
+
+              </Box>
+            </Grid>
+          </div>
+        </div>
+
+        <div className="dashboardright">
+          <div className="containerdashboardright">
+          <SuggestedScholarships />
+          </div>
+        </div>
         
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             gap: 1.5,
@@ -68,7 +103,7 @@ const Dashboard = () => {
         <div></div>
       </div>
       <div>
-        <SuggestedScholarships />
+        <SuggestedScholarships /> */}
       </div>
 
     </>

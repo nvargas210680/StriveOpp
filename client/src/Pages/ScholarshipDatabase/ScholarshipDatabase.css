@@ -6,9 +6,6 @@
   color: var(--green-dark-striveopp);
 }
 
-.filter {
-}
-
 select {
   width: 60%;
   background: #eee;
@@ -17,9 +14,10 @@ select {
 /* Add this CSS code to your App.css or a separate CSS file */
 
 .scholarships-container {
+  align-items: center;
   width: 100%;
-  padding: 1rem;
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  margin: 0px 180px 0 180px;
+  /* overflow-x: auto; Enable horizontal scrolling if needed */
 }
 
 .scholarships-table {

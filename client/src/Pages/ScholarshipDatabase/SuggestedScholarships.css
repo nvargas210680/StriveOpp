@@ -1,0 +1,12 @@
+.scholarships-table {
+    width: 100%;
+    border: 1px solid blue;
+  }
+  
+  .scrollwrapper {
+    overflow: auto;
+  }
+  
+  td {
+    border: 1px solid #aaa;
+  }
