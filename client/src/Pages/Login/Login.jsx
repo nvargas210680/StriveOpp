@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import Button from "@mui/joy/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Box from '@mui/joy/Box';
 import { TextField } from "@mui/material";
 import { Form, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
@@ -94,7 +95,7 @@ const Login = () => {
             {error && <Alert variant="danger">{error}</Alert>}
           </Typography>
 
-          <Grid container direction="column" justify="center">
+          <Grid container direction="column" justify="center" alignItems="center">
             <Grid item>
               <Form id="login-form" onSubmit={handleSubmit}>
                 <Grid item>
@@ -106,6 +107,8 @@ const Login = () => {
                     placeholder="Email"
                     name="Email"
                     margin="normal"
+                    justify="center"
+                    alignItems="center"
                   ></TextField>
                 </Grid>
 
@@ -120,23 +123,18 @@ const Login = () => {
                     margin="normal"
                   ></TextField>
                 </Grid>
-                <Grid
-                  item
-                  container
-                  direction="row"
-                  spacing={2}
-                  style={{ marginTop: 10 }}
-                  align="center"
-                >
-                  <Grid item style={{ alignItems: "center" }}>
-                    <Button style={{ width: "50%" }}>Reset</Button>
-                  </Grid>
 
-                  <Grid item>
-                    <Button style={{ width: "50%" }} type="submit">
-                      Submit
-                    </Button>
-                  </Grid>
+
+                <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
+                      <Button
+                      sx={{ bgcolor: "#294243", gap:"5px" }}>Reset</Button>
+                    
+                      <Button 
+                      sx={{ bgcolor: "#294243", gap:"5px" }}
+                      type="submit">
+                        Submit
+                      </Button>
+                  </Box>
 
                   <div className="loginquestion">
                     <Link to="/forgot-password">Forgot Password?</Link>
@@ -145,7 +143,7 @@ const Login = () => {
                   <div className="loginquestion">
                     Need an account? <Link to="/signup">Sign Up</Link>
                   </div>
-                </Grid>
+                
               </Form>
             </Grid>
           </Grid>

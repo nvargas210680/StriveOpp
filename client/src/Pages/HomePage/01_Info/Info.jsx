@@ -31,12 +31,12 @@ const Info = () => {
                         our education, join StriveOpp today.
                     </span>
 
-                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', backgroundColor:'#eee', }}>
-                            <Button variant="outlined" href="/About" bgcolor="neutral">
+                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%' }}>
+                            <Button variant="outlined" href="/About" sx={{bgcolor: "#294243", color:"#eee"}}>
                                 Learn More
                             </Button>
             
-                            <Button variant="solid" href="/Scholarships" color="primary">
+                            <Button variant="solid" href="/Scholarships" sx={{bgcolor: "#294243"}}>
                                 Scholarship Database
                             </Button>
                     </Box> 

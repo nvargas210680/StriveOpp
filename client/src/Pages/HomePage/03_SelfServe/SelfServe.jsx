@@ -10,9 +10,13 @@ const SelfServe = () => {
             <h1 className="selfserve">Self-Service</h1>
             
             <div className="containerselfserve">
-                <BookWithMe />
-                <AccessDatabase /> 
-                <ResumeWriting />
+                <div className="selfserveleft">
+                    <BookWithMe />
+                </div>
+                <div className="selfserveright">
+                    <AccessDatabase /> 
+                    <ResumeWriting />
+                </div>
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { TextField } from "@mui/material";
 import Button from '@mui/joy/Button';
+import Box from '@mui/joy/Box';
 
 const Contact = () =>{
     return(
@@ -27,7 +28,7 @@ const Contact = () =>{
                             <form id="contact-form">
                                 <Grid item>
                                         <TextField
-                                            style = {{width: 400}}
+                                            style = {{width: 600}}
                                             id="name"
                                             label="Name"
                                             name="userName"
@@ -37,7 +38,7 @@ const Contact = () =>{
 
                                     <Grid item>
                                         <TextField
-                                        style = {{width: 400}}
+                                        style = {{width: 600}}
                                         id="email"
                                         label="Email"
                                         name="email"
@@ -47,35 +48,31 @@ const Contact = () =>{
                                     
                                     <Grid item>
                                         <TextField
-                                        style = {{width: 400}}
+                                        style = {{width: 600}}
                                         id="message"
                                         label="Message"
                                         name="message"
                                         margin="normal"
                                         multiline
-                                        rowsMax="4"
+                                        rows="6"
                                         />
                                     </Grid>
 
-                                    <Grid container direction="row" spacing={2} style={{ marginTop: 20 }}>
-                                        <Grid item >
+                                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
                                             <Button
                                             type="reset"
-                                            variant="contained"
-                                            color="default">
-                                            RESET
+                                            variant="solid"
+                                            sx={{ bgcolor: "#294243", width:"40%", gap:"5px" }}>
+                                            Reset
                                             </Button>
-                                        </Grid>
                                         
-                                        <Grid item >  
                                             <Button
                                             type="submit"
-                                            variant="contained"
-                                            color="primary">
+                                            variant="solid"
+                                            sx={{ bgcolor: "#294243", width:"40%" }}>
                                             Submit
                                             </Button>
-                                        </Grid>
-                                    </Grid>
+                                    </Box>
                             </form>
                         </Grid>
                     </Grid>

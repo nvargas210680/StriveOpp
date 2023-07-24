@@ -7,6 +7,7 @@ import Button from '@mui/joy/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { TextField } from "@mui/material";
+import Box from '@mui/joy/Box';
 
 const Signup = () => {
   const emailRef = useRef();
@@ -98,26 +99,17 @@ const Signup = () => {
                         </TextField>
                     </Grid>
                     
-                    <Grid 
-                      item container direction="row"
-                      spacing={2}
-                      style={{marginTop:10}}
-                      align="center">
-                        <Grid item
-                          style={{alignItems:"center"}}>
+                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
                           <Button
-                            style={{width:"50%"}}>
+                            sx={{ bgcolor: "#294243" }}>
                             Reset
                           </Button>
-                        </Grid>
 
-                        <Grid item>
                           <Button
-                            style={{width:"50%"}}>
+                            sx={{ bgcolor: "#294243" }}>
                             Next Page
                           </Button>
-                        </Grid>
-                    </Grid>
+                    </Box>
 
                     <div className="signupquestion">
                       Already have an account? <Link to="/login">Log In</Link>

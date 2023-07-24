@@ -23,27 +23,28 @@ h3.selfserve{
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 300ms ease;
+}
+        
+.containerselfserve:hover, .containerselfserve:focus-within {
+    transform: scale(1.05);
 }
 
 .selfserveleft{
+    align-items: center;
     display:flex;
     flex-direction:column;
-    margin:50px;
-}
-
-.selfservelefttop{
-    display:flex;
-    flex-direction:row;
-}
-
-.selfserveleftbottom{
-    display:flex;
-    flex-direction:row;
+    padding:50px;    
 }
 
 .selfserveright{
+    align-items: center;
     display:flex;
     flex-direction:column;
-    margin:50px;
+    padding:50px;
+}
+
+img.selfserve{
+    width:60%;
 }
 
