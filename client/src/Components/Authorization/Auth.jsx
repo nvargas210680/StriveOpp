@@ -5,7 +5,7 @@ import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { BsGoogle, BsMicrosoft, BsFacebook } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import Button from '@mui/joy/Button';
+import Button from "@mui/joy/Button";
 
 export const Auth = () => {
   const emailRef = useRef();
@@ -23,7 +23,7 @@ export const Auth = () => {
       setError("");
       setLoading(true);
       await signin(emailRef.current.value, passwordRef.current.value);
-      navigate("suggested-scholarship");
+      navigate("dashboard");
     } catch {
       setError("Failed to log in");
     }
@@ -64,13 +64,13 @@ export const Auth = () => {
 
             {/* Buttons - Native Login */}
 
-            <Button 
-              variant="solid" 
-              sx={{width:"40%", bgColor:"#006699", m:1}}
+            <Button
+              variant="solid"
+              sx={{ width: "40%", bgColor: "#006699", m: 1 }}
               type="submit"
               disabled={loading}
               // onClick={signIn}
-              >
+            >
               Login
             </Button>
             <br />
@@ -81,13 +81,9 @@ export const Auth = () => {
               Don't have an account?
               <br />
               <br />
-              Use your Google account or sign-up <Link to="/register"> here</Link>!
-
+              Use your Google account or sign-up{" "}
+              <Link to="/register"> here</Link>!
             </p>
-
-
-
-
           </form>
 
           {/* Buttons - Social Login */}
@@ -101,19 +97,17 @@ export const Auth = () => {
               </button>
             </div> */}
             {/* Buttons - Social Login */}
-            <IconContext.Provider value={{ color: "black", className: "contactIcon" }}>
+            <IconContext.Provider
+              value={{ color: "black", className: "contactIcon" }}
+            >
               <div className="social-login">
                 <div className="social-media">
                   <BsGoogle
                     // onClick={signInWithGoogle}
                     size={40}
                   />
-                  <BsMicrosoft
-                    size={40}
-                  />
-                  <BsFacebook
-                    size={40}
-                  />
+                  <BsMicrosoft size={40} />
+                  <BsFacebook size={40} />
                 </div>
               </div>
             </IconContext.Provider>
