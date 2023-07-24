@@ -4,6 +4,8 @@ import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import UserProfile from "../userProfile/UserProfile";
 import SuggestedScholarships from "../ScholarshipDatabase/SuggestedScholarships";
+import { Box } from "@mui/material";
+import "./dashboard.css";
 
 const Dashboard = () => {
   const [error, setError] = useState("");
@@ -28,33 +30,47 @@ const Dashboard = () => {
     }
   };
 
+  const handleProfile = () => {
+    navigate("/update-profile");
+  }
+
   if (!currentUser) {
     return <div>Loading...</div>;
   }
 
   return (
     <>
+      <div className="containerUserProfile">
+        
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1.5,
+            "& > button": { flex: 1 },
+            width: "80%",
+            height: "80%",
+            marginTop: "5px",
+          }}
+        >
+          <UserProfile />
       <div>
-        <UserProfile />
+  
+          <Button sx={{ bgcolor: "#294243", gap:"5px"}} onClick={handleProfile}>Update Profile</Button>
+      </div>
+      <div className="w-100 text-center mt-2">
+    
+        <Button sx={{ bgcolor: "#294243", gap:"5px" }} variant="link" onClick={handleLogout}>
+          Log Out
+        </Button>
+  
+      </div>
+        </Box>
         <div></div>
       </div>
       <div>
         <SuggestedScholarships />
       </div>
-      <div>
-        <h2 className="text-center mb-4">Profile</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <strong>Email: </strong> {currentUser.email || "No email available"}
-        <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-          Update Profile
-        </Link>
-      </div>
 
-      <div className="w-100 text-center mt-2">
-        <Button variant="link" onClick={handleLogout}>
-          Log Out
-        </Button>
-      </div>
     </>
   );
 };
