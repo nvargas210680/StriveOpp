@@ -2,12 +2,12 @@ import { useRef, useState } from "react";
 import { Form, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
-import "./Signup.css"
-import Button from '@mui/joy/Button';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import "./Signup.css";
+import Button from "@mui/joy/Button";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import { TextField } from "@mui/material";
-import Box from '@mui/joy/Box';
+import Box from "@mui/joy/Box";
 
 const Signup = () => {
   const emailRef = useRef();
@@ -47,75 +47,76 @@ const Signup = () => {
             color="#294243"
             variant="h4"
             align="center"
-            gutterBottom>
-              {'Sign-Up'.toUpperCase()}
+            gutterBottom
+          >
+            {"Sign-Up".toUpperCase()}
 
-              {error && <Alert variant="danger">{error}</Alert>}
+            {error && <Alert variant="danger">{error}</Alert>}
           </Typography>
 
-          <Grid 
-            container direction="column"
-            justify="center">
-              <Grid item>
-                <Form
-                  id="signup-form"
-                  onSubmit={handleSubmit}>
-                  <Grid item>
-                    <TextField
-                        style={{width:400}}
-                        type="email"
-                        ref={emailRef}
-                        required
-                        label="Email"
-                        placeholder="Email"
-                        name="Email"
-                        margin="normal">
-                    </TextField>
-                  </Grid>
-                  
-                  <Grid item>
-                      <TextField
-                        style={{width:400}}
-                        type="password"
-                        ref={passwordRef}
-                        required
-                        label="Password"
-                        placeholder="Password"
-                        name="password"
-                        margin="normal">
-                      </TextField>
-                    </Grid>
+          <Grid container direction="column" justify="center">
+            <Grid item>
+              <Form id="signup-form" onSubmit={handleSubmit}>
+                <Grid item>
+                  <TextField
+                    style={{ width: 400 }}
+                    type="email"
+                    ref={emailRef}
+                    required
+                    label="Email"
+                    placeholder="Email"
+                    name="Email"
+                    margin="normal"
+                  ></TextField>
+                </Grid>
 
-                    <Grid item>
-                      <TextField
-                        style={{width:400}}
-                        type="password"
-                        ref={passwordConfirmRef}
-                        required
-                        label="Confirm your password"
-                        placeholder="Confirm your password"
-                        name="Confirm your password"
-                        margin="normal">
-                        </TextField>
-                    </Grid>
-                    
-                    <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
-                          <Button
-                            sx={{ bgcolor: "#294243" }}>
-                            Reset
-                          </Button>
+                <Grid item>
+                  <TextField
+                    style={{ width: 400 }}
+                    type="password"
+                    ref={passwordRef}
+                    required
+                    label="Password"
+                    placeholder="Password"
+                    name="password"
+                    margin="normal"
+                  ></TextField>
+                </Grid>
 
-                          <Button
-                            sx={{ bgcolor: "#294243" }}>
-                            Next Page
-                          </Button>
-                    </Box>
+                <Grid item>
+                  <TextField
+                    style={{ width: 400 }}
+                    type="password"
+                    ref={passwordConfirmRef}
+                    required
+                    label="Confirm your password"
+                    placeholder="Confirm your password"
+                    name="Confirm your password"
+                    margin="normal"
+                  ></TextField>
+                </Grid>
 
-                    <div className="signupquestion">
-                      Already have an account? <Link to="/login">Log In</Link>
-                    </div>
-                </Form>
-              </Grid>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 1.5,
+                    "& > button": { flex: 1 },
+                    width: "80%",
+                    marginTop: "10px",
+                  }}
+                >
+                  <Button sx={{ bgcolor: "#294243" }}>Reset</Button>
+
+                  <Button type="link" sx={{ bgcolor: "#294243" }}>
+                    Next Page
+                  </Button>
+                </Box>
+
+                <div className="signupquestion">
+                  Already have an account? <Link to="/login">Log In</Link>
+                </div>
+              </Form>
+            </Grid>
           </Grid>
         </div>
       </div>
