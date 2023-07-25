@@ -55,7 +55,7 @@ const Login = () => {
         setMatchedScholarships(matchedScholarships);
       }
 
-      navigate("dashboard");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error retrieving user data from Firebase:", error);
     }
@@ -99,7 +99,7 @@ const Login = () => {
             container
             direction="column"
             justify="center"
-            alignItems="center"
+            // alignitems="center"
           >
             <Grid item>
               <Form id="login-form" onSubmit={handleSubmit}>
@@ -107,13 +107,13 @@ const Login = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="email"
-                    ref={emailRef}
+                    inputRef={emailRef}
                     label="Email"
                     placeholder="Email"
                     name="Email"
                     margin="normal"
                     justify="center"
-                    alignItems="center"
+                    // alignItems="center"
                   ></TextField>
                 </Grid>
 
@@ -121,7 +121,7 @@ const Login = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="password"
-                    ref={passwordRef}
+                    inputRef={passwordRef}
                     label="Password"
                     placeholder="Password"
                     name="password"
@@ -154,7 +154,7 @@ const Login = () => {
                 </div>
 
                 <div className="loginquestion">
-                  Need an account? <Link to="/signup">Sign Up</Link>
+                  Need an account? <Link to="/register">Sign Up</Link>
                 </div>
               </Form>
             </Grid>
