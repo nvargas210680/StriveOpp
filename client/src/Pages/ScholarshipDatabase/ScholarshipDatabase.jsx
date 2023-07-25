@@ -79,7 +79,7 @@ export default function Scholarship(){
                       <option value="high school">High School</option>
                       <option value="bachelor">Bachelor</option>
                       <option value="pos-graduate">Post-Graduated</option>
-                      <option value="master">Masters</option>
+                      <option value="master">Master</option>
                       <option value="undergraduate">Undergraduate</option>
                     </select>
                 </div>
