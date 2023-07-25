@@ -19,7 +19,9 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    console.log(e);
     e.preventDefault();
+    console.log("hello");
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError("Passwords do not match!");
     }
@@ -61,7 +63,7 @@ const Signup = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="email"
-                    ref={emailRef}
+                    inputRef={emailRef}
                     required
                     label="Email"
                     placeholder="Email"
@@ -74,7 +76,7 @@ const Signup = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="password"
-                    ref={passwordRef}
+                    inputRef={passwordRef}
                     required
                     label="Password"
                     placeholder="Password"
@@ -87,7 +89,7 @@ const Signup = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="password"
-                    ref={passwordConfirmRef}
+                    inputRef={passwordConfirmRef}
                     required
                     label="Confirm your password"
                     placeholder="Confirm your password"

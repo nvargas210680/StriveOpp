@@ -1,31 +1,21 @@
-.contact{
-    display:flex;
-    flex-direction:row;
+.testscholarshiptable{
     height:fit-content;
-    align-items: center;
     width: fit-content;
+    align-items: center;
     color:var(--green-dark-striveopp);
+    display:flex;
+    flex-direction:column;
 }
 
-.container-contact{
+.testcontainerscholarshiptable{
     display:flex;
     flex-direction: row;
     border-radius:12px;
     background-color: #eee;
     padding:40px;
-    margin:40px;
+    margin:20px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.contactleft{
-    display:flex;
-    flex-direction: column;
-}
-
-.contactright{
-    display:flex;
-    flex-direction: column;
 }
 

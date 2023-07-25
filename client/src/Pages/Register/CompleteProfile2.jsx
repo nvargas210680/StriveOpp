@@ -60,7 +60,7 @@ const CompleteProfile2 = () => {
       setSelectedTags([...selectedTags, tag]);
     }
   };
-
+  console.log("test", currentUser);
   const handleSaveToFirebase = async () => {
     try {
       const userProfileRef = doc(db, "user_profile", currentUser.uid);
@@ -91,7 +91,7 @@ const CompleteProfile2 = () => {
       });
 
       // Navigate to the "suggested-scholarship" page
-      navigate("/complete-profile/:var1/:var2/suggested-scholarship");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error saving tags to Firebase:", error);
     }

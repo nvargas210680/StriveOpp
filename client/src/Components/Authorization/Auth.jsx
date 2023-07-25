@@ -23,7 +23,7 @@ export const Auth = () => {
       setError("");
       setLoading(true);
       await signin(emailRef.current.value, passwordRef.current.value);
-      navigate("dashboard");
+      navigate("/dashboard");
     } catch {
       setError("Failed to log in");
     }

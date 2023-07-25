@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import Button from "@mui/joy/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Box from '@mui/joy/Box';
+import Box from "@mui/joy/Box";
 import { TextField } from "@mui/material";
 import { Form, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthProvider";
@@ -55,7 +55,7 @@ const Login = () => {
         setMatchedScholarships(matchedScholarships);
       }
 
-      navigate("suggested-scholarship");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error retrieving user data from Firebase:", error);
     }
@@ -95,20 +95,25 @@ const Login = () => {
             {error && <Alert variant="danger">{error}</Alert>}
           </Typography>
 
-          <Grid container direction="column" justify="center" alignItems="center">
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            // alignitems="center"
+          >
             <Grid item>
               <Form id="login-form" onSubmit={handleSubmit}>
                 <Grid item>
                   <TextField
                     style={{ width: 400 }}
                     type="email"
-                    ref={emailRef}
+                    inputRef={emailRef}
                     label="Email"
                     placeholder="Email"
                     name="Email"
                     margin="normal"
                     justify="center"
-                    alignItems="center"
+                    // alignItems="center"
                   ></TextField>
                 </Grid>
 
@@ -116,7 +121,7 @@ const Login = () => {
                   <TextField
                     style={{ width: 400 }}
                     type="password"
-                    ref={passwordRef}
+                    inputRef={passwordRef}
                     label="Password"
                     placeholder="Password"
                     name="password"
@@ -124,26 +129,33 @@ const Login = () => {
                   ></TextField>
                 </Grid>
 
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 1.5,
+                    "& > button": { flex: 1 },
+                    width: "80%",
+                    marginTop: "10px",
+                  }}
+                >
+                  <Button sx={{ bgcolor: "#294243", gap: "5px" }}>Reset</Button>
 
-                <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 }, width:'80%', marginTop:"10px"}}>
-                      <Button
-                      sx={{ bgcolor: "#294243", gap:"5px" }}>Reset</Button>
-                    
-                      <Button 
-                      sx={{ bgcolor: "#294243", gap:"5px" }}
-                      type="submit">
-                        Submit
-                      </Button>
-                  </Box>
+                  <Button
+                    sx={{ bgcolor: "#294243", gap: "5px" }}
+                    disabled={loading}
+                    type="submit"
+                  >
+                    Submit
+                  </Button>
+                </Box>
 
-                  <div className="loginquestion">
-                    <Link to="/forgot-password">Forgot Password?</Link>
-                  </div>
+                <div className="loginquestion">
+                  <Link to="/forgot-password">Forgot Password?</Link>
+                </div>
 
-                  <div className="loginquestion">
-                    Need an account? <Link to="/signup">Sign Up</Link>
-                  </div>
-                
+                <div className="loginquestion">
+                  Need an account? <Link to="/register">Sign Up</Link>
+                </div>
               </Form>
             </Grid>
           </Grid>
