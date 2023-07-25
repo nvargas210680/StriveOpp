@@ -32,9 +32,7 @@ function Footer(props) {
                 </div>
 
                 <div className="footerlinks">
-                    <a className="footerlinks" href="/">Products & Services</a>
-                    <br />
-                    <a className="footerlinks" href="/">Testimonials</a>
+                    <a className="footerlinks" href="/Services">Products & Services</a>
                     <br />
                     <a className="footerlinks" href="/About">Who We Are</a>
                     <br />
