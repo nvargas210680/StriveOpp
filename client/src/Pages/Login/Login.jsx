@@ -138,7 +138,9 @@ const Login = () => {
                     marginTop: "10px",
                   }}
                 >
-                  <Button sx={{ bgcolor: "#294243", gap: "5px" }}>Reset</Button>
+                  <Button sx={{ bgcolor: "#294243", gap: "5px" }}>
+                    Reset
+                  </Button>
 
                   <Button
                     sx={{ bgcolor: "#294243", gap: "5px" }}

@@ -6,8 +6,21 @@ const Coaching = () =>{
         <div className="coaching">
             <div className="container-coaching">
                 <div className="coachingleft">
-                    <h1>Coaching</h1>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, natus fuga voluptatem temporibus voluptatibus, quaerat dolorum sed deserunt ex quasi reprehenderit eligendi iste! Soluta voluptatibus assumenda iusto rem quia!</span>
+                    <span>
+                    Events
+                    </span>
+
+                    <span>
+                    Unlock Your Potential with Our Exciting Events
+                    </span>
+
+                    <span>
+                    At StriveOpp, we believe in empowering individuals like you to achieve your dreams. That's why we not only offer an extensive scholarship database but also curate top-notch networking and upskilling events to enhance your personal and professional growth.
+                    </span>
+
+                    <span>
+                    Our events go beyond the conventional scholarship search. We bring together a diverse range of thought-provoking and skill-enhancing activities that will open new doors to success. From exclusive networking sessions with industry leaders to interactive workshops conducted by experts, our events are designed to equip you with the tools you need to thrive in today's competitive world.   
+                    </span>
                 </div>
 
                 <div className="coachingright">

@@ -1,5 +1,5 @@
 .team{
-
+	font-family:"Poppins", sans-serif;
     margin-top:-220px;
     align-items: center;
     text-align: center;
@@ -136,6 +136,8 @@ span.bio {
 }
 
 .bio-name{
+	font-family:"Poppins", sans-serif;
+	font-size:25px;
 	color: #eee;
 	grid-column: 1;
 	grid-row: 2;
@@ -176,26 +178,26 @@ span.bio {
 }
 
 .headshotImg-Dawn{
-	background-image:url();
+	background-image:url(https://i.imgur.com/3aZgN0l.png);
 	background-color:#658d6e;
 }
 
 .headshotImg-Elvin{
-	background-image:url();
+	background-image:url(https://i.imgur.com/E2zmtkU.png);
 	background-color:#658d6e;
 }
 
 .headshotImg-Nicolas{
-	background-image:url();
+	background-image:url(https://i.imgur.com/vGCyx7S.png);
 	background-color:#658d6e;
 }
 
 .headshotImg-Renata{
-	background-image:url();
+	background-image:url(https://i.imgur.com/PAIaQgK.png);
 	background-color:#658d6e;
 }
 
 .headshotImg-Han{
-	background-image:url(https://i.imgur.com/uf7tmnl.png);
+	background-image:url(https://i.imgur.com/rNMNbGG.png);
 	background-color:#658d6e;
 }

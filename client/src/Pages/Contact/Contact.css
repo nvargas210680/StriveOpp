@@ -5,6 +5,7 @@
     align-items: center;
     width: fit-content;
     color:var(--green-dark-striveopp);
+    margin-top:-210px;
 }
 
 .container-contact{

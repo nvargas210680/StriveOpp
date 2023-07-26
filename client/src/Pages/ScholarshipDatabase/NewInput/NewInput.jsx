@@ -8,7 +8,7 @@ import "./NewInput.css";
 const NewInput = () => {
   return (
       <Grid
-        style={{ height: "100%" }}
+        style={{ height: "100%", width:"400px" }}
         direction="row"
         align="center"
         justify="center"

@@ -17,7 +17,7 @@ export default function SelectTags() {
     { field: "deadline", headerName: "Deadline", width: 150 },
     { field: "value", headerName: "Value", width: 120 },
     { field: "requirements", headerName: "Requirements", width: 250 },
-    { field: "tag", headerName: "Tag", width: 120 },
+    { field: "tag", headerName: "Tag", width: 300 },
     { field: "url", headerName: "URL", width: 200 },
   ];
   const [rows, setRows] = useState([]);
@@ -185,9 +185,13 @@ export default function SelectTags() {
     <div className="selecttag">
       {/* https://mui.com/material-ui/react-select/ */}
       <div className="containerselecttags">
+        <div className="containerselecttagsleft">
+            <img className="taginput "src="https://i.imgur.com/4X6bqaO.png" />
+        </div>
+        <div className="right">
         <Grid>
           <Grid container direction="row">
-            <FormControl direction="row" justify="center" sx={{ m: 1 }}>
+            <FormControl direction="row" justify="center" sx={{ m: 1, width:"250px" }}>
               <InputLabel id="simple-select-label">Field of Studies</InputLabel>
 
               <Select
@@ -216,6 +220,9 @@ export default function SelectTags() {
                 </MenuItem>
                 <MenuItem sx={{ color: "#294243" }} value="economics">
                   Economics
+                </MenuItem>
+                <MenuItem sx={{ color: "#294243" }} value="education">
+                  Education
                 </MenuItem>
                 <MenuItem sx={{ color: "#294243" }} value="engineering">
                   Engineering
@@ -256,7 +263,7 @@ export default function SelectTags() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Cultural Identity
               </InputLabel>
@@ -303,7 +310,7 @@ export default function SelectTags() {
           </Grid>
 
           <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Industry
               </InputLabel>
@@ -354,7 +361,7 @@ export default function SelectTags() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Educational Level
               </InputLabel>
@@ -385,7 +392,7 @@ export default function SelectTags() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Marginalized Classes
               </InputLabel>
@@ -421,12 +428,18 @@ export default function SelectTags() {
                 <MenuItem sx={{ color: "#294243" }} value="immigrant">
                   Immigrant Student
                 </MenuItem>
+                <MenuItem sx={{ color: "#294243" }} value="domestic">
+                  Domestic Student
+                </MenuItem>
+                <MenuItem sx={{ color: "#294243" }} value="international">
+                  International Student
+                </MenuItem>
               </Select>
             </FormControl>
           </Grid>
 
           <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Athletics
               </InputLabel>
@@ -465,7 +478,7 @@ export default function SelectTags() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Student Type
               </InputLabel>
@@ -490,14 +503,14 @@ export default function SelectTags() {
             </FormControl>
           </Grid>
           <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">GPA</InputLabel>
 
               <Select
                 labelId="demo-simple-select-error-label"
                 id="demo-simple-select-error"
                 value={GPAFilter}
-                label="Age"
+                label="GPA"
                 onChange={handleGPAFilterChange}
               >
                 <MenuItem value="">
@@ -521,14 +534,14 @@ export default function SelectTags() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1 }}>
+            {/* <FormControl sx={{ m: 1, width:"200px" }}>
               <InputLabel id="demo-simple-select-error-label">Value</InputLabel>
 
               <Select
                 labelId="demo-simple-select-error-label"
                 id="demo-simple-select-error"
                 value={valueFilter}
-                label="Age"
+                label="value"
                 onChange={handleValueFilterChange}
               >
                 <MenuItem value="">
@@ -551,9 +564,9 @@ export default function SelectTags() {
                   $5000+{" "}
                 </MenuItem>
               </Select>
-            </FormControl>
+            </FormControl> */}
 
-            <FormControl sx={{ m: 1 }}>
+            <FormControl sx={{ m: 1, width:"250px" }}>
               <InputLabel id="demo-simple-select-error-label">
                 Disimbursement Schedule
               </InputLabel>
@@ -568,10 +581,10 @@ export default function SelectTags() {
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="annually">
+                <MenuItem sx={{ color: "#294243"}} value="annually">
                   Annually
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="one-time">
+                <MenuItem sx={{ color: "#294243"}} value="one-time">
                   One-Time
                 </MenuItem>
               </Select>
@@ -579,19 +592,20 @@ export default function SelectTags() {
           </Grid>
         </Grid>
       </div>
+      </div>
 
       <div className="containerselecttags">
         <Grid container direction="row">
           <DataGrid
             sx={{
               backgroundColor: "#eee",
-              height: "500px",
+              height: "600px",
               width: "fit-content",
               m: 5,
             }}
             rows={filteredScholarships}
             columns={columns}
-            slots={{ toolbar: GridToolbar }}
+            // slots={{ toolbar: GridToolbar }}
             slotProps={{
               toolbar: {
                 showQuickFilter: true,

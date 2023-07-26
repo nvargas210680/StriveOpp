@@ -16,8 +16,8 @@ import "./NavigationBar.css";
 import { Link } from 'react-router-dom';
 import { BiUserCircle } from "react-icons/bi";
 
-const pages = ['Scholarships', 'Coaching', 'Blog', 'About'];
-const settings = ['Profile', 'Dashboard', 'Login', 'Register'];
+const pages = ['Scholarships', 'Events', 'Blog', 'About'];
+const settings = ['Dashboard', 'Login', 'Register'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null)

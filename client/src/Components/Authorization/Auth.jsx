@@ -50,6 +50,7 @@ export const Auth = () => {
             <div className="login__field">
               <i className="login__icon fas fa-lock"></i>
               <input
+                style={{backgroundColor:"#eee"}}
                 className="login__input"
                 placeholder="Password"
                 type="password"
@@ -66,7 +67,7 @@ export const Auth = () => {
 
             <Button
               variant="solid"
-              sx={{ width: "40%", bgColor: "#006699", m: 1 }}
+              sx={{ width: "40%", bgcolor: "#294243", m: 1 }}
               type="submit"
               disabled={loading}
               // onClick={signIn}

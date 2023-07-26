@@ -104,7 +104,7 @@
 .login__input {
 	border: none;
 	border-bottom: 2px solid #b1d3b9;
-	background: none;
+	background: #eee;
 	padding: 10px;
 	padding-left: 24px;
 	font-weight: 700;
@@ -199,4 +199,8 @@ p.account-question{
 
 .contactIcon:hover {
     fill: #f2f735;
+}
+
+.input{
+	background-color: #eee;
 }

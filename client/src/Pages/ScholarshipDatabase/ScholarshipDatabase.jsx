@@ -67,7 +67,7 @@ export default function Scholarship(){
 
     return(
         <div className="scholarshipdatabase">
-            <h1>Scholarship Database</h1>
+            <h1 className="database">Scholarship Database</h1>
             <SelectTags />
                 {/* <div className="filter">
                     <label className="tagFilter" htmlFor="tagFilter">Tag Filter:</label>
