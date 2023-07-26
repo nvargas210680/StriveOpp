@@ -12,11 +12,10 @@ export default function FilterTable() {
   const [rows, setRows] = useState([])
   const columns = [
     { field: "scholarship", headerName: "Scholarship", width: 200 },
-    { field: "deadline", headerName: "Deadline", width: 150 },
     { field: "value", headerName: "Value", width: 120 },
-    { field: "demographic", headerName: "Demographic", width: 200 },
+    { field: "deadline", headerName: "Deadline", width: 150 },
     { field: "requirements", headerName: "Requirements", width: 250 },
-    { field: "tag", headerName: "Tag", width: 120 },
+    { field: "tag", headerName: "Tag", width: 200 },
     { field: "url", headerName: "URL", width: 200 },
   ];
 
@@ -32,10 +31,13 @@ export default function FilterTable() {
         style={{ height: 800, width:"100%"}}>
 
         <DataGrid
-          rows={filteredScholarships} columns={columns} 
-          slots={{
-            toolbar: GridToolbar,
-          }}
+          rows={filteredScholarships}
+          columns={columns} 
+          
+          // slots={{
+          //   toolbar: GridToolbar,
+          // }}
+
           initialState={{
             ...data.initialState,
             filter: {

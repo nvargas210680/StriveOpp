@@ -23,7 +23,6 @@ import UpdateProfile from "./Pages/passwordUpdateProfile/UpdateProfile";
 import PrivateRoute from "./Pages/privateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider";
 import UserProfile from "./Pages/userProfile/UserProfile";
-import ScholarshipDraft from "./Pages/ScholarshipDatabase/_ScholarshipDraft";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -47,7 +46,6 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/register" element={<Signup />} />
-              <Route path="/test" element={<ScholarshipDraft />} />
               <Route
                 path="/suggested-scholarship"
                 element={<SuggestedScholarships />}

@@ -4,6 +4,8 @@ import { collection, getDocs} from "firebase/firestore";
 import { DataGrid, GridToolbar} from '@mui/x-data-grid';
 import "./ScholarshipDatabase.css";
 import MultiSelectDropDown from "./MultiSelectDropDown/MultiSelectDropDown";
+import SelectTags from "./TagInput/TagInput";
+import NewInput from "./NewInput/NewInput";
 
 export default function Scholarship(){
 
@@ -66,8 +68,7 @@ export default function Scholarship(){
     return(
         <div className="scholarshipdatabase">
             <h1>Scholarship Database</h1>
-
-            <MultiSelectDropDown />
+            <SelectTags />
 
                 <div className="filter">
                     <label className="tagFilter" htmlFor="tagFilter">Tag Filter:</label>
@@ -97,6 +98,7 @@ export default function Scholarship(){
                         <option value="women">Women</option>
                         <option value="international">International</option>
                     </select>
+                    </div>
 
                     <DataGrid sx = {{backgroundColor:'#eee', height:"500px", width: "fit-content", m:5}}
                             rows={filteredScholarships} columns={columns} 
@@ -106,7 +108,8 @@ export default function Scholarship(){
                                 showQuickFilter: true,
                                 quickFilterProps: { debounceMs: 500 },
                                 }, }} />
-              </div>
+                    
+              <NewInput />
           </div>
     );
 }

@@ -86,7 +86,7 @@ const ScholarshipDraft = () => {
         console.log(tagFilterValue, demographicFilterValue)
         console.log(scholarships)
         const filteredData = scholarships.filter((scholarship) => {
-          const tagMatch =scholarship.tag && scholarship.tag.toLowerCase().includes(tagFilterValue);
+          const tagMatch = scholarship.tag && scholarship.tag.toLowerCase().includes(tagFilterValue);
           const demographicMatch = scholarship.demographic &&scholarship.demographic
             .toLowerCase()
             .includes(demographicFilterValue);
@@ -168,4 +168,4 @@ const ScholarshipDraft = () => {
     )
 }
 
-export default ScholarshipDraft
+// export default ScholarshipDraft

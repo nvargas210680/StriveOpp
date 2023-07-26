@@ -1,15 +1,10 @@
-.selecttag{
+.containerscholarshiptable{
     display:flex;
-    flex-direction:column;
-}
-
-.containerselecttags{
-    display:flex;
-    flex-direction:row;
+    flex-direction: row;
     border-radius:12px;
-    background-color:#eee;
-    padding:100px;
-    margin:100px;
+    background-color: #eee;
+    padding:40px;
+    margin:20px;
     width:fit-content;
     height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
