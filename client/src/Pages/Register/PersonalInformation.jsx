@@ -84,7 +84,7 @@ const PersonalInformation = () => {
                     style={{ color: "#294243" }}
                     id="selectlabelprovince"
                   >
-                    Province of Study
+                    Province or Territory of Study
                   </InputLabel>
 
                   <Select
@@ -104,24 +104,48 @@ const PersonalInformation = () => {
                     >
                       British Columbia
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>Quebec</MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>Manitoba</MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>
+                    <MenuItem value="quebec" style={{ color: "#294243" }}>
+                      Quebec
+                    </MenuItem>
+                    <MenuItem value="manitoba" style={{ color: "#294243" }}>
+                      Manitoba
+                    </MenuItem>
+                    <MenuItem
+                      value="new brunswick"
+                      style={{ color: "#294243" }}
+                    >
                       New Brunswick
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>
+                    <MenuItem
+                      value="newfoundland and labrador"
+                      style={{ color: "#294243" }}
+                    >
                       Newfoundland and Labrador
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>
+                    <MenuItem value="nova scotia" style={{ color: "#294243" }}>
                       Nova Scotia
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>
+                    <MenuItem
+                      value="prince edward island"
+                      style={{ color: "#294243" }}
+                    >
                       Prince Edward Island
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>
+                    <MenuItem value="saskatchewan" style={{ color: "#294243" }}>
                       Saskatchewan
                     </MenuItem>
-                    <MenuItem style={{ color: "#294243" }}>Yukon</MenuItem>
+                    <MenuItem value="yukon" style={{ color: "#294243" }}>
+                      Yukon
+                    </MenuItem>
+                    <MenuItem value="nunavut" style={{ color: "#294243" }}>
+                      Nunavut
+                    </MenuItem>
+                    <MenuItem
+                      value="Northwest Territories"
+                      style={{ color: "#294243" }}
+                    >
+                      Northwest Territories
+                    </MenuItem>
                   </Select>
 
                   <Button
