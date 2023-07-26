@@ -16,7 +16,6 @@ export default function SelectTags() {
     { field: "scholarship", headerName: "Scholarship", width: 200 },
     { field: "deadline", headerName: "Deadline", width: 150 },
     { field: "value", headerName: "Value", width: 120 },
-    { field: "demographic", headerName: "Demographic", width: 200 },
     { field: "requirements", headerName: "Requirements", width: 250 },
     { field: "tag", headerName: "Tag", width: 120 },
     { field: "url", headerName: "URL", width: 200 },
@@ -230,28 +229,28 @@ export default function SelectTags() {
                 <MenuItem sx={{ color: "#294243" }} value="journalism">
                   Journalism
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="law">
                   Law
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="linguistics">
                   Linguistics
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="medicine">
                   Medicine & Health
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="nursing">
                   Nursing
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="physics">
                   Physics
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="science">
                   Science
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="social work">
                   Social Work
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
+                <MenuItem sx={{ color: "#294243" }} value="study abroad">
                   Study Abroad / Cultural Exchange
                 </MenuItem>
               </Select>
@@ -266,38 +265,37 @@ export default function SelectTags() {
                 labelId="demo-simple-select-error-label"
                 id="demo-simple-select-error"
                 value={culturalIdentityFilter}
-                label="Age"
+                label="cultural-identity"
                 onChange={handleCulturalIdentityFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="white">
                   White
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="black">
                   Black or African Canadian
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="south asian">
                   South Asian
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="indigenous">
                   Indigenous or First Nations
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="east asian">
                   East Asian
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="southeast asian">
                   Southeast Asian
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="arab">
                   Arab
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="latin american">
                   Latin American
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="west asian">
                   West Asian
                 </MenuItem>
               </Select>
@@ -316,42 +314,41 @@ export default function SelectTags() {
                 value={industryFilter}
                 label="Age"
                 onChange={handleIndustryFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="agriculture">
                   Agriculture
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="aviation">
                   Aviation
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="broadcasting">
                   Broadcasting
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="creative">
                   Creative
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="electrical">
                   Electrical
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="oil">
                   Oil & Gas
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="film">
                   Film
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="finance">
                   Finance
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="social work">
                   Social Work
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="economic">
                   Economics
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="journalism">
                   Journalism
                 </MenuItem>
               </Select>
@@ -376,14 +373,14 @@ export default function SelectTags() {
                 <MenuItem sx={{ color: "#294243" }} value="masters">
                   Master's Degree
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="bachelors">
                   Bachelor's Degree
                 </MenuItem>
                 <MenuItem sx={{ color: "#294243" }} value="high school">
                   High School
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  Creative
+                <MenuItem sx={{ color: "#294243" }} value="phd">
+                  Ph.D
                 </MenuItem>
               </Select>
             </FormControl>
@@ -399,30 +396,29 @@ export default function SelectTags() {
                 value={marginalizedClassesFilter}
                 label="Age"
                 onChange={handleMarginalizedClassesFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="disability">
                   Living with a disability
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="mature">
                   Mature Students
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="lgbtq">
                   LGBTQ+
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="women">
                   Women Students
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="first-gen">
                   First-Generation College Students
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="low-income">
                   Low-Income Household
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="immigrant">
                   Immigrant Student
                 </MenuItem>
               </Select>
@@ -441,36 +437,30 @@ export default function SelectTags() {
                 value={athleticsFilter}
                 label="Age"
                 onChange={handleAthleticsFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="basketball">
                   Basketball
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="baseball">
                   Baseball
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  {" "}
-                  Soccer{" "}
+                <MenuItem sx={{ color: "#294243" }} value="soccer">
+                  Soccer
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  {" "}
-                  Football{" "}
+                <MenuItem sx={{ color: "#294243" }} value="football">
+                  Football
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  {" "}
-                  Swimming{" "}
+                <MenuItem sx={{ color: "#294243" }} value="swimming">
+                  Swimming
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  {" "}
-                  Hockey{" "}
+                <MenuItem sx={{ color: "#294243" }} value="hockey">
+                  Hockey
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
-                  {" "}
-                  Other{" "}
+                <MenuItem sx={{ color: "#294243" }} value="other">
+                  Other
                 </MenuItem>
               </Select>
             </FormControl>
@@ -486,15 +476,14 @@ export default function SelectTags() {
                 value={studentTypeFilter}
                 label="Age"
                 onChange={handleStudentTypeFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="full-time">
                   Full-Time
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="part-time">
                   Part-Time
                 </MenuItem>
               </Select>
@@ -510,23 +499,22 @@ export default function SelectTags() {
                 value={GPAFilter}
                 label="Age"
                 onChange={handleGPAFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="no minimum gpa">
                   No Minimum GPA
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="3.0">
                   {" "}
                   3.0+{" "}
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="3.5+">
                   {" "}
                   3.5+{" "}
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="4.0+">
                   {" "}
                   4.0+{" "}
                 </MenuItem>
@@ -542,24 +530,23 @@ export default function SelectTags() {
                 value={valueFilter}
                 label="Age"
                 onChange={handleValueFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="under 500">
                   {" "}
                   Under $500{" "}
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="500 to 999">
                   {" "}
                   $500 - $999{" "}
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="999 to 4999">
                   {" "}
                   $999 - $4999{" "}
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="5000 plus">
                   {" "}
                   $5000+{" "}
                 </MenuItem>
@@ -575,28 +562,26 @@ export default function SelectTags() {
                 labelId="demo-simple-select-error-label"
                 id="demo-simple-select-error"
                 value={valueFilter}
-                label="Age"
+                label="value"
                 onChange={handleValueFilterChange}
-                renderValue={(value) => `⚠️  - ${value}`}
               >
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="annually">
                   Annually
                 </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arts">
+                <MenuItem sx={{ color: "#294243" }} value="one-time">
                   One-Time
                 </MenuItem>
               </Select>
             </FormControl>
           </Grid>
         </Grid>
-        </div>
+      </div>
 
-        <div className="containerselecttags">
-            <Grid container direction="row">
-        
+      <div className="containerselecttags">
+        <Grid container direction="row">
           <DataGrid
             sx={{
               backgroundColor: "#eee",
@@ -615,10 +600,10 @@ export default function SelectTags() {
             }}
           />
         </Grid>
-        </div>
+      </div>
 
-        <div className="containerselecttags">
-            <Grid>
+      <div className="containerselecttags">
+        <Grid>
           <NewInput />
         </Grid>
       </div>
