@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useEffect, useState } from 'react';
-import { db, auth, storage } from '../../config/firebase';
+import { db, auth, storage } from '../../../config/firebase';
 import { 
         getDocs, 
         collection, 
@@ -22,7 +22,7 @@ import { useDemoData } from '@mui/x-data-grid-generator';
 
 import "./_ScholarshipDraft.css";
 import FilterTable from "./_ScholarshipTable";
-import SelectTags from "./TagInput/TagInput";
+import SelectTags from "../TagInput/TagInput";
 
 const ScholarshipDraft = () => {
 

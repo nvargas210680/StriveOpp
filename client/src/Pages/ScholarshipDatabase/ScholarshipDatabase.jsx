@@ -57,9 +57,9 @@ export default function Scholarship(){
         console.log(scholarships)
         const filteredData = scholarships.filter((scholarship) => {
           const tagMatch =scholarship.tag && scholarship.tag.toLowerCase().includes(tagFilterValue);
-          const demographicMatch = scholarship.demographic &&scholarship.demographic
-            .toLowerCase()
-            .includes(demographicFilterValue);
+          // const demographicMatch = scholarship.demographic &&scholarship.demographic
+          //   .toLowerCase()
+          //   .includes(demographicFilterValue);
           return tagMatch && demographicMatch;
         });
         setFilteredScholarships(filteredData);
@@ -69,8 +69,7 @@ export default function Scholarship(){
         <div className="scholarshipdatabase">
             <h1>Scholarship Database</h1>
             <SelectTags />
-
-                <div className="filter">
+                {/* <div className="filter">
                     <label className="tagFilter" htmlFor="tagFilter">Tag Filter:</label>
                     <select
                     id="tagFilter"
@@ -83,9 +82,9 @@ export default function Scholarship(){
                       <option value="master">Masters</option>
                       <option value="undergraduate">Undergraduate</option>
                     </select>
-                </div>
+                </div> */}
 
-                <div className="filter">
+                {/* <div className="filter">
                     <label className="tagFilter" htmlFor="demographicFilter">Demographic Filter:</label>
                     <select
                         id="demographicFilter"
@@ -98,18 +97,7 @@ export default function Scholarship(){
                         <option value="women">Women</option>
                         <option value="international">International</option>
                     </select>
-                    </div>
-
-                    <DataGrid sx = {{backgroundColor:'#eee', height:"500px", width: "fit-content", m:5}}
-                            rows={filteredScholarships} columns={columns} 
-                            slots={{toolbar: GridToolbar}} 
-                            slotProps={{
-                                toolbar: {
-                                showQuickFilter: true,
-                                quickFilterProps: { debounceMs: 500 },
-                                }, }} />
-                    
-              <NewInput />
+                    </div> */}
           </div>
     );
 }
