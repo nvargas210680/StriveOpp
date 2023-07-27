@@ -78,6 +78,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="containerlogin">
+
         <div className="loginleft">
           <img className="loginleft" src="https://i.imgur.com/K1E8Kex.png" />
         </div>
@@ -105,7 +106,7 @@ const Login = () => {
               <Form id="login-form" onSubmit={handleSubmit}>
                 <Grid item>
                   <TextField
-                    style={{ width: 400 }}
+                    style={{ width: 350 }}
                     type="email"
                     inputRef={emailRef}
                     label="Email"
@@ -119,7 +120,7 @@ const Login = () => {
 
                 <Grid item>
                   <TextField
-                    style={{ width: 400 }}
+                    style={{ width: 350 }}
                     type="password"
                     inputRef={passwordRef}
                     label="Password"
@@ -163,7 +164,7 @@ const Login = () => {
           </Grid>
         </div>
 
-        {/* {matchedScholarships.length > 0 && (
+        {matchedScholarships.length > 0 && (
               <div className="matchedscholarships">
                 <h3>Matched Scholarships:</h3>
                   <ul>
@@ -171,7 +172,8 @@ const Login = () => {
                     <li key={scholarship.id}>{scholarship.title}</li>
                     ))}
                   </ul>
-              </div> */}
+              </div>
+        )}
       </div>
     </div>
 

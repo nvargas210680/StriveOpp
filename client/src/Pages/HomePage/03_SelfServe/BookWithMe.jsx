@@ -13,7 +13,7 @@ const BookWithMe = () => {
         extensive scholarship database but also curate top-notch 
         networking and upskilling events to enhance your personal and 
         professional growth.
-            {/* <BookCalendar /> */}
+            <BookCalendar />
         </p>
         
     </div>

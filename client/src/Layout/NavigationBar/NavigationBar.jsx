@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 import { BiUserCircle } from "react-icons/bi";
 
 const pages = ['Scholarships', 'Events', 'Blog', 'About'];
-const settings = ['Dashboard', 'Login', 'Register'];
+const settings = ['Profile', 'Dashboard', 'Login', 'Register'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null)
