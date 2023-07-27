@@ -186,355 +186,361 @@ export default function SelectTags() {
       {/* https://mui.com/material-ui/react-select/ */}
       <div className="containerselecttags">
         <div className="containerselecttagsleft">
-            <img className="taginput "src="https://i.imgur.com/4X6bqaO.png" />
+          <img className="taginput " src="https://i.imgur.com/4X6bqaO.png" />
         </div>
         <div className="right">
-        <Grid>
-          <Grid container direction="row">
-            <FormControl direction="row" justify="center" sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="simple-select-label">Field of Studies</InputLabel>
-
-              <Select
-                display="flex"
+          <Grid>
+            <Grid container direction="row">
+              <FormControl
                 direction="row"
-                labelId="demo-simple-select-disabled-label"
-                id="demo-simple-select-disabled"
-                value={studiesFilter}
-                label="fieldofstudies"
-                onChange={handleStudiesFilterChange}
+                justify="center"
+                sx={{ m: 1, width: "250px" }}
               >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="humanities">
-                  Arts & Humanities
-                </MenuItem>
-                <MenuItem
-                  sx={{ color: "#294243" }}
-                  value="business administration and management"
+                <InputLabel id="simple-select-label">
+                  Field of Studies
+                </InputLabel>
+
+                <Select
+                  display="flex"
+                  direction="row"
+                  labelId="demo-simple-select-disabled-label"
+                  id="demo-simple-select-disabled"
+                  value={studiesFilter}
+                  label="fieldofstudies"
+                  onChange={handleStudiesFilterChange}
                 >
-                  Business Administration and Management
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="communications">
-                  Communication
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="economics">
-                  Economics
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="education">
-                  Education
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="engineering">
-                  Engineering
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="fine arts">
-                  Fine Arts
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="history">
-                  History
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="journalism">
-                  Journalism
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="law">
-                  Law
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="linguistics">
-                  Linguistics
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="medicine">
-                  Medicine & Health
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="nursing">
-                  Nursing
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="physics">
-                  Physics
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="science">
-                  Science
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="social work">
-                  Social Work
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="study abroad">
-                  Study Abroad / Cultural Exchange
-                </MenuItem>
-              </Select>
-            </FormControl>
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="humanities">
+                    Arts & Humanities
+                  </MenuItem>
+                  <MenuItem
+                    sx={{ color: "#294243" }}
+                    value="business administration and management"
+                  >
+                    Business Administration and Management
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="communications">
+                    Communication
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="economics">
+                    Economics
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="education">
+                    Education
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="engineering">
+                    Engineering
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="fine arts">
+                    Fine Arts
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="history">
+                    History
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="journalism">
+                    Journalism
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="law">
+                    Law
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="linguistics">
+                    Linguistics
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="medicine">
+                    Medicine & Health
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="nursing">
+                    Nursing
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="physics">
+                    Physics
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="science">
+                    Science
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="social work">
+                    Social Work
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="study abroad">
+                    Study Abroad / Cultural Exchange
+                  </MenuItem>
+                </Select>
+              </FormControl>
 
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Cultural Identity
-              </InputLabel>
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Cultural Identity
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={culturalIdentityFilter}
-                label="cultural-identity"
-                onChange={handleCulturalIdentityFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="white">
-                  White
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="black">
-                  Black or African Canadian
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="south asian">
-                  South Asian
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="indigenous">
-                  Indigenous or First Nations
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="east asian">
-                  East Asian
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="southeast asian">
-                  Southeast Asian
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="arab">
-                  Arab
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="latin american">
-                  Latin American
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="west asian">
-                  West Asian
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={culturalIdentityFilter}
+                  label="cultural-identity"
+                  onChange={handleCulturalIdentityFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="white">
+                    White
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="black">
+                    Black or African Canadian
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="south asian">
+                    South Asian
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="indigenous">
+                    Indigenous or First Nations
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="east asian">
+                    East Asian
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="southeast asian">
+                    Southeast Asian
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="arab">
+                    Arab
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="latin american">
+                    Latin American
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="west asian">
+                    West Asian
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
 
-          <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Industry
-              </InputLabel>
+            <Grid container direction="row" justify="center">
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Industry
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={industryFilter}
-                label="Age"
-                onChange={handleIndustryFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="agriculture">
-                  Agriculture
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="aviation">
-                  Aviation
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="broadcasting">
-                  Broadcasting
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="creative">
-                  Creative
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="electrical">
-                  Electrical
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="oil">
-                  Oil & Gas
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="film">
-                  Film
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="finance">
-                  Finance
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="social work">
-                  Social Work
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="economic">
-                  Economics
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="journalism">
-                  Journalism
-                </MenuItem>
-              </Select>
-            </FormControl>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={industryFilter}
+                  label="Age"
+                  onChange={handleIndustryFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="agriculture">
+                    Agriculture
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="aviation">
+                    Aviation
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="broadcasting">
+                    Broadcasting
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="creative">
+                    Creative
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="electrical">
+                    Electrical
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="oil">
+                    Oil & Gas
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="film">
+                    Film
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="finance">
+                    Finance
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="social work">
+                    Social Work
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="economic">
+                    Economics
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="journalism">
+                    Journalism
+                  </MenuItem>
+                </Select>
+              </FormControl>
 
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Educational Level
-              </InputLabel>
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Educational Level
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                label="Educational Level"
-                value={educationFilter}
-                onChange={handleEducationFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  label="Educational Level"
+                  value={educationFilter}
+                  onChange={handleEducationFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
 
-                <MenuItem sx={{ color: "#294243" }} value="masters">
-                  Master's Degree
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="bachelors">
-                  Bachelor's Degree
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="high school">
-                  High School
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="phd">
-                  Ph.D
-                </MenuItem>
-              </Select>
-            </FormControl>
+                  <MenuItem sx={{ color: "#294243" }} value="masters">
+                    Master's Degree
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="bachelors">
+                    Bachelor's Degree
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="high school">
+                    High School
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="phd">
+                    Ph.D
+                  </MenuItem>
+                </Select>
+              </FormControl>
 
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Marginalized Classes
-              </InputLabel>
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Marginalized Classes
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={marginalizedClassesFilter}
-                label="Age"
-                onChange={handleMarginalizedClassesFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="disability">
-                  Living with a disability
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="mature">
-                  Mature Students
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="lgbtq">
-                  LGBTQ+
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="women">
-                  Women Students
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="first-gen">
-                  First-Generation College Students
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="low-income">
-                  Low-Income Household
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="immigrant">
-                  Immigrant Student
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="domestic">
-                  Domestic Student
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="international">
-                  International Student
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={marginalizedClassesFilter}
+                  label="Age"
+                  onChange={handleMarginalizedClassesFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="disability">
+                    Living with a disability
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="mature">
+                    Mature Students
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="lgbtq">
+                    LGBTQ+
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="women">
+                    Women Students
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="first-gen">
+                    First-Generation College Students
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="low-income">
+                    Low-Income Household
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="immigrant">
+                    Immigrant Student
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="domestic">
+                    Domestic Student
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="international">
+                    International Student
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
 
-          <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Athletics
-              </InputLabel>
+            <Grid container direction="row" justify="center">
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Athletics
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={athleticsFilter}
-                label="Age"
-                onChange={handleAthleticsFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="basketball">
-                  Basketball
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="baseball">
-                  Baseball
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="soccer">
-                  Soccer
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="football">
-                  Football
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="swimming">
-                  Swimming
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="hockey">
-                  Hockey
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="other">
-                  Other
-                </MenuItem>
-              </Select>
-            </FormControl>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={athleticsFilter}
+                  label="Age"
+                  onChange={handleAthleticsFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="basketball">
+                    Basketball
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="baseball">
+                    Baseball
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="soccer">
+                    Soccer
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="football">
+                    Football
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="swimming">
+                    Swimming
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="hockey">
+                    Hockey
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="other">
+                    Other
+                  </MenuItem>
+                </Select>
+              </FormControl>
 
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Student Type
-              </InputLabel>
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Student Type
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={studentTypeFilter}
-                label="Age"
-                onChange={handleStudentTypeFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="full-time">
-                  Full-Time
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="part-time">
-                  Part-Time
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid container direction="row" justify="center">
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">GPA</InputLabel>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={studentTypeFilter}
+                  label="Age"
+                  onChange={handleStudentTypeFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="full-time">
+                    Full-Time
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="part-time">
+                    Part-Time
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid container direction="row" justify="center">
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">GPA</InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={GPAFilter}
-                label="GPA"
-                onChange={handleGPAFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="no minimum gpa">
-                  No Minimum GPA
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="3.0">
-                  {" "}
-                  3.0+{" "}
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="3.5+">
-                  {" "}
-                  3.5+{" "}
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243" }} value="4.0+">
-                  {" "}
-                  4.0+{" "}
-                </MenuItem>
-              </Select>
-            </FormControl>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={GPAFilter}
+                  label="GPA"
+                  onChange={handleGPAFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="no minimum gpa">
+                    No Minimum GPA
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="3.0">
+                    {" "}
+                    3.0+{" "}
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="3.5+">
+                    {" "}
+                    3.5+{" "}
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="4.0+">
+                    {" "}
+                    4.0+{" "}
+                  </MenuItem>
+                </Select>
+              </FormControl>
 
-            {/* <FormControl sx={{ m: 1, width:"200px" }}>
+              {/* <FormControl sx={{ m: 1, width:"200px" }}>
               <InputLabel id="demo-simple-select-error-label">Value</InputLabel>
 
               <Select
@@ -566,50 +572,50 @@ export default function SelectTags() {
               </Select>
             </FormControl> */}
 
-            <FormControl sx={{ m: 1, width:"250px" }}>
-              <InputLabel id="demo-simple-select-error-label">
-                Disimbursement Schedule
-              </InputLabel>
+              <FormControl sx={{ m: 1, width: "250px" }}>
+                <InputLabel id="demo-simple-select-error-label">
+                  Disimbursement Schedule
+                </InputLabel>
 
-              <Select
-                labelId="demo-simple-select-error-label"
-                id="demo-simple-select-error"
-                value={valueFilter}
-                label="value"
-                onChange={handleValueFilterChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243"}} value="annually">
-                  Annually
-                </MenuItem>
-                <MenuItem sx={{ color: "#294243"}} value="one-time">
-                  One-Time
-                </MenuItem>
-              </Select>
-            </FormControl>
+                <Select
+                  labelId="demo-simple-select-error-label"
+                  id="demo-simple-select-error"
+                  value={valueFilter}
+                  label="value"
+                  onChange={handleValueFilterChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="annually">
+                    Annually
+                  </MenuItem>
+                  <MenuItem sx={{ color: "#294243" }} value="one-time">
+                    One-Time
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
           </Grid>
-        </Grid>
-      </div>
+        </div>
       </div>
 
       <div className="containerselecttags">
         <Grid container direction="row">
           <DataGrid
             sx={{
-                backgroundColor: "#eee",
-                boxShadow:2,
-                height: "600px",
-                width: "fit-content",
-                m: 5,
-                '& .MuiDataGrid-cell:hover':{
-                    color:'primary:main,'
-                }, 
+              backgroundColor: "#eee",
+              boxShadow: 2,
+              height: "600px",
+              width: "fit-content",
+              m: 5,
+              "& .MuiDataGrid-cell:hover": {
+                color: "primary:main,",
+              },
             }}
             rows={filteredScholarships}
             columns={columns}
-            // slots={{ toolbar: GridToolbar }}
+            slots={{ toolbar: GridToolbar }}
             slotProps={{
               toolbar: {
                 showQuickFilter: true,

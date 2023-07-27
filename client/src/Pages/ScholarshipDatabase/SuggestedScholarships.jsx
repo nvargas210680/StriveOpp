@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useAuth } from "../../contexts/AuthProvider";
 import { db } from "../../config/firebase";
 import { collection, doc, getDocs, query, where } from "firebase/firestore";
-import "./SuggestedScholarships.css"
+import "./SuggestedScholarships.css";
 
 function SuggestedScholarships() {
   const [userProfile, setUserProfile] = useState();
@@ -42,7 +42,7 @@ function SuggestedScholarships() {
 
     fetchUserProfile();
   }, [currentUser]);
-  console.log("hello");
+  console.log("hello", scholarships);
   return (
     // <div className="scholarships-container">
     //   <table className="scholarships-table">

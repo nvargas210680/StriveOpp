@@ -15,7 +15,7 @@ import { useNavigate, useParams } from "react-router-dom";
 const CompleteProfile2 = () => {
   const tags = [
     "Arts",
-    "master",
+    "Masters",
     "Business",
     "Communication",
     "Economics",
@@ -52,12 +52,12 @@ const CompleteProfile2 = () => {
   const navigate = useNavigate();
 
   const handleTagClick = (tag) => {
-    if (selectedTags.includes(tag)) {
+    if (selectedTags.includes(tag.toLowerCase())) {
       setSelectedTags(
-        selectedTags.filter((selectedTag) => selectedTag !== tag)
+        selectedTags.filter((selectedTag) => selectedTag !== tag.toLowerCase())
       );
     } else {
-      setSelectedTags([...selectedTags, tag]);
+      setSelectedTags([...selectedTags, tag.toLowerCase()]);
     }
   };
   console.log("test", currentUser);
