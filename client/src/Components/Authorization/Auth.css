@@ -201,6 +201,6 @@ p.account-question{
     fill: #f2f735;
 }
 
-.input{
+input.login__input{
 	background-color: #eee;
 }

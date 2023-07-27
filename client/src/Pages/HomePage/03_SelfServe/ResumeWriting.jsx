@@ -7,11 +7,14 @@ const ResumeWriting = () => {
   return (
     <div className="cardresume">
         <img className="selfserve" src="https://i.imgur.com/ceA6YTg.png" />
-        <h3 className="selfserve">Resume Writing</h3>
+        <h3 className="selfserve">Essay Editing</h3>
         <Box sx={{ display: 'flex', flexDirection:'column', width:'50%', marginTop:"10px"}}>
             
               <p className="cardcareercoachinginfo">
-                lorem ipsum
+                Welcome to our Essay Editing Service, where your words are expertly 
+                crafted to make a lasting impact. We understand the power of a well-written 
+                essay in achieving academic and professional success, and our 
+                team of skilled editors is dedicated to helping you shine.
               </p>
             
               <Button 

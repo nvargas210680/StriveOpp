@@ -40,6 +40,7 @@ export const Auth = () => {
               <i className="login__icon fas fa-user"></i>
               <input
                 className="login__input"
+                sx={{bgcolor:"#eee"}}
                 placeholder="Email"
                 ref={emailRef}
                 // onChange={(e) => setEmail(e.target.value)}
@@ -50,7 +51,7 @@ export const Auth = () => {
             <div className="login__field">
               <i className="login__icon fas fa-lock"></i>
               <input
-                style={{backgroundColor:"#eee"}}
+                style={{bgcolor:"#eee"}}
                 className="login__input"
                 placeholder="Password"
                 type="password"

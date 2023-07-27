@@ -598,10 +598,14 @@ export default function SelectTags() {
         <Grid container direction="row">
           <DataGrid
             sx={{
-              backgroundColor: "#eee",
-              height: "600px",
-              width: "fit-content",
-              m: 5,
+                backgroundColor: "#eee",
+                boxShadow:2,
+                height: "600px",
+                width: "fit-content",
+                m: 5,
+                '& .MuiDataGrid-cell:hover':{
+                    color:'primary:main,'
+                }, 
             }}
             rows={filteredScholarships}
             columns={columns}

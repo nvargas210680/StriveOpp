@@ -12,7 +12,10 @@ const AccessDatabase = () => {
         <Box sx={{ display: 'flex', flexDirection:'column', width:'50%', marginTop:"10px"}}>
             
               <p className="cardcareercoachinginfo">
-                lorem ipsum
+                Our Scholarship Database is your gateway to a world of educational opportunities and possibilities.
+                We understand that pursuing higher education can be a significant financial undertaking, 
+                and that's why we are committed to supporting your academic journey with a vast and diverse 
+                collection of scholarships.
               </p>
             
               <Button 
