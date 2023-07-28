@@ -11,7 +11,7 @@ const HomePage = () => {
         <Info />
         <Statistics />
         <SelfServe />
-        <InTheNews />
+        {/* <InTheNews /> */}
         </div>
     )
 }

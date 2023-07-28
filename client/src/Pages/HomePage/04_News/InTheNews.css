@@ -25,3 +25,6 @@ h1.inthenews{
     transform: scale(1.05);
 }
 
+img.inthenews{
+    width:60%;
+}

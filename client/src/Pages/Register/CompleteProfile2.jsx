@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from '@mui/joy/Button';
 import {
   collection,
   setDoc,
@@ -11,6 +12,7 @@ import { db } from "../../config/firebase";
 import { useAuth } from "../../contexts/AuthProvider";
 import "./CompleteProfile2.css";
 import { useNavigate, useParams } from "react-router-dom";
+import { ButtonRoot } from "@mui/joy/Button/Button";
 
 const CompleteProfile2 = () => {
   const tags = [
@@ -102,16 +104,18 @@ const CompleteProfile2 = () => {
       <h1>Select Tags</h1>
       <div className="tags">
         {tags.map((tag) => (
-          <button
+          <Button
+          sx={{bgcolor: "#eee", color: "#294243", width:"20%"}}
+            variant="solid"
             key={tag}
             className={selectedTags.includes(tag) ? "selected" : ""}
             onClick={() => handleTagClick(tag)}
           >
             {tag}
-          </button>
+          </Button>
         ))}
       </div>
-      <button onClick={handleSaveToFirebase}>Submit</button>
+      <Button variant="solid" sx={{bgcolor: "#294243", width:"60%"}} onClick={handleSaveToFirebase}>Submit</Button>
     </div>
   );
 };

@@ -36,7 +36,7 @@ const About = () =>{
                 </div>
             </div>
 
-            {/* About Us */}
+            {/* About Us
 
             <div className="container-aboutus">
                 <div className="aboutusleft">
@@ -51,7 +51,7 @@ const About = () =>{
 
             {/* Testimonials */}
 
-            <div className="container-aboutus">
+            {/* <div className="container-aboutus">
                 <div className="aboutusright">
                     <img className="aboutus" src="https://i.imgur.com/8RnOqyk.png" />
                 </div>
@@ -60,13 +60,13 @@ const About = () =>{
                     <h1 className="about">Testimonials</h1>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quod dolor aut voluptate cumque eveniet recusandae placeat ratione voluptatum, assumenda tempora nemo soluta maiores officiis explicabo blanditiis eaque totam tenetur.</span>
                 </div>
-            </div>
+            </div> */}
 
             {/* Let's Connect */}
 
             <div className="container-aboutus">
                 <div className="aboutusleft">
-                    <img src="" />
+                    <img className="aboutus" src="https://i.imgur.com/SVIl3Rg.png" />
                 </div>
 
                 <div className="aboutusleft">
